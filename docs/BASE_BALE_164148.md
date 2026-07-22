@@ -10,6 +10,7 @@ The repository includes a clean decoded vanilla Bale baseline for maintainers wh
 | minSdkVersion | `24` |
 | targetSdkVersion | `35` |
 | Apktool version used to decode | `3.0.2` |
+| Rebuild verification | `apktool b` completed successfully with Apktool `3.0.2` |
 | SHA-256 of source APK | `09B9B9315B0CE94AF721DCED0DB23ABE7A016590AFEDD24093EA50A4E8C6F061` |
 | Decoded tree | [`../src/bale_164148_apktool/`](../src/bale_164148_apktool/) |
 
