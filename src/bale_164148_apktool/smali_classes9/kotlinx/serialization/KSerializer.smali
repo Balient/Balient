@@ -1,0 +1,12 @@
+.class public interface abstract Lkotlinx/serialization/KSerializer;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/ST6;
+.implements Lir/nasim/eY1;
+
+
+# virtual methods
+.method public abstract getDescriptor()Lkotlinx/serialization/descriptors/SerialDescriptor;
+.end method

@@ -1,0 +1,28 @@
+.class public interface abstract Lcom/google/android/exoplayer2/source/SequenceableLoader;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/android/exoplayer2/source/SequenceableLoader$Callback;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract a()J
+.end method
+
+.method public abstract c()Z
+.end method
+
+.method public abstract e(J)Z
+.end method
+
+.method public abstract f()J
+.end method
+
+.method public abstract g(J)V
+.end method

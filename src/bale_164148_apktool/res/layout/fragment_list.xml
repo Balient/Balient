@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/invite_link_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="@string/invite_link_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:layout_gravity="center|top" android:id="@id/selectAllFrame" android:background="@color/secondary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/background_1" android:layout_gravity="center" android:id="@id/selectAllTextView" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <androidx.appcompat.widget.AppCompatCheckBox android:layout_gravity="end" android:id="@id/selectAllCheckbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="16.0dp" app:buttonTint="@color/secondary" />
+    </FrameLayout>
+    <ir.nasim.designsystem.adapters.RecyclerListView android:id="@id/listView" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/selector" android:divider="@null" android:dividerHeight="0.0dp" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/emptyView" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+</LinearLayout>

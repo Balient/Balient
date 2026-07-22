@@ -1,0 +1,6 @@
+.class public interface abstract Lai/bale/proto/F;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/cp4;

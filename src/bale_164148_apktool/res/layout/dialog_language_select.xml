@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="rtl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioButton android:gravity="start" android:id="@id/radio_farsi" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lang_farsi" />
+    <RadioButton android:gravity="start" android:id="@id/radio_english" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lang_english" />
+    <RadioButton android:gravity="start" android:id="@id/radio_torki" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lang_torki" />
+    <RadioButton android:gravity="start" android:id="@id/radio_arabic" android:paddingLeft="12.0dp" android:paddingTop="4.0dp" android:paddingRight="12.0dp" android:paddingBottom="4.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/lang_arabic" />
+</RadioGroup>

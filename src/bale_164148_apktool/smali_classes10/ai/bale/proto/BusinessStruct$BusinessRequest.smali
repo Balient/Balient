@@ -1,0 +1,3093 @@
+.class public final Lai/bale/proto/BusinessStruct$BusinessRequest;
+.super Lcom/google/protobuf/GeneratedMessageLite;
+.source "SourceFile"
+
+# interfaces
+.implements Lai/bale/proto/F;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lai/bale/proto/BusinessStruct$BusinessRequest$b;,
+        Lai/bale/proto/BusinessStruct$BusinessRequest$a;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/protobuf/GeneratedMessageLite;",
+        "Lai/bale/proto/F;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final ADDRESS_FIELD_NUMBER:I = 0xb
+
+.field public static final CREATED_AT_FIELD_NUMBER:I = 0x3
+
+.field public static final CREATOR_USER_ID_FIELD_NUMBER:I = 0xd
+
+.field private static final DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+.field public static final ECONOMIC_NUMBER_FIELD_NUMBER:I = 0x9
+
+.field public static final LANDLINE_NUMBER_FIELD_NUMBER:I = 0xa
+
+.field public static final NATIONAL_NUMBER_FIELD_NUMBER:I = 0x8
+
+.field public static final ORGANIZATION_ID_FIELD_NUMBER:I = 0x2
+
+.field public static final ORG_NAME_FIELD_NUMBER:I = 0x7
+
+.field public static final OWNER_NAME_FIELD_NUMBER:I = 0xe
+
+.field private static volatile PARSER:Lir/nasim/jf5; = null
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lir/nasim/jf5;"
+        }
+    .end annotation
+.end field
+
+.field public static final POSTAL_CODE_FIELD_NUMBER:I = 0xc
+
+.field public static final REJECTION_REASON_FIELD_NUMBER:I = 0x6
+
+.field public static final REQUEST_ID_FIELD_NUMBER:I = 0x1
+
+.field public static final REQUEST_STATUS_FIELD_NUMBER:I = 0x4
+
+.field public static final REQUEST_TYPE_FIELD_NUMBER:I = 0x5
+
+.field public static final SAFIR_REQUEST_FIELD_NUMBER:I = 0x65
+
+.field public static final TEMPLATE_MESSAGE_REQUEST_FIELD_NUMBER:I = 0x66
+
+
+# instance fields
+.field private address_:Lcom/google/protobuf/StringValue;
+
+.field private bitField0_:I
+
+.field private createdAt_:J
+
+.field private creatorUserId_:I
+
+.field private economicNumber_:Lcom/google/protobuf/StringValue;
+
+.field private landlineNumber_:Lcom/google/protobuf/StringValue;
+
+.field private nationalNumber_:Lcom/google/protobuf/StringValue;
+
+.field private orgName_:Lcom/google/protobuf/StringValue;
+
+.field private organizationId_:I
+
+.field private ownerName_:Lcom/google/protobuf/StringValue;
+
+.field private postalCode_:Lcom/google/protobuf/StringValue;
+
+.field private rejectionReason_:Lcom/google/protobuf/StringValue;
+
+.field private requestId_:I
+
+.field private requestStatus_:I
+
+.field private requestType_:I
+
+.field private traitCase_:I
+
+.field private trait_:Ljava/lang/Object;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lai/bale/proto/BusinessStruct$BusinessRequest;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 7
+    .line 8
+    const-class v1, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 9
+    .line 10
+    invoke-static {v1, v0}, Lcom/google/protobuf/GeneratedMessageLite;->registerDefaultInstance(Ljava/lang/Class;Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method private clearAddress()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->address_:Lcom/google/protobuf/StringValue;
+
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 5
+    .line 6
+    and-int/lit8 v0, v0, -0x21
+
+    .line 7
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private clearCreatedAt()V
+    .locals 2
+
+    .line 1
+    const-wide/16 v0, 0x0
+
+    .line 2
+    .line 3
+    iput-wide v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->createdAt_:J
+
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method private clearCreatorUserId()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->creatorUserId_:I
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private clearEconomicNumber()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->economicNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 5
+    .line 6
+    and-int/lit8 v0, v0, -0x9
+
+    .line 7
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private clearLandlineNumber()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->landlineNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 5
+    .line 6
+    and-int/lit8 v0, v0, -0x11
+
+    .line 7
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private clearNationalNumber()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->nationalNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 5
+    .line 6
+    and-int/lit8 v0, v0, -0x5
+
+    .line 7
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private clearOrgName()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->orgName_:Lcom/google/protobuf/StringValue;
+
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 5
+    .line 6
+    and-int/lit8 v0, v0, -0x3
+
+    .line 7
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private clearOrganizationId()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->organizationId_:I
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private clearOwnerName()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->ownerName_:Lcom/google/protobuf/StringValue;
+
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 5
+    .line 6
+    and-int/lit16 v0, v0, -0x81
+
+    .line 7
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private clearPostalCode()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->postalCode_:Lcom/google/protobuf/StringValue;
+
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 5
+    .line 6
+    and-int/lit8 v0, v0, -0x41
+
+    .line 7
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private clearRejectionReason()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->rejectionReason_:Lcom/google/protobuf/StringValue;
+
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 5
+    .line 6
+    and-int/lit8 v0, v0, -0x2
+
+    .line 7
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private clearRequestId()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestId_:I
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private clearRequestStatus()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestStatus_:I
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private clearRequestType()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestType_:I
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method private clearSafirRequest()V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x65
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 9
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    :cond_0
+    return-void
+.end method
+
+.method private clearTemplateMessageRequest()V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x66
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 9
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    :cond_0
+    return-void
+.end method
+
+.method private clearTrait()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public static getDefaultInstance()Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method static bridge synthetic j()Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object v0
+.end method
+
+.method private mergeAddress(Lcom/google/protobuf/StringValue;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->address_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->address_:Lcom/google/protobuf/StringValue;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/google/protobuf/StringValue;->newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/google/protobuf/StringValue$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/google/protobuf/StringValue;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->address_:Lcom/google/protobuf/StringValue;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->address_:Lcom/google/protobuf/StringValue;
+
+    .line 36
+    .line 37
+    :goto_0
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 38
+    .line 39
+    or-int/lit8 p1, p1, 0x20
+
+    .line 40
+    .line 41
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method private mergeEconomicNumber(Lcom/google/protobuf/StringValue;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->economicNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->economicNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/google/protobuf/StringValue;->newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/google/protobuf/StringValue$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/google/protobuf/StringValue;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->economicNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->economicNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 36
+    .line 37
+    :goto_0
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 38
+    .line 39
+    or-int/lit8 p1, p1, 0x8
+
+    .line 40
+    .line 41
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method private mergeLandlineNumber(Lcom/google/protobuf/StringValue;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->landlineNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->landlineNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/google/protobuf/StringValue;->newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/google/protobuf/StringValue$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/google/protobuf/StringValue;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->landlineNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->landlineNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 36
+    .line 37
+    :goto_0
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 38
+    .line 39
+    or-int/lit8 p1, p1, 0x10
+
+    .line 40
+    .line 41
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method private mergeNationalNumber(Lcom/google/protobuf/StringValue;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->nationalNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->nationalNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/google/protobuf/StringValue;->newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/google/protobuf/StringValue$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/google/protobuf/StringValue;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->nationalNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->nationalNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 36
+    .line 37
+    :goto_0
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 38
+    .line 39
+    or-int/lit8 p1, p1, 0x4
+
+    .line 40
+    .line 41
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method private mergeOrgName(Lcom/google/protobuf/StringValue;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->orgName_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->orgName_:Lcom/google/protobuf/StringValue;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/google/protobuf/StringValue;->newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/google/protobuf/StringValue$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/google/protobuf/StringValue;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->orgName_:Lcom/google/protobuf/StringValue;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->orgName_:Lcom/google/protobuf/StringValue;
+
+    .line 36
+    .line 37
+    :goto_0
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 38
+    .line 39
+    or-int/lit8 p1, p1, 0x2
+
+    .line 40
+    .line 41
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method private mergeOwnerName(Lcom/google/protobuf/StringValue;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->ownerName_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->ownerName_:Lcom/google/protobuf/StringValue;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/google/protobuf/StringValue;->newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/google/protobuf/StringValue$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/google/protobuf/StringValue;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->ownerName_:Lcom/google/protobuf/StringValue;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->ownerName_:Lcom/google/protobuf/StringValue;
+
+    .line 36
+    .line 37
+    :goto_0
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 38
+    .line 39
+    or-int/lit16 p1, p1, 0x80
+
+    .line 40
+    .line 41
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method private mergePostalCode(Lcom/google/protobuf/StringValue;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->postalCode_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->postalCode_:Lcom/google/protobuf/StringValue;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/google/protobuf/StringValue;->newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/google/protobuf/StringValue$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/google/protobuf/StringValue;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->postalCode_:Lcom/google/protobuf/StringValue;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->postalCode_:Lcom/google/protobuf/StringValue;
+
+    .line 36
+    .line 37
+    :goto_0
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 38
+    .line 39
+    or-int/lit8 p1, p1, 0x40
+
+    .line 40
+    .line 41
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method private mergeRejectionReason(Lcom/google/protobuf/StringValue;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->rejectionReason_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    if-eq v0, v1, :cond_0
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->rejectionReason_:Lcom/google/protobuf/StringValue;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, Lcom/google/protobuf/StringValue;->newBuilder(Lcom/google/protobuf/StringValue;)Lcom/google/protobuf/StringValue$b;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    check-cast p1, Lcom/google/protobuf/StringValue$b;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lcom/google/protobuf/StringValue;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->rejectionReason_:Lcom/google/protobuf/StringValue;
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->rejectionReason_:Lcom/google/protobuf/StringValue;
+
+    .line 36
+    .line 37
+    :goto_0
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 38
+    .line 39
+    or-int/lit8 p1, p1, 0x1
+
+    .line 40
+    .line 41
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method private mergeSafirRequest(Lai/bale/proto/BusinessStruct$SafirRequest;)V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 5
+    .line 6
+    const/16 v1, 0x65
+
+    .line 7
+    .line 8
+    if-ne v0, v1, :cond_0
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    invoke-static {}, Lai/bale/proto/BusinessStruct$SafirRequest;->getDefaultInstance()Lai/bale/proto/BusinessStruct$SafirRequest;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v2
+
+    .line 16
+    if-eq v0, v2, :cond_0
+
+    .line 17
+    .line 18
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    check-cast v0, Lai/bale/proto/BusinessStruct$SafirRequest;
+
+    .line 21
+    .line 22
+    invoke-static {v0}, Lai/bale/proto/BusinessStruct$SafirRequest;->newBuilder(Lai/bale/proto/BusinessStruct$SafirRequest;)Lai/bale/proto/BusinessStruct$SafirRequest$a;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lai/bale/proto/BusinessStruct$SafirRequest$a;
+
+    .line 31
+    .line 32
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    goto :goto_0
+
+    .line 39
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 40
+    .line 41
+    :goto_0
+    iput v1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method private mergeTemplateMessageRequest(Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;)V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 5
+    .line 6
+    const/16 v1, 0x66
+
+    .line 7
+    .line 8
+    if-ne v0, v1, :cond_0
+
+    .line 9
+    .line 10
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    invoke-static {}, Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;->getDefaultInstance()Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v2
+
+    .line 16
+    if-eq v0, v2, :cond_0
+
+    .line 17
+    .line 18
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    check-cast v0, Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;
+
+    .line 21
+    .line 22
+    invoke-static {v0}, Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;->newBuilder(Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;)Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest$a;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    invoke-virtual {v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->w(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p1
+
+    .line 30
+    check-cast p1, Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest$a;
+
+    .line 31
+    .line 32
+    invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessageLite$b;->n()Lcom/google/protobuf/GeneratedMessageLite;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    goto :goto_0
+
+    .line 39
+    :cond_0
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 40
+    .line 41
+    :goto_0
+    iput v1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 42
+    .line 43
+    return-void
+.end method
+
+.method public static newBuilder()Lai/bale/proto/BusinessStruct$BusinessRequest$a;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder()Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    move-result-object v0
+
+    check-cast v0, Lai/bale/proto/BusinessStruct$BusinessRequest$a;
+
+    return-object v0
+.end method
+
+.method public static newBuilder(Lai/bale/proto/BusinessStruct$BusinessRequest;)Lai/bale/proto/BusinessStruct$BusinessRequest$a;
+    .locals 1
+
+    .line 2
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-virtual {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->createBuilder(Lcom/google/protobuf/GeneratedMessageLite;)Lcom/google/protobuf/GeneratedMessageLite$b;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest$a;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/s;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 2
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseDelimitedFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/s;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/g;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 3
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/g;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/g;Lcom/google/protobuf/s;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 4
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/g;Lcom/google/protobuf/s;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/h;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 9
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/h;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Lcom/google/protobuf/h;Lcom/google/protobuf/s;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 10
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/h;Lcom/google/protobuf/s;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 7
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/s;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 8
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/io/InputStream;Lcom/google/protobuf/s;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom(Ljava/nio/ByteBuffer;Lcom/google/protobuf/s;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 2
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;Ljava/nio/ByteBuffer;Lcom/google/protobuf/s;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([B)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 5
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[B)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parseFrom([BLcom/google/protobuf/s;)Lai/bale/proto/BusinessStruct$BusinessRequest;
+    .locals 1
+
+    .line 6
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    invoke-static {v0, p0, p1}, Lcom/google/protobuf/GeneratedMessageLite;->parseFrom(Lcom/google/protobuf/GeneratedMessageLite;[BLcom/google/protobuf/s;)Lcom/google/protobuf/GeneratedMessageLite;
+
+    move-result-object p0
+
+    check-cast p0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    return-object p0
+.end method
+
+.method public static parser()Lir/nasim/jf5;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lir/nasim/jf5;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->getParserForType()Lir/nasim/jf5;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method private setAddress(Lcom/google/protobuf/StringValue;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->address_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 7
+    .line 8
+    or-int/lit8 p1, p1, 0x20
+
+    .line 9
+    .line 10
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private setCreatedAt(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->createdAt_:J
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method private setCreatorUserId(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->creatorUserId_:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method private setEconomicNumber(Lcom/google/protobuf/StringValue;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->economicNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 7
+    .line 8
+    or-int/lit8 p1, p1, 0x8
+
+    .line 9
+    .line 10
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private setLandlineNumber(Lcom/google/protobuf/StringValue;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->landlineNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 7
+    .line 8
+    or-int/lit8 p1, p1, 0x10
+
+    .line 9
+    .line 10
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private setNationalNumber(Lcom/google/protobuf/StringValue;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->nationalNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 7
+    .line 8
+    or-int/lit8 p1, p1, 0x4
+
+    .line 9
+    .line 10
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private setOrgName(Lcom/google/protobuf/StringValue;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->orgName_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 7
+    .line 8
+    or-int/lit8 p1, p1, 0x2
+
+    .line 9
+    .line 10
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private setOrganizationId(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->organizationId_:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method private setOwnerName(Lcom/google/protobuf/StringValue;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->ownerName_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 7
+    .line 8
+    or-int/lit16 p1, p1, 0x80
+
+    .line 9
+    .line 10
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private setPostalCode(Lcom/google/protobuf/StringValue;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->postalCode_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 7
+    .line 8
+    or-int/lit8 p1, p1, 0x40
+
+    .line 9
+    .line 10
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private setRejectionReason(Lcom/google/protobuf/StringValue;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->rejectionReason_:Lcom/google/protobuf/StringValue;
+
+    .line 5
+    .line 6
+    iget p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 7
+    .line 8
+    or-int/lit8 p1, p1, 0x1
+
+    .line 9
+    .line 10
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method private setRequestId(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestId_:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method private setRequestStatus(Lir/nasim/Gy0;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Lir/nasim/Gy0;->getNumber()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestStatus_:I
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method private setRequestStatusValue(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestStatus_:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method private setRequestType(Lir/nasim/Hy0;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Lir/nasim/Hy0;->getNumber()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestType_:I
+
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method private setRequestTypeValue(I)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestType_:I
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method private setSafirRequest(Lai/bale/proto/BusinessStruct$SafirRequest;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    const/16 p1, 0x65
+
+    .line 7
+    .line 8
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method private setTemplateMessageRequest(Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    const/16 p1, 0x66
+
+    .line 7
+    .line 8
+    iput p1, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method protected final dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$g;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 20
+
+    .line 1
+    sget-object v0, Lai/bale/proto/E;->a:[I
+
+    .line 2
+    .line 3
+    invoke-virtual/range {p1 .. p1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    aget v0, v0, v1
+
+    .line 8
+    .line 9
+    const/4 v1, 0x0
+
+    .line 10
+    packed-switch v0, :pswitch_data_0
+
+    .line 11
+    .line 12
+    .line 13
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    .line 14
+    .line 15
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    .line 16
+    .line 17
+    .line 18
+    throw v0
+
+    .line 19
+    :pswitch_0
+    return-object v1
+
+    .line 20
+    :pswitch_1
+    const/4 v0, 0x1
+
+    .line 21
+    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    return-object v0
+
+    .line 26
+    :pswitch_2
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->PARSER:Lir/nasim/jf5;
+
+    .line 27
+    .line 28
+    if-nez v0, :cond_1
+
+    .line 29
+    .line 30
+    const-class v1, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 31
+    .line 32
+    monitor-enter v1
+
+    .line 33
+    :try_start_0
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->PARSER:Lir/nasim/jf5;
+
+    .line 34
+    .line 35
+    if-nez v0, :cond_0
+
+    .line 36
+    .line 37
+    new-instance v0, Lcom/google/protobuf/GeneratedMessageLite$c;
+
+    .line 38
+    .line 39
+    sget-object v2, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 40
+    .line 41
+    invoke-direct {v0, v2}, Lcom/google/protobuf/GeneratedMessageLite$c;-><init>(Lcom/google/protobuf/GeneratedMessageLite;)V
+
+    .line 42
+    .line 43
+    .line 44
+    sput-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->PARSER:Lir/nasim/jf5;
+
+    .line 45
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :catchall_0
+    move-exception v0
+
+    .line 48
+    goto :goto_1
+
+    .line 49
+    :cond_0
+    :goto_0
+    monitor-exit v1
+
+    .line 50
+    goto :goto_2
+
+    .line 51
+    :goto_1
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 52
+    throw v0
+
+    .line 53
+    :cond_1
+    :goto_2
+    return-object v0
+
+    .line 54
+    :pswitch_3
+    sget-object v0, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 55
+    .line 56
+    return-object v0
+
+    .line 57
+    :pswitch_4
+    const-string v1, "trait_"
+
+    .line 58
+    .line 59
+    const-string v2, "traitCase_"
+
+    .line 60
+    .line 61
+    const-string v3, "bitField0_"
+
+    .line 62
+    .line 63
+    const-string v4, "requestId_"
+
+    .line 64
+    .line 65
+    const-string v5, "organizationId_"
+
+    .line 66
+    .line 67
+    const-string v6, "createdAt_"
+
+    .line 68
+    .line 69
+    const-string v7, "requestStatus_"
+
+    .line 70
+    .line 71
+    const-string v8, "requestType_"
+
+    .line 72
+    .line 73
+    const-string v9, "rejectionReason_"
+
+    .line 74
+    .line 75
+    const-string v10, "orgName_"
+
+    .line 76
+    .line 77
+    const-string v11, "nationalNumber_"
+
+    .line 78
+    .line 79
+    const-string v12, "economicNumber_"
+
+    .line 80
+    .line 81
+    const-string v13, "landlineNumber_"
+
+    .line 82
+    .line 83
+    const-string v14, "address_"
+
+    .line 84
+    .line 85
+    const-string v15, "postalCode_"
+
+    .line 86
+    .line 87
+    const-string v16, "creatorUserId_"
+
+    .line 88
+    .line 89
+    const-string v17, "ownerName_"
+
+    .line 90
+    .line 91
+    const-class v18, Lai/bale/proto/BusinessStruct$SafirRequest;
+
+    .line 92
+    .line 93
+    const-class v19, Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;
+
+    .line 94
+    .line 95
+    filled-new-array/range {v1 .. v19}, [Ljava/lang/Object;
+
+    .line 96
+    .line 97
+    .line 98
+    move-result-object v0
+
+    .line 99
+    const-string v1, "\u0000\u0010\u0001\u0001\u0001f\u0010\u0000\u0000\u0000\u0001\u0004\u0002\u0004\u0003\u0002\u0004\u000c\u0005\u000c\u0006\u1009\u0000\u0007\u1009\u0001\u0008\u1009\u0002\t\u1009\u0003\n\u1009\u0004\u000b\u1009\u0005\u000c\u1009\u0006\r\u0004\u000e\u1009\u0007e<\u0000f<\u0000"
+
+    .line 100
+    .line 101
+    sget-object v2, Lai/bale/proto/BusinessStruct$BusinessRequest;->DEFAULT_INSTANCE:Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 102
+    .line 103
+    invoke-static {v2, v1, v0}, Lcom/google/protobuf/GeneratedMessageLite;->newMessageInfo(Lcom/google/protobuf/P;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 104
+    .line 105
+    .line 106
+    move-result-object v0
+
+    .line 107
+    return-object v0
+
+    .line 108
+    :pswitch_5
+    new-instance v0, Lai/bale/proto/BusinessStruct$BusinessRequest$a;
+
+    .line 109
+    .line 110
+    invoke-direct {v0, v1}, Lai/bale/proto/BusinessStruct$BusinessRequest$a;-><init>(Lir/nasim/ty0;)V
+
+    .line 111
+    .line 112
+    .line 113
+    return-object v0
+
+    .line 114
+    :pswitch_6
+    new-instance v0, Lai/bale/proto/BusinessStruct$BusinessRequest;
+
+    .line 115
+    .line 116
+    invoke-direct {v0}, Lai/bale/proto/BusinessStruct$BusinessRequest;-><init>()V
+
+    .line 117
+    .line 118
+    .line 119
+    return-object v0
+
+    .line 120
+    nop
+
+    .line 121
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public getAddress()Lcom/google/protobuf/StringValue;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->address_:Lcom/google/protobuf/StringValue;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getCreatedAt()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->createdAt_:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public getCreatorUserId()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->creatorUserId_:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getEconomicNumber()Lcom/google/protobuf/StringValue;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->economicNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getLandlineNumber()Lcom/google/protobuf/StringValue;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->landlineNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getNationalNumber()Lcom/google/protobuf/StringValue;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->nationalNumber_:Lcom/google/protobuf/StringValue;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getOrgName()Lcom/google/protobuf/StringValue;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->orgName_:Lcom/google/protobuf/StringValue;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getOrganizationId()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->organizationId_:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getOwnerName()Lcom/google/protobuf/StringValue;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->ownerName_:Lcom/google/protobuf/StringValue;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getPostalCode()Lcom/google/protobuf/StringValue;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->postalCode_:Lcom/google/protobuf/StringValue;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getRejectionReason()Lcom/google/protobuf/StringValue;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->rejectionReason_:Lcom/google/protobuf/StringValue;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-static {}, Lcom/google/protobuf/StringValue;->getDefaultInstance()Lcom/google/protobuf/StringValue;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    :cond_0
+    return-object v0
+.end method
+
+.method public getRequestId()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestId_:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getRequestStatus()Lir/nasim/Gy0;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestStatus_:I
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lir/nasim/Gy0;->b(I)Lir/nasim/Gy0;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    sget-object v0, Lir/nasim/Gy0;->f:Lir/nasim/Gy0;
+
+    .line 10
+    .line 11
+    :cond_0
+    return-object v0
+.end method
+
+.method public getRequestStatusValue()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestStatus_:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getRequestType()Lir/nasim/Hy0;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestType_:I
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lir/nasim/Hy0;->b(I)Lir/nasim/Hy0;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    sget-object v0, Lir/nasim/Hy0;->e:Lir/nasim/Hy0;
+
+    .line 10
+    .line 11
+    :cond_0
+    return-object v0
+.end method
+
+.method public getRequestTypeValue()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->requestType_:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getSafirRequest()Lai/bale/proto/BusinessStruct$SafirRequest;
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x65
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    check-cast v0, Lai/bale/proto/BusinessStruct$SafirRequest;
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    :cond_0
+    invoke-static {}, Lai/bale/proto/BusinessStruct$SafirRequest;->getDefaultInstance()Lai/bale/proto/BusinessStruct$SafirRequest;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
+.end method
+
+.method public getTemplateMessageRequest()Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x66
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    iget-object v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->trait_:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    check-cast v0, Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    :cond_0
+    invoke-static {}, Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;->getDefaultInstance()Lai/bale/proto/BusinessStruct$SafirTemplateMessageRequest;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
+.end method
+
+.method public getTraitCase()Lai/bale/proto/BusinessStruct$BusinessRequest$b;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lai/bale/proto/BusinessStruct$BusinessRequest$b;->b(I)Lai/bale/proto/BusinessStruct$BusinessRequest$b;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public hasAddress()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v0, v0, 0x20
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return v0
+.end method
+
+.method public hasEconomicNumber()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v0, v0, 0x8
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return v0
+.end method
+
+.method public hasLandlineNumber()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v0, v0, 0x10
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return v0
+.end method
+
+.method public hasNationalNumber()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v0, v0, 0x4
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return v0
+.end method
+
+.method public hasOrgName()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v0, v0, 0x2
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return v0
+.end method
+
+.method public hasOwnerName()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit16 v0, v0, 0x80
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return v0
+.end method
+
+.method public hasPostalCode()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v0, v0, 0x40
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return v0
+.end method
+
+.method public hasRejectionReason()Z
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->bitField0_:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    and-int/2addr v0, v1
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 9
+    :goto_0
+    return v1
+.end method
+
+.method public hasSafirRequest()Z
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x65
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return v0
+.end method
+
+.method public hasTemplateMessageRequest()Z
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lai/bale/proto/BusinessStruct$BusinessRequest;->traitCase_:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x66
+
+    .line 4
+    .line 5
+    if-ne v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    return v0
+.end method

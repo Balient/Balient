@@ -1,7 +1,7 @@
 # Balient
 
 <p align="center">
-  <img src="docs/assets/balient-mark.svg" width="132" height="132" alt="Balient logo" />
+  <img src="docs/assets/balient-padded-icon.png" width="132" height="132" alt="Balient logo" />
 </p>
 
 <p align="center">
@@ -23,13 +23,14 @@
 </p>
 
 > [!NOTE]
-> This repository is a **source handoff and modding workspace**, not an official Bale distribution. It preserves the final Balient apktool tree, the build path used for it, and a practical guide for porting its work to future vanilla Bale releases.
+> This repository is a **source handoff and modding workspace**, not an official Bale distribution. It preserves the final Balient apktool tree, the latest bundled vanilla Bale reference tree, the build path used for them, and a practical guide for porting work forward.
 
 ## Start here
 
 | I want to… | Read / run |
 | --- | --- |
 | Build the included Balient tree | [Build and sign](#build-and-sign) |
+| Start from the bundled latest Bale baseline | [Bale 10.15.25 (164148) reference](docs/BASE_BALE_164148.md) |
 | Start from a fresh vanilla Bale APK | [English modding guide](docs/MODDING_FROM_SCRATCH.md) · [راهنمای فارسی](docs/FA_MODDING_FROM_SCRATCH.md) |
 | Port Balient to a newer Bale version | [Porting checklist](docs/PORTING_CHECKLIST.md) · [چک‌لیست فارسی](docs/FA_PORTING_CHECKLIST.md) |
 | Download the last handoff APK | [GitHub Releases](https://github.com/Balient/Balient/releases/latest) |
@@ -49,6 +50,7 @@
 ## What is included
 
 - The **last public Balient apktool project tree** under [`src/apktool/`](src/apktool/).
+- A clean decoded copy of **Bale 10.15.25 (164148)** under [`src/bale_164148_apktool/`](src/bale_164148_apktool/), ready to use as the current vanilla porting baseline.
 - PowerShell scripts for deterministic **build**, **zipalign**, **sign**, and **verify** steps.
 - Complete documentation for modding a vanilla Bale APK from scratch in **English and Persian**.
 - A release handoff APK, published as a GitHub Release asset rather than committed into Git history.
@@ -67,6 +69,11 @@ Balient/
 │       ├── assets/ lib/ unknown/         Preserved runtime files and native libraries
 │       └── smali_classes10/ir/nasim/balientlab/
 │                                          Balient-owned helper/feature code
+│   └── bale_164148_apktool/              Clean vanilla Bale 10.15.25 (164148)
+│       ├── AndroidManifest.xml            Vanilla reference manifest
+│       ├── apktool.yml                    Base-version build metadata
+│       ├── res/ smali*/ assets/ lib/      Complete decoded reference tree
+│       └── original/ build/               Intentionally excluded from Git
 ├── scripts/
 │   ├── build.ps1                         Build decoded source to an unsigned APK
 │   └── sign.ps1                          Zipalign, sign, and verify an APK
@@ -75,6 +82,7 @@ Balient/
 │   ├── FA_MODDING_FROM_SCRATCH.md        راهنمای کامل فارسی
 │   ├── PORTING_CHECKLIST.md              New-version porting checklist
 │   ├── FA_PORTING_CHECKLIST.md           چک‌لیست انتقال نسخه به فارسی
+│   ├── BASE_BALE_164148.md                Metadata for the bundled vanilla baseline
 │   └── RELEASES.md                       Release notes and policy
 ├── CONTRIBUTING.md                       Contribution conventions
 └── LICENSE                               License for Balient-owned work
@@ -167,14 +175,15 @@ If Android rejects installation over an existing app, uninstall the old package 
 The short workflow is:
 
 ```powershell
-# Keep the downloaded APK out of Git.
+# A clean vanilla 10.15.25 (164148) tree is already included under src/.
+# For a newer downloaded APK, keep it out of Git and decode it separately.
 java -jar tools\apktool\apktool.jar d input\Bale.apk -o work\bale_vanilla_apktool -f
 
 # Port only deliberate Balient changes into work\bale_vanilla_apktool.
 java -jar tools\apktool\apktool.jar b work\bale_vanilla_apktool -o dist\Balient_unsigned.apk
 ```
 
-Do **not** overwrite a newer vanilla Bale tree with the whole old Balient tree. Bale is obfuscated and class names, methods, registers, layouts, and resource ids can move on every release. Start with Balient-owned files, then port each integration patch using a stable anchor in the new version.
+Use `src/bale_164148_apktool/` as the included current vanilla reference. Do **not** overwrite it, or any newer vanilla Bale tree, with the whole old Balient tree. Bale is obfuscated and class names, methods, registers, layouts, and resource ids can move on every release. Start with Balient-owned files, then port each integration patch using a stable anchor in the target version.
 
 **Read the complete guide before porting:**
 
@@ -197,7 +206,7 @@ Do **not** overwrite a newer vanilla Bale tree with the whole old Balient tree. 
 
 ## What is intentionally excluded
 
-These files are ignored and must stay out of commits:
+These files are ignored and must stay out of commits, including inside every decoded `src/*` tree:
 
 - Downloaded vanilla Bale APKs.
 - Generated unsigned/signed APKs, `.idsig`, `.ap_`, and apktool `build/` outputs.

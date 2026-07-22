@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/container" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.chrisbanes.photoview.PhotoView android:id="@id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:adjustViewBounds="true" android:contentDescription="@null" />
+    <FrameLayout android:id="@id/downloadView" android:background="@drawable/conv_progress_bg" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_centerInParent="true">
+        <com.droidkit.progress.CircularView android:id="@id/downloadProgress" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/s11" android:gravity="center" android:id="@id/downloadPercent" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/downloadIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_baseline_arrow_downward_24" android:contentDescription="@null" />
+    </FrameLayout>
+</RelativeLayout>

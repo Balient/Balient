@@ -1,0 +1,208 @@
+.class final Lir/nasim/Vr3$b$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/YS2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lir/nasim/Vr3$b;->e(Lir/nasim/ia5;Lir/nasim/Qo1;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lir/nasim/IS2;
+
+
+# direct methods
+.method constructor <init>(Lir/nasim/IS2;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lir/nasim/Vr3$b$a;->a:Lir/nasim/IS2;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lir/nasim/Qo1;I)V
+    .locals 11
+
+    .line 1
+    and-int/lit8 p2, p2, 0x3
+
+    .line 2
+    .line 3
+    const/4 v0, 0x2
+
+    .line 4
+    if-ne p2, v0, :cond_1
+
+    .line 5
+    .line 6
+    invoke-interface {p1}, Lir/nasim/Qo1;->k()Z
+
+    .line 7
+    .line 8
+    .line 9
+    move-result p2
+
+    .line 10
+    if-nez p2, :cond_0
+
+    .line 11
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    invoke-interface {p1}, Lir/nasim/Qo1;->M()V
+
+    .line 14
+    .line 15
+    .line 16
+    goto :goto_1
+
+    .line 17
+    :cond_1
+    :goto_0
+    sget-object p2, Lir/nasim/sj1;->a:Lir/nasim/sj1;
+
+    .line 18
+    .line 19
+    invoke-virtual {p2}, Lir/nasim/sj1;->c()Lir/nasim/YS2;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    sget-object v1, Lir/nasim/S42$b$b;->b:Lir/nasim/S42$b$b;
+
+    .line 24
+    .line 25
+    invoke-virtual {p2}, Lir/nasim/sj1;->d()Lir/nasim/YS2;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v2
+
+    .line 29
+    sget-object v3, Lir/nasim/S42$a$c;->a:Lir/nasim/S42$a$c;
+
+    .line 30
+    .line 31
+    sget-object v5, Lir/nasim/Fz0$b$b;->a:Lir/nasim/Fz0$b$b;
+
+    .line 32
+    .line 33
+    iget-object v6, p0, Lir/nasim/Vr3$b$a;->a:Lir/nasim/IS2;
+
+    .line 34
+    .line 35
+    sget v7, Lir/nasim/QZ5;->understand:I
+
+    .line 36
+    .line 37
+    sget p2, Lir/nasim/S42$b$b;->c:I
+
+    .line 38
+    .line 39
+    shl-int/lit8 p2, p2, 0x3
+
+    .line 40
+    .line 41
+    or-int/lit16 p2, p2, 0x186
+
+    .line 42
+    .line 43
+    sget v4, Lir/nasim/S42$a$c;->b:I
+
+    .line 44
+    .line 45
+    shl-int/lit8 v4, v4, 0x9
+
+    .line 46
+    .line 47
+    or-int/2addr p2, v4
+
+    .line 48
+    sget v4, Lir/nasim/Fz0$b$b;->c:I
+
+    .line 49
+    .line 50
+    shl-int/lit8 v4, v4, 0xf
+
+    .line 51
+    .line 52
+    or-int v9, p2, v4
+
+    .line 53
+    .line 54
+    const/16 v10, 0x10
+
+    .line 55
+    .line 56
+    const/4 v4, 0x0
+
+    .line 57
+    move-object v8, p1
+
+    .line 58
+    invoke-static/range {v0 .. v10}, Lir/nasim/R40;->X(Lir/nasim/YS2;Lir/nasim/S42$b;Lir/nasim/YS2;Lir/nasim/S42$a;Lir/nasim/Lz4;Lir/nasim/Fz0;Lir/nasim/IS2;ILir/nasim/Qo1;II)V
+
+    .line 59
+    .line 60
+    .line 61
+    :goto_1
+    return-void
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lir/nasim/Qo1;
+
+    .line 2
+    .line 3
+    check-cast p2, Ljava/lang/Number;
+
+    .line 4
+    .line 5
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p2
+
+    .line 9
+    invoke-virtual {p0, p1, p2}, Lir/nasim/Vr3$b$a;->a(Lir/nasim/Qo1;I)V
+
+    .line 10
+    .line 11
+    .line 12
+    sget-object p1, Lir/nasim/Xh8;->a:Lir/nasim/Xh8;
+
+    .line 13
+    .line 14
+    return-object p1
+.end method

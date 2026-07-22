@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/share" android:visible="false" android:title="@string/menu_share" />
+    <item android:id="@id/save" android:visible="false" android:title="@string/menu_save" />
+    <item android:id="@id/forward" android:title="@string/menu_forward" />
+    <item android:id="@id/quote" android:visible="false" android:title="@string/menu_quote" />
+    <item android:id="@id/like" android:title="@string/menu_like" />
+    <item android:id="@id/copy" android:visible="false" android:title="@string/menu_copy" />
+    <item android:id="@id/delete" android:title="@string/menu_delete" />
+</menu>

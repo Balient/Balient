@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/container" android:paddingLeft="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="59.0dp" android:layout_height="48.0dp">
+            <ir.nasim.designsystem.avatar.AvatarViewGlide android:layout_gravity="center" android:id="@id/avatar" android:layout_width="35.0dp" android:layout_height="35.0dp" />
+        </FrameLayout>
+        <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:lines="1" android:singleLine="true" />
+        <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/mention" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:lines="1" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:layout_width="match_parent" android:layout_height="@dimen/div_size" android:layout_marginRight="59.0dp" />
+</LinearLayout>

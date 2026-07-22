@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SplashScreen.DayNight" parent="@style/Base.Theme.SplashScreen" />
+    <style name="Theme" />
+    <style name="Theme.AppCompat.DayNight" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.DarkActionBar" parent="@style/Theme.AppCompat" />
+    <style name="Theme.AppCompat.DayNight.Dialog" parent="@style/Theme.AppCompat.Dialog" />
+    <style name="Theme.AppCompat.DayNight.Dialog.Alert" parent="@style/Theme.AppCompat.Dialog.Alert" />
+    <style name="Theme.AppCompat.DayNight.Dialog.MinWidth" parent="@style/Theme.AppCompat.Dialog.MinWidth" />
+    <style name="Theme.AppCompat.DayNight.DialogWhenLarge" parent="@style/Theme.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.DayNight.NoActionBar" parent="@style/Theme.AppCompat.NoActionBar" />
+    <style name="Theme.Bale.Base" parent="@style/Theme.Material3.Dark.NoActionBar">
+        <item name="android:textColorHighlight">@color/n30_dark</item>
+        <item name="android:textColorLink">@color/link_dark</item>
+        <item name="a01">@color/a01_dark</item>
+        <item name="a02">@color/a02_dark</item>
+        <item name="a03">@color/a03_dark</item>
+        <item name="a04">@color/a04_dark</item>
+        <item name="a05">@color/a05_dark</item>
+        <item name="a06">@color/a06_dark</item>
+        <item name="a07">@color/a07_dark</item>
+        <item name="a08">@color/a08_dark</item>
+        <item name="a09">@color/a09_dark</item>
+        <item name="a10">@color/a10_dark</item>
+        <item name="appBarLayoutStyle">@style/Bale.AppBarLayout</item>
+        <item name="app_bar">@color/app_bar_dark</item>
+        <item name="background">@color/background_dark</item>
+        <item name="background_fixed">@color/background_fixed</item>
+        <item name="chips_serviec_message">@color/bubble_chips_serviec_message_dark</item>
+        <item name="colorAlert">@color/alert_dark</item>
+        <item name="colorContainer">@color/colorPrimary_dark</item>
+        <item name="colorControlActivated">@color/colorPrimary_dark</item>
+        <item name="colorError">@color/error_dark</item>
+        <item name="colorOnContainer">@color/on_primary_dark</item>
+        <item name="colorOnError">@color/on_primary_dark</item>
+        <item name="colorOnPrimary">@color/on_primary_dark</item>
+        <item name="colorOnSecondary">@color/on_primary_dark</item>
+        <item name="colorOnSurface">@color/n500_dark</item>
+        <item name="colorOutline">@color/colorPrimary_dark</item>
+        <item name="colorPrimary">@color/colorPrimary_dark</item>
+        <item name="colorPrimaryFixed">@color/colorPrimaryFixed</item>
+        <item name="colorPrimaryHover">@color/colorPrimaryHover_dark</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant_dark</item>
+        <item name="colorSecondary">@color/colorPrimary_dark</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryVariant_dark</item>
+        <item name="colorSuccess">@color/success_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="dividerColor">@color/n30_dark</item>
+        <item name="golden_packet_gradient01">@color/golden_packet_gradient01_dark</item>
+        <item name="golden_packet_gradient02">@color/golden_packet_gradient02_dark</item>
+        <item name="golden_packet_gradient03">@color/golden_packet_gradient03_dark</item>
+        <item name="golden_packet_gradient04">@color/golden_packet_gradient04_dark</item>
+        <item name="golden_packet_gradient05">@color/golden_packet_gradient05_dark</item>
+        <item name="highBrightness_fixed">@color/highBrightness_fixed</item>
+        <item name="lowBrightness_fixed">@color/lowBrightness_fixed</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.Bale.Button.OutlinedButton</item>
+        <item name="materialButtonStyle">@style/Widget.Bale.Button</item>
+        <item name="middleBrightness_fixed">@color/middleBrightness_fixed</item>
+        <item name="n10">@color/n10_dark</item>
+        <item name="n100">@color/n100_dark</item>
+        <item name="n100_fixed">@color/n100_fixed</item>
+        <item name="n10_fixed">@color/n10_fixed</item>
+        <item name="n20">@color/n20_dark</item>
+        <item name="n200">@color/n200_dark</item>
+        <item name="n200_fixed">@color/n200_fixed</item>
+        <item name="n20_fixed">@color/n20_fixed</item>
+        <item name="n30">@color/n30_dark</item>
+        <item name="n300">@color/n300_dark</item>
+        <item name="n300_fixed">@color/n300_fixed</item>
+        <item name="n30_fixed">@color/n30_fixed</item>
+        <item name="n40">@color/n40_dark</item>
+        <item name="n400">@color/n400_dark</item>
+        <item name="n400_fixed">@color/n400_fixed</item>
+        <item name="n40_fixed">@color/n40_fixed</item>
+        <item name="n50">@color/n50_dark</item>
+        <item name="n500">@color/n500_dark</item>
+        <item name="n500_fixed">@color/n500_fixed</item>
+        <item name="n50_fixed">@color/n50_fixed</item>
+        <item name="onBackground_fixed">@color/onBackground_fixed</item>
+        <item name="overlay_bg_fixed">@color/overlay_bg_fixed</item>
+        <item name="primaryOpacity15">@color/colorPrimaryOpacity15_dark</item>
+        <item name="rippleColor">@color/color_primary_alpha15</item>
+        <item name="statusBarBackgroundColor">?app_bar</item>
+    </style>
+    <style name="Theme.Bale.BubbleTheme" parent="@style/Theme.Bale.Base">
+        <item name="bubble_background_icon">@color/bubble_background_icon_dark</item>
+        <item name="bubble_low_text">@color/bubble_low_text_dark</item>
+        <item name="bubble_progress">@color/bubble_progress_dark</item>
+        <item name="bubble_receipt">@color/bubble_receipt_dark</item>
+        <item name="bubble_seen_in_dark_bg">@color/bubble_seen_in_dark_bg_light</item>
+        <item name="colorControlActivated">?bubble_secondary</item>
+        <item name="colorControlNormal">?bubble_secondary</item>
+    </style>
+    <style name="Theme.Bale.BubbleTheme.Incomming" parent="@style/Theme.Bale.BubbleTheme">
+        <item name="bubble_button">?materialButtonStyle</item>
+        <item name="bubble_forth">@color/bubble_in_forth_dark</item>
+        <item name="bubble_gold_button">@style/Widget.Bale.Button.Gradient</item>
+        <item name="bubble_primary">@color/bubble_in_primary_dark</item>
+        <item name="bubble_secondary">@color/bubble_in_secondary_dark</item>
+        <item name="bubble_third">@color/bubble_in_third_dark</item>
+    </style>
+    <style name="Theme.Bale.BubbleTheme.Outgoing" parent="@style/Theme.Bale.BubbleTheme">
+        <item name="bubble_button">?materialButtonOutlinedStyle</item>
+        <item name="bubble_forth">@color/bubble_out_forth_dark</item>
+        <item name="bubble_gold_button">@style/Widget.Bale.Button.Gradient</item>
+        <item name="bubble_primary">@color/bubble_out_primary_dark</item>
+        <item name="bubble_secondary">@color/bubble_out_secondary_dark</item>
+        <item name="bubble_third">@color/bubble_out_third_dark</item>
+    </style>
+    <style name="Theme.Bale.Feed" parent="@style/Theme.Bale.Base">
+        <item name="bubble_background_icon">@color/bubble_background_icon_dark</item>
+        <item name="bubble_low_text">@color/bubble_low_text_dark</item>
+        <item name="bubble_secondary">@color/bubble_background_icon_light</item>
+        <item name="feedReactionPressed">@color/feed_reaction_pressed_dark</item>
+    </style>
+    <style name="Theme.MaterialComponents.DayNight" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.BottomSheetDialog" parent="@style/Theme.MaterialComponents.BottomSheetDialog" />
+    <style name="Theme.MaterialComponents.DayNight.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar" parent="@style/Theme.MaterialComponents" />
+    <style name="Theme.MaterialComponents.DayNight.DarkActionBar.Bridge" parent="@style/Theme.MaterialComponents.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog" parent="@style/Theme.MaterialComponents.Dialog" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert" parent="@style/Theme.MaterialComponents.Dialog.Alert" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Alert.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Alert.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.Bridge" parent="@style/Theme.MaterialComponents.Dialog.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize" parent="@style/Theme.MaterialComponents.Dialog.FixedSize" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.FixedSize.Bridge" parent="@style/Theme.MaterialComponents.Dialog.FixedSize.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth" parent="@style/Theme.MaterialComponents.Dialog.MinWidth" />
+    <style name="Theme.MaterialComponents.DayNight.Dialog.MinWidth.Bridge" parent="@style/Theme.MaterialComponents.Dialog.MinWidth.Bridge" />
+    <style name="Theme.MaterialComponents.DayNight.DialogWhenLarge" parent="@style/Theme.MaterialComponents.DialogWhenLarge" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar" parent="@style/Theme.MaterialComponents.NoActionBar" />
+    <style name="Theme.MaterialComponents.DayNight.NoActionBar.Bridge" parent="@style/Theme.MaterialComponents.NoActionBar.Bridge" />
+</resources>

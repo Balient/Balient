@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <padding android:left="8.0dp" android:top="3.0dp" android:right="8.0dp" android:bottom="3.0dp" />
+            <solid android:color="@color/c6" />
+            <corners android:topLeftRadius="20.0dp" android:topRightRadius="20.0dp" android:bottomLeftRadius="20.0dp" android:bottomRightRadius="20.0dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <padding android:left="8.0dp" android:top="3.0dp" android:right="8.0dp" android:bottom="3.0dp" />
+            <solid android:color="@color/c6" />
+            <corners android:topLeftRadius="20.0dp" android:topRightRadius="20.0dp" android:bottomLeftRadius="20.0dp" android:bottomRightRadius="20.0dp" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <padding android:left="8.0dp" android:top="3.0dp" android:right="8.0dp" android:bottom="3.0dp" />
+            <solid android:color="#00ffffff" />
+            <corners android:topLeftRadius="20.0dp" android:topRightRadius="20.0dp" android:bottomLeftRadius="20.0dp" android:bottomRightRadius="20.0dp" />
+        </shape>
+    </item>
+    <item android:state_hovered="true">
+        <shape android:shape="rectangle">
+            <padding android:left="8.0dp" android:top="3.0dp" android:right="8.0dp" android:bottom="3.0dp" />
+            <solid android:color="@color/c4" />
+            <corners android:topLeftRadius="20.0dp" android:topRightRadius="20.0dp" android:bottomLeftRadius="20.0dp" android:bottomRightRadius="20.0dp" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <padding android:left="8.0dp" android:top="3.0dp" android:right="8.0dp" android:bottom="3.0dp" />
+            <solid android:color="#00ffffff" />
+            <corners android:topLeftRadius="20.0dp" android:topRightRadius="20.0dp" android:bottomLeftRadius="20.0dp" android:bottomRightRadius="20.0dp" />
+        </shape>
+    </item>
+</selector>

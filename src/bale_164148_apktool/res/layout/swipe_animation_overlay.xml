@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/bottom_sheet_scrim" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="278.0dp" android:layout_height="167.0dp" android:layout_marginBottom="@dimen/spacing_12">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/swipe_lottie_animation" android:layout_width="222.0dp" android:layout_height="167.0dp" app:lottie_autoPlay="true" app:lottie_loop="true" app:lottie_rawRes="@raw/swipe_animation" />
+        <TextView android:textSize="16.0dp" android:textColor="?onBackground_fixed" android:layout_gravity="center|bottom" android:id="@id/swipe_action_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_animation_action_label" android:fontFamily="@font/iran_sans_medium" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dp" android:textColor="?onBackground_fixed" android:id="@id/swipe_action_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/spacing_16" android:text="@string/swipe_animation_action_text" android:fontFamily="@font/iran_sans_medium" />
+    <com.google.android.material.button.MaterialButton android:textSize="12.0dp" android:textColor="?onBackground_fixed" android:id="@id/swipe_action_button" android:paddingLeft="11.0dp" android:paddingTop="6.0dp" android:paddingRight="11.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/swipe_animation_understood" android:fontFamily="@font/iran_sans_medium" android:paddingHorizontal="11.0dp" android:paddingVertical="6.0dp" app:cornerRadius="8.0dp" app:strokeColor="?onBackground_fixed" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+</LinearLayout>

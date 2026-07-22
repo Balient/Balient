@@ -1,0 +1,34 @@
+.class public final synthetic Lir/nasim/wM4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/Comparator;
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
+
+    .line 1
+    check-cast p1, Lai/bale/proto/Ghasedak$RouteSeqState;
+
+    check-cast p2, Lai/bale/proto/Ghasedak$RouteSeqState;
+
+    invoke-static {p1, p2}, Lir/nasim/NM4;->h0(Lai/bale/proto/Ghasedak$RouteSeqState;Lai/bale/proto/Ghasedak$RouteSeqState;)I
+
+    move-result p1
+
+    return p1
+.end method

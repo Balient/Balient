@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="?n300" android:id="@id/title_tv" android:background="@color/n30" android:paddingLeft="12.0dp" android:paddingTop="5.0dp" android:paddingRight="12.0dp" android:paddingBottom="5.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/the_best_of_the_day" android:paddingHorizontal="12.0dp" android:paddingVertical="5.0dp" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/title_container" android:background="?background" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless">
+        <ImageView android:id="@id/trend_img" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginTop="16.0dp" android:src="@drawable/trend" android:layout_marginStart="12.0dp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="?n300" />
+        <TextView android:textSize="14.0dp" android:textColor="?n500" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dp" app:layout_constraintBottom_toBottomOf="@id/trend_img" app:layout_constraintStart_toEndOf="@id/trend_img" app:layout_constraintTop_toTopOf="@id/trend_img" />
+        <ir.nasim.designsystem.DividerView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/trend_img" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

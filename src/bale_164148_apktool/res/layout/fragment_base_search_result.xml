@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/loadState_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/media_loading_layout" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/primary" android:id="@id/please_wait_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/please_wait" android:layout_marginStart="8.0dp" />
+    </LinearLayout>
+    <include android:id="@id/empty_state_container" android:visibility="gone" layout="@layout/search_empty" />
+</FrameLayout>

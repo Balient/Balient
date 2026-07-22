@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_alphabetic_sort" android:id="@id/sort_contacts" android:title="@string/sortContacts" app:showAsAction="always" />
+    <item android:icon="@drawable/search_vd" android:id="@id/search_contacts" android:title="@string/contacts_fragment_search_button_content_description" app:showAsAction="always" />
+</menu>

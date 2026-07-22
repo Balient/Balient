@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">192.168.0.233</domain>
+        <domain includeSubdomains="true">192.168.43.221</domain>
+        <domain includeSubdomains="true">127.0.0.1</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">ep.bale.tel</domain>
+        <domain includeSubdomains="true">ep.bale.ai</domain>
+        <domain includeSubdomains="true">hash.bale.ai</domain>
+        <domain includeSubdomains="true">185.13.231.71</domain>
+    </domain-config>
+</network-security-config>

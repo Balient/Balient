@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="50.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="16.0sp" android:gravity="start|center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_info_report" />
+        <TextView android:textSize="10.0sp" android:layout_gravity="center" android:id="@id/txtBadge" android:background="@drawable/bg_solid_radius_7" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/badge_new" android:fontFamily="@font/iran_sans_regular" android:paddingStart="6.0dp" android:paddingEnd="6.0dp" android:layout_marginStart="6.0dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,27 @@
+.class public final Lir/nasim/story/data/DownloadErrorCancellationException;
+.super Ljava/util/concurrent/CancellationException;
+.source "SourceFile"
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    const-string v0, "download failed"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0}, Ljava/util/concurrent/CancellationException;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: IRANSansFaNum;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/IRANSansWeb\(FaNum\)_Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: Regular;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/IRANSansWeb.woff") format("woff");
+}
+
+
+.css-q33tdu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #edf2f5;
+}
+.css-1jl2bxi {
+    color: #161c4e;
+    font-size: 16px;
+    font-family: IRANSansFaNum;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    direction: rtl;
+}
+.css-1lms7ge {
+    color: #7075A0;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-family: Regular;
+    font-weight: normal;
+    direction: rtl;
+}
+.css-1hrq7fg {
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 22px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+.css-1r9wz37 {
+    color: #328fef;
+    font-family: IRANSansFaNum;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    direction: rtl;
+}

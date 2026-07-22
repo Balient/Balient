@@ -1,0 +1,209 @@
+.class Lir/nasim/app/a$g$a$d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/el4$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lir/nasim/app/a$g$a;->get()Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lir/nasim/app/a$g$a;
+
+
+# direct methods
+.method constructor <init>(Lir/nasim/app/a$g$a;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lir/nasim/app/a$g$a$d;->a:Lir/nasim/app/a$g$a;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Lir/nasim/xD1;)Lir/nasim/el4;
+    .locals 8
+
+    .line 1
+    new-instance v7, Lir/nasim/el4;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lir/nasim/app/a$g$a$d;->a:Lir/nasim/app/a$g$a;
+
+    .line 4
+    .line 5
+    invoke-static {v0}, Lir/nasim/app/a$g$a;->b(Lir/nasim/app/a$g$a;)Lir/nasim/app/a$j;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-static {v0}, Lir/nasim/app/a$j;->U3(Lir/nasim/app/a$j;)Lir/nasim/jT5;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-interface {v0}, Lir/nasim/kT5;->get()Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    check-cast v0, Ljava/lang/Integer;
+
+    .line 18
+    .line 19
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v2
+
+    .line 23
+    invoke-static {}, Lir/nasim/JD1;->a()Lir/nasim/lD1;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v3
+
+    .line 27
+    iget-object v0, p0, Lir/nasim/app/a$g$a$d;->a:Lir/nasim/app/a$g$a;
+
+    .line 28
+    .line 29
+    invoke-static {v0}, Lir/nasim/app/a$g$a;->b(Lir/nasim/app/a$g$a;)Lir/nasim/app/a$j;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    invoke-static {v0}, Lir/nasim/app/a$j;->A3(Lir/nasim/app/a$j;)Lir/nasim/jT5;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    invoke-interface {v0}, Lir/nasim/kT5;->get()Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    move-object v4, v0
+
+    .line 42
+    check-cast v4, Lir/nasim/rJ5;
+
+    .line 43
+    .line 44
+    iget-object v0, p0, Lir/nasim/app/a$g$a$d;->a:Lir/nasim/app/a$g$a;
+
+    .line 45
+    .line 46
+    invoke-static {v0}, Lir/nasim/app/a$g$a;->b(Lir/nasim/app/a$g$a;)Lir/nasim/app/a$j;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v0
+
+    .line 50
+    invoke-static {v0}, Lir/nasim/app/a$j;->z3(Lir/nasim/app/a$j;)Lir/nasim/jT5;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v0
+
+    .line 54
+    invoke-interface {v0}, Lir/nasim/kT5;->get()Ljava/lang/Object;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v0
+
+    .line 58
+    move-object v5, v0
+
+    .line 59
+    check-cast v5, Lir/nasim/wH5;
+
+    .line 60
+    .line 61
+    iget-object v0, p0, Lir/nasim/app/a$g$a$d;->a:Lir/nasim/app/a$g$a;
+
+    .line 62
+    .line 63
+    invoke-static {v0}, Lir/nasim/app/a$g$a;->b(Lir/nasim/app/a$g$a;)Lir/nasim/app/a$j;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v0
+
+    .line 67
+    invoke-static {v0}, Lir/nasim/app/a$j;->o1(Lir/nasim/app/a$j;)Lir/nasim/CI;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v0
+
+    .line 71
+    invoke-static {v0}, Lir/nasim/DI;->a(Lir/nasim/CI;)Landroid/content/Context;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v6
+
+    .line 75
+    move-object v0, v7
+
+    .line 76
+    move-object v1, p1
+
+    .line 77
+    invoke-direct/range {v0 .. v6}, Lir/nasim/el4;-><init>(Lir/nasim/xD1;ILir/nasim/lD1;Lir/nasim/rJ5;Lir/nasim/wH5;Landroid/content/Context;)V
+
+    .line 78
+    .line 79
+    .line 80
+    return-object v7
+.end method

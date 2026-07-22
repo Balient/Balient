@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/feed_gif_parent" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_gravity="center" android:id="@id/gif_container" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/feed_state_container_gif" android:background="@drawable/circle_bubble_secondary_color" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ir.nasim.features.conversation.messages.content.CircleProgressBar android:layout_gravity="center" android:id="@id/feed_progress_gif" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" android:max="100" />
+        <ImageView android:layout_gravity="center" android:id="@id/feed_state_gif_iv" android:layout_width="24.0dp" android:layout_height="24.0dp" app:tint="?colorOnPrimary" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

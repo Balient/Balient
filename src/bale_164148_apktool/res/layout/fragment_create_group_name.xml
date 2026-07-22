@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/create_group_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center|top" android:orientation="vertical" android:paddingTop="16.0dp" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/createGroup" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="96.0dp" android:layout_height="96.0dp" android:layout_marginEnd="16.0dp">
+                    <ir.nasim.designsystem.avatar.AvatarViewGlide android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" />
+                    <ImageButton android:id="@id/pickAvatar" android:background="@drawable/selector_circle" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_camera_alt_white_36dp" />
+                </FrameLayout>
+                <TextView android:textSize="15.0sp" android:id="@id/create_group_hint" android:paddingTop="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/create_group_hint" />
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/groupTitleLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="16.0dp" app:errorEnabled="false" app:errorTextColor="@color/error">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/groupTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences" android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/groupIDLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="16.0dp" app:errorEnabled="false" app:errorTextColor="@color/error">
+                <com.google.android.material.textfield.TextInputEditText android:id="@id/groupID" android:layout_width="match_parent" android:layout_height="wrap_content" android:digits="abcdefghijklmnopqrstuvwxyz1234567890_" android:inputType="textVisiblePassword" android:imeOptions="actionNext" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView android:textSize="12.0sp" android:id="@id/channel_id_pattern_hint" android:paddingTop="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:text="@string/channel_id_pattern_desc" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="24.0dp" android:layout_marginRight="16.0dp" android:minHeight="40.0dp">
+                <ImageView android:layout_gravity="end|center" android:id="@id/image_bank_logo" android:layout_width="55.0dp" android:layout_height="55.0dp" android:src="@drawable/bank_unknown" />
+                <com.google.android.material.textfield.TextInputLayout android:layout_gravity="center" android:id="@id/card_number_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+                    <EditText android:gravity="start" android:layout_gravity="center" android:id="@id/et_card_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/edit_text_min_height" android:hint="@string/channel_card_number" android:maxLines="1" android:maxLength="19" android:imeOptions="actionNext" android:textDirection="ltr" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

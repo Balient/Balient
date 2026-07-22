@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:theme="@style/Theme.Bale.Base" android:fitsSystemWindows="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBarLayout2" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="?actionBarSize">
+            <androidx.compose.ui.platform.ComposeView android:id="@id/composeToolbar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/toolbar" android:layout_width="match_parent" android:layout_height="match_parent" app:title="@string/create_group_title" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.compose.ui.platform.ComposeView android:id="@id/composeView" android:background="?background" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" app:layout_constraintBottom_toTopOf="@id/ok_button_selection" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/appBarLayout2" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/ok_button_selection" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bank_small_bottomsheet_background" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dp" android:textColor="@color/c10" android:id="@id/details_title" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/money_request_payment_details" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageButton android:id="@id/details_close" android:background="@drawable/transparent" android:padding="16.0dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:src="@drawable/close_choose_card" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/details_container" android:paddingLeft="20.0dp" android:paddingTop="30.0dp" android:paddingRight="20.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="140.0dp" android:layout_below="@id/details_title">
+        <ProgressBar android:layout_gravity="center" android:id="@id/bottom_sheet_progress_bar" android:layout_width="40.0dp" android:layout_height="40.0dp" android:indeterminate="true" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_below="@id/details_container" />
+    <LinearLayout android:gravity="center" android:id="@id/list_button_container" android:background="@color/buttonBackground" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp" android:layout_below="@id/divider">
+        <TextView android:textSize="20.0sp" android:textColor="@color/secondary" android:layout_gravity="center" android:id="@id/list_button_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bank_payment_list_title" />
+    </LinearLayout>
+</RelativeLayout>

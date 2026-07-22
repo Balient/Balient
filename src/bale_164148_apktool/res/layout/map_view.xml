@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.carto.ui.MapView android:id="@id/carto_map" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" style="@style/NoBackground" />
+    <LinearLayout android:gravity="center" android:id="@id/zoom_out_btn" android:background="@drawable/circle_button" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginBottom="20.0dp" android:layout_marginEnd="20.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_minus" app:tint="#000000" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/zoom_in_btn" android:background="@drawable/circle_button" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginBottom="5.0dp" app:layout_constraintBottom_toTopOf="@id/zoom_out_btn" app:layout_constraintEnd_toEndOf="@id/zoom_out_btn">
+        <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_plus" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/my_location_btn" android:background="@drawable/circle_button" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginTop="20.0dp" android:layout_marginEnd="20.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/carto_map">
+        <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_my_location" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/compass_btn" android:background="@drawable/circle_button" android:visibility="gone" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_marginTop="30.0dp" android:layout_marginStart="30.0dp" app:layout_constraintStart_toStartOf="@id/carto_map" app:layout_constraintTop_toTopOf="@id/carto_map">
+        <ImageView android:layout_width="wrap_content" android:layout_height="20.0dp" android:src="@drawable/ic_compass" android:adjustViewBounds="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/neshan_logo_iv" android:layout_width="wrap_content" android:layout_height="30.0dp" android:layout_margin="15.0dp" android:src="@drawable/default_logo" android:scaleType="fitCenter" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/NoBackground" />
+</androidx.constraintlayout.widget.ConstraintLayout>

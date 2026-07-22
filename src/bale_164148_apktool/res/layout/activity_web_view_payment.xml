@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/statusBar_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="24.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.card.MaterialCardView android:id="@id/cardUrl" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:cardBackgroundColor="#ffffffff" app:cardCornerRadius="0.0dp" app:cardElevation="16.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/statusBar_background">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@id/closeImg" android:padding="8.0dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/ic_close_white_24dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tint="#ff7075a0" />
+            <com.google.android.material.card.MaterialCardView android:layout_width="0.0dp" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="8.0dp" android:layout_marginEnd="16.0dp" app:cardBackgroundColor="#fff9f9f9" app:cardCornerRadius="18.0dp" app:cardElevation="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/closeImg" app:layout_constraintTop_toTopOf="parent">
+                <HorizontalScrollView android:layout_gravity="center" android:id="@id/scrollview" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff161c4e" android:gravity="center" android:layout_gravity="left" android:id="@id/urlTv" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="1" android:paddingStart="16.0dp" app:layout_constraintTop_toBottomOf="@id/statusBar_background" />
+                </HorizontalScrollView>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <WebView android:id="@id/webView" android:layout_width="0.0dp" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cardUrl" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created create-react-app" />
+
+  <title>Offline Page</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="font__fa_num hideScrollbar">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root" class="light">
+  <div class="css-q33tdu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="210" height="130" viewBox="0 0 100 98">
+      <g id="no_wifi" transform="translate(-130 -308)">
+        <rect id="Rectangle_2448" data-name="Rectangle 2448" width="210" height="130" transform="translate(130 308)"
+              fill="none" />
+        <g id="noun_no_wifi_2432440" data-name="noun_no wifi_2432440" transform="translate(118.105 300.256)">
+          <circle id="Ellipse_124" data-name="Ellipse 124" cx="4.768" cy="4.768" r="4.768"
+                  transform="translate(57.128 79.208)" fill="#c7cbd8" />
+          <path id="Path_3334" data-name="Path 3334"
+                d="M77.469,38a40.431,40.431,0,0,0-3.421-2.846L70.92,37.817a36.684,36.684,0,0,1,3.82,3.106A2,2,0,0,0,77.469,38Z"
+                transform="translate(23.791 5.19)" fill="#c7cbd8" />
+          <path id="Path_3335" data-name="Path 3335"
+                d="M65,42.862l-3.247,2.765a24.94,24.94,0,0,1,5.229,3.727,2,2,0,0,0,2.73-2.924A29.009,29.009,0,0,0,65,42.862Z"
+                transform="translate(23.791 9.206)" fill="#c7cbd8" />
+          <path id="Path_3336" data-name="Path 3336"
+                d="M99.387,29.872a2.941,2.941,0,0,0,.324-4.1,2.842,2.842,0,0,0-4.045-.329l-9.451,8.168A56.955,56.955,0,0,0,22.808,44.042a2.941,2.941,0,0,0-.141,4.116,2.84,2.84,0,0,0,4.055.143A51.4,51.4,0,0,1,81.358,37.8l-9.642,8.332A40.862,40.862,0,0,0,33.943,56.317a2.941,2.941,0,0,0-.141,4.116,2.84,2.84,0,0,0,4.055.141A35.316,35.316,0,0,1,62.22,50.827a34.129,34.129,0,0,1,3.791.237L31.468,80.914a2.941,2.941,0,0,0-.324,4.1,2.839,2.839,0,0,0,4.045.328Z"
+                fill="#c7cbd8" />
+          <path id="Path_3337" data-name="Path 3337"
+                d="M55.219,51.189l-3.78,3.22a12.231,12.231,0,0,1,6.946,3.212A2,2,0,1,0,61.113,54.7,16.225,16.225,0,0,0,55.219,51.189Z"
+                transform="translate(15.314 13.416)" fill="#c7cbd8" />
+        </g>
+      </g>
+    </svg>
+
+    <p class="css-1jl2bxi">شما به اینترنت وصل نیستید!</p>
+    <p size="14" color="#7075A0" font-family="Regular" data-testid="text" class="css-1lms7ge">پس از اتصال به اینترنت
+      دوباره تلاش کنید.</p>
+    <button class="css-1hrq7fg" onclick="tryAgain()"><p size="16" color="#328fef" data-testid="text" class="css-1r9wz37">تلاش دوباره</p>
+    </button>
+  </div>
+</div>
+<script type="text/javascript">
+
+
+  function tryAgain(){
+    BaleAndroid.TRY_AGAIN_ON_OFFLINE();
+  }
+
+</script>
+</body>
+</html>

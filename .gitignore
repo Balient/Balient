@@ -11,5 +11,5 @@
 *.jks
 *.log
 *.tmp
-src/apktool/build/
-src/apktool/original/
+src/*/build/
+src/*/original/

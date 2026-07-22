@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="forward_multiple_senders">
+        <item quantity="one">%1$s و %2$d آیری نفر</item>
+        <item quantity="other">%1$s و %2$d آیری نفر</item>
+    </plurals>
+    <plurals name="forward_to_multiple_chats_successful">
+        <item quantity="one">سِچیلن پیام %d دانیشیغا یوللاندی.</item>
+        <item quantity="other">سِچیلن پیام‌لار %d دانیشیغا یوللاندی.</item>
+    </plurals>
+    <plurals name="forward_to_single_chat_successful">
+        <item quantity="one">سِچیلن پیام %s‌دا یوللاندی.</item>
+        <item quantity="other">سِچیلن پیام‌لار %s‌دا یوللاندی.</item>
+    </plurals>
+    <plurals name="group_chat_members_count">
+        <item quantity="one">%s نفر</item>
+        <item quantity="other">%s نفر</item>
+    </plurals>
+    <plurals name="other_people_in_reaction_list">
+        <item quantity="one">آیری نفر</item>
+        <item quantity="other">آیری نفر</item>
+    </plurals>
+    <plurals name="reaction_string">
+        <item quantity="one">واکنش</item>
+        <item quantity="other">واکنش</item>
+    </plurals>
+</resources>

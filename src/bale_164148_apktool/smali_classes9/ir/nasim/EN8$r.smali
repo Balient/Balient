@@ -1,0 +1,60 @@
+.class public final Lir/nasim/EN8$r;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/IS2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lir/nasim/EN8;->A(Lir/nasim/JN8;Lir/nasim/m78;JJLir/nasim/Lz4;Lir/nasim/Qo1;II)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lir/nasim/nc8;
+
+
+# direct methods
+.method public constructor <init>(Lir/nasim/nc8;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lir/nasim/EN8$r;->a:Lir/nasim/nc8;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/EN8$r;->a:Lir/nasim/nc8;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lir/nasim/nc8;->v()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method

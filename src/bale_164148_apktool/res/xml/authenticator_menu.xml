@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/settings_setting" />
+    <PreferenceScreen android:title="@string/settings_profile" android:key="account_settings" android:summary="">
+        <intent android:targetPackage="ir.nasim" android:action="ir.nasim.OPEN_ACCOUNT" android:targetClass="ir.nasim.features.MainActivity" />
+    </PreferenceScreen>
+</PreferenceScreen>

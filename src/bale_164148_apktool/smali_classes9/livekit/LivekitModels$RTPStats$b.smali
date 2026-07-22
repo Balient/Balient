@@ -1,0 +1,58 @@
+.class abstract Llivekit/LivekitModels$RTPStats$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Llivekit/LivekitModels$RTPStats;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "b"
+.end annotation
+
+
+# static fields
+.field static final a:Lcom/google/protobuf/I;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    sget-object v0, Lcom/google/protobuf/r0$b;->g:Lcom/google/protobuf/r0$b;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v1
+
+    .line 8
+    sget-object v2, Lcom/google/protobuf/r0$b;->o:Lcom/google/protobuf/r0$b;
+
+    .line 9
+    .line 10
+    invoke-static {v0, v1, v2, v1}, Lcom/google/protobuf/I;->d(Lcom/google/protobuf/r0$b;Ljava/lang/Object;Lcom/google/protobuf/r0$b;Ljava/lang/Object;)Lcom/google/protobuf/I;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    sput-object v0, Llivekit/LivekitModels$RTPStats$b;->a:Lcom/google/protobuf/I;
+
+    .line 15
+    .line 16
+    return-void
+.end method

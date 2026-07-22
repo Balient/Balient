@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/color6_2" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Clickable"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatRadioButton android:textSize="15.0sp" android:textColor="@color/color9" android:id="@id/radioButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:buttonTint="@color/secondary_2" />
+</FrameLayout>

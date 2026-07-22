@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorSurface" android:paddingTop="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="14.0dp" android:paddingEnd="14.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/n500_light" android:id="@id/selected_date" android:background="?colorSurface" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Selected Date" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" android:paddingHorizontal="8.0dp" />
+    <ir.nasim.features.pfm.persiandate.view.PersianDatePicker android:id="@id/persian_date_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" />
+    <Button android:textColor="@color/n500_light" android:id="@id/done_button32" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="@string/Done" android:backgroundTint="@color/colorPrimary_dark" />
+</LinearLayout>

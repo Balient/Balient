@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:layout_width="72.0dp" android:layout_height="58.0dp">
+            <ir.nasim.designsystem.avatar.AvatarViewGlide android:layout_gravity="center" android:id="@id/avatar" android:layout_width="42.0dp" android:layout_height="42.0dp" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/name" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:gravity="center_vertical" android:id="@id/unblock" android:paddingLeft="8.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/blocked_unblock" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:layout_width="match_parent" android:layout_height="@dimen/div_size" android:layout_marginRight="72.0dp" />
+</LinearLayout>

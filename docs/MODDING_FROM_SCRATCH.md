@@ -2,6 +2,8 @@
 
 This document explains how to start from a clean Bale APK, decode it, apply Balient-style modifications, rebuild it, sign it, and debug common failures. It is written for maintainers who want to continue Balient on a newer Bale version instead of only rebuilding the included last Balient tree.
 
+The repository also ships a clean decoded **Bale 10.15.25 (164148)** tree at [`src/bale_164148_apktool/`](../src/bale_164148_apktool/). See [BASE_BALE_164148.md](BASE_BALE_164148.md) for its exact metadata and use it as the initial comparison baseline.
+
 ## 1. Prepare tools
 
 Required tools:

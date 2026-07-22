@@ -1,0 +1,34 @@
+.class public final Lir/nasim/services/ui/ServicesViewModel$f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lir/nasim/services/ui/ServicesViewModel;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "f"
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Lir/nasim/hS1;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lir/nasim/services/ui/ServicesViewModel$f;-><init>()V
+
+    return-void
+.end method

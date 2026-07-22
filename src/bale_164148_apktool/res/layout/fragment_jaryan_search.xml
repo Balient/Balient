@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_5" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/jaryan_search_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/search_content_container" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.tabs.TabLayout android:theme="@style/BaleTabText" android:id="@id/jaryan_tab_layout" android:background="@color/tabBarNavBarBackground" android:layout_width="match_parent" android:layout_height="48.0dp" android:elevation="5.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:tabGravity="fill" app:tabIndicator="@drawable/selected_tab_indicator_jaryan" app:tabIndicatorColor="@color/tabBarNavBarActiveObject" app:tabMaxWidth="0.0dp" app:tabMode="fixed" app:tabSelectedTextColor="@color/tabBarNavBarActiveObject" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" app:tabTextColor="@color/itemSubtitle" />
+        <androidx.viewpager2.widget.ViewPager2 android:id="@id/search_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+.class public final Lir/nasim/b59;
+.super Lir/nasim/m29;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/a49;
+
+
+# direct methods
+.method constructor <init>(Landroid/os/IBinder;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "com.google.android.gms.phenotype.internal.IPhenotypeService"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1, v0}, Lir/nasim/m29;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method

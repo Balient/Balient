@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AlertDialogStyle" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:background">@color/background_3</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="AppToolbarTheme" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionModeBackground">@color/primary</item>
+        <item name="android:actionBarSize">56.0dp</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary</item>
+        <item name="android:colorAccent">@color/secondary</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="appBarLayoutStyle">@style/Bale.AppBarLayout</item>
+        <item name="app_bar">@color/app_bar</item>
+        <item name="colorAccent">@color/secondary</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_navigation_arrow_back</item>
+        <item name="snackbarStyle">@style/BaleSnackbar</item>
+    </style>
+    <style name="BALE.BUTTON.BANK.BLUE" parent="@android:style/Widget.Button">
+        <item name="android:textColor">@color/blue_button_text_color</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="background">@drawable/bank_blue_selector</item>
+    </style>
+    <style name="BaleSnackbar" parent="@style/Widget.MaterialComponents.Snackbar.FullWidth">
+        <item name="android:layout_marginLeft">8.0dp</item>
+        <item name="android:layout_marginTop">8.0dp</item>
+        <item name="android:layout_marginRight">8.0dp</item>
+        <item name="android:layout_marginBottom">8.0dp</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="BaleTabText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:fontFamily">@font/iran_sans_medium</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Base.Theme.SplashScreen" parent="@android:style/Theme.DeviceDefault.DayNight">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.Theme.SplashScreen" />
+    <style name="BottomSheetDialogFragmentTheme" parent="@style/Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="CardPaymentActivityTheme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="android:colorBackground">@color/c1</item>
+        <item name="android:windowBackground">@color/c1</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+        <item name="colorAccent">@color/secondary</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary</item>
+        <item name="snackbarStyle">@style/BaleSnackbar</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="CardPaymentBottomSheetTheme" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="bottomSheetStyle">@style/CardPaymentModalStyle</item>
+    </style>
+    <style name="CardPaymentModalStyle" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/ic_card_payment_background_bottom_sheet</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="CardToCardFieldHintStyle" parent="@style/TextAppearance.Design.Hint">
+        <item name="android:textSize">16.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/c8</item>
+        <item name="android:padding">4.0dp</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="CrowdfundingBottomSheetTheme" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="bottomSheetStyle">@style/CrowdfundingModalStyle</item>
+    </style>
+    <style name="CrowdfundingModalStyle" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/ic_crowdfunding_background_bottom_sheet</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="CustomBottomSheetStyle" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_dialog</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="ExoMediaButton.Next" parent="@style/ExoMediaButton">
+        <item name="android:visibility">gone</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="ExoMediaButton.Previous" parent="@style/ExoMediaButton">
+        <item name="android:visibility">gone</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="ExoStyledControls.Button.Center.RepeatToggle" parent="@style/ExoStyledControls.Button.Center">
+        <item name="android:src">@drawable/exo_styled_controls_repeat_off</item>
+        <item name="android:contentDescription">@string/exo_controls_repeat_off_description</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="ExoStyledControls.Button.Center.Shuffle" parent="@style/ExoStyledControls.Button.Center">
+        <item name="android:src">@drawable/player_controls_shuffle_off</item>
+        <item name="android:contentDescription">@string/exo_controls_shuffle_off_description</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="IranSans">
+        <item name="android:fontFamily">@font/iran_sans</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="IranSharp">
+        <item name="android:fontFamily">@font/iran_sharp</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="MainActivityTheme" parent="@style/AppToolbarTheme">
+        <item name="android:colorBackground">@color/c1</item>
+        <item name="android:windowBackground">@color/c1</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="actionBarSize">64.0dp</item>
+        <item name="actionModeCloseDrawable">@drawable/action_close</item>
+        <item name="actionModeStyle">@style/Action</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="NasimHintStyle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/c7</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="NoBarActivityTheme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="snackbarStyle">@style/BaleSnackbar</item>
+    </style>
+    <style name="NumberPicker">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:colorControlNormal">@color/itemSubtitle</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="fontFamily">@font/iran_sans_medium</item>
+    </style>
+    <style name="PlayListBottomSheetDialogTheme" parent="@style/Theme.Design.BottomSheetDialog">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@color/itemBackgroundSecondary</item>
+        <item name="android:layoutDirection">locale</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Roboto">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Shabnam">
+        <item name="android:fontFamily">@font/shabnam</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="TextInputLayoutAppearanceCounterTextLabel" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">13.0dp</item>
+        <item name="android:textColor">@color/c8</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="TextInputLayoutAppearanceTextLabel" parent="@style/TextAppearance.Design.Hint">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColorHint">@color/inputHint</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="Theme.GalleryBottomSheet" parent="@style/Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+    <style name="Theme.PhotoViewer" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="snackbarStyle">@style/BaleSnackbar</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.ReportBottomSheet" parent="@style/Theme.Design.BottomSheetDialog">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+    <style name="TransparentBottomSheetDialog" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="TransparentDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="TransparentStatusBarTheme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="android:colorBackground">@color/c1</item>
+        <item name="android:windowBackground">@color/c1</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+        <item name="snackbarStyle">@style/BaleSnackbar</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="VideoFullscreenTheme" parent="@style/Theme.MaterialComponents.DayNight.DarkActionBar.Bridge">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogStyle</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="snackbarStyle">@style/BaleSnackbar</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="cursorColor" parent="@style/Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="inviteDialogStyle" parent="@style/Theme.Design.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

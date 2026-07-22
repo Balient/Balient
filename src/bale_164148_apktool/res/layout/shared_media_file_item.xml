@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/AlertDialogStyle" android:orientation="vertical" android:background="@color/color3" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/top_spacer" android:background="@color/color4" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="12.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color8" android:id="@id/title_date" android:background="@color/color1" android:paddingLeft="12.0dp" android:paddingTop="5.0dp" android:paddingRight="12.0dp" android:paddingBottom="5.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp" android:paddingVertical="5.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless">
+        <androidx.appcompat.widget.AppCompatCheckBox android:id="@id/chb_selected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_marginStart="12.0dp" android:buttonTint="@color/file_check_box_color" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.cardview.widget.CardView android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginTop="6.0dp" android:layout_marginBottom="6.0dp" android:layout_marginStart="6.0dp" android:backgroundTint="@color/transparent" app:cardCornerRadius="8.0dp" app:cardElevation="0.0dp">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_logo" android:background="@color/transparent" android:padding="6.0dp" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="2.0dp" android:layout_marginEnd="8.0dp">
+            <TextView android:textSize="14.0sp" android:textColor="@color/color9" android:ellipsize="end" android:id="@id/name_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+                <androidx.cardview.widget.CardView android:id="@id/downloadState_container" android:clickable="true" android:layout_width="20.0dp" android:layout_height="20.0dp" app:cardCornerRadius="20.0dp" app:cardElevation="0.0dp">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_downloadState" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?selectableItemBackgroundBorderless" android:src="@drawable/new_download" />
+                </androidx.cardview.widget.CardView>
+                <TextView android:textSize="12.0sp" android:textColor="@color/color8" android:id="@id/ext_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color8" android:id="@id/size_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color8" android:id="@id/date_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ir.nasim.designsystem.DividerView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginHorizontal="12.0dp" />
+</LinearLayout>

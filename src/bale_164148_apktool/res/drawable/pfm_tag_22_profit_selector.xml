@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/secondary_tint"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <stroke android:width="1.5dp" android:color="@color/pfm_tag_22" />
+            <corners android:radius="50.0dp" />
+        </shape>
+    </item>
+</ripple>

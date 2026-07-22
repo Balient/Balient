@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="20.0dp" android:width="21.0dp" android:viewportWidth="21.0" android:viewportHeight="20.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/color6_2" android:pathData="M1.5,10C1.5,5.029 5.529,1 10.5,1C15.471,1 19.5,5.029 19.5,10C19.5,14.971 15.471,19 10.5,19C5.529,19 1.5,14.971 1.5,10Z" android:strokeColor="@color/secondary_2" android:strokeWidth="2.0" />
+    <path android:name="check_mark" android:fillColor="#00000000" android:pathData="M6.5,10L9.167,12.5L14.5,7.5" android:strokeColor="@color/secondary_2" android:strokeWidth="2.0" android:strokeLineCap="round" android:strokeLineJoin="round" />
+</vector>

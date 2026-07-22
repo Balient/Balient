@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/itemsContainer" android:background="@drawable/context_menu_background" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:clipToOutline="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@android:id/cut" android:padding="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:text="@android:string/cut" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@android:id/copy" android:padding="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:text="@android:string/copy" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@android:id/paste" android:padding="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:text="@android:string/paste" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@android:id/selectAll" android:padding="12.0dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:text="@android:string/selectAll" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+</ScrollView>

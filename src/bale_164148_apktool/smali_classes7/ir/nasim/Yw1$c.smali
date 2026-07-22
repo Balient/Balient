@@ -1,0 +1,74 @@
+.class final Lir/nasim/Yw1$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/HW3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lir/nasim/Yw1;->o(IILjava/lang/String;Lir/nasim/tA1;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lir/nasim/tA1;
+
+
+# direct methods
+.method constructor <init>(Lir/nasim/tA1;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lir/nasim/Yw1$c;->a:Lir/nasim/tA1;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/util/List;JJ)V
+    .locals 0
+
+    .line 1
+    const-string p2, "items"
+
+    .line 2
+    .line 3
+    invoke-static {p1, p2}, Lir/nasim/Rw3;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p2, p0, Lir/nasim/Yw1$c;->a:Lir/nasim/tA1;
+
+    .line 7
+    .line 8
+    invoke-static {p1}, Lir/nasim/nn6;->b(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-interface {p2, p1}, Lir/nasim/tA1;->resumeWith(Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/pfm_notification_heads_up" />
+    <LinearLayout android:orientation="vertical" android:id="@id/top_up_tags" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layoutDirection="rtl">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag20_salary" android:background="@drawable/pfm_tag_20_salary_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imv_tag23" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_tag20_salary" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:id="@id/pfm_tag_tv424" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_deposit_tag20_salary" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag25_dong" android:background="@drawable/pfm_tag_25_dong_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginRight="12.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imv_tag23b" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_tag25_dong" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:id="@id/pfm_tag_tv424b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_deposit_tag25_dong" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layoutDirection="rtl">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag24_pocket" android:background="@drawable/pfm_tag_24_pocket_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imv_tag24b" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_tag24_pocket_money" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:id="@id/pfm_tag_tv24b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_deposit_tag24_pocket_money" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag33_jib_be_jib" android:background="@drawable/pfm_tag_33_jib_be_jib_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp" android:layout_marginStart="12.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imv_tag33b" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_pfm_jib_be_jib" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:id="@id/pfm_tag_tv33b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_tag33_jib_be_jib" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layoutDirection="rtl">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag22_profit" android:background="@drawable/pfm_tag_22_profit_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imv_tag3545" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_tag22_profit" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:id="@id/pfm_tag_tv3646" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_deposit_tag22_profit" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/add_more_top_up_tag" android:background="@drawable/pfm_tag_more_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginRight="12.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imv_tag3545b" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_add_more_tag" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:id="@id/pfm_tag_tv3646b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_notification_other" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/withdraw_tags" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layoutDirection="rtl">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag2_food" android:background="@drawable/pfm_tag_2_food_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_tag2_food" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_tag2_food" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag3_transport" android:background="@drawable/pfm_tag_3_transport_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginRight="12.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_tag3_transport" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_tag3_transport" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layoutDirection="rtl">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag10_installment" android:background="@drawable/pfm_tag_10_installment_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_tag10_installment" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_tag10_installment" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag4_internet" android:background="@drawable/pfm_tag_4_internet_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginRight="12.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_tag4_internet" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_tag4_internet" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" android:layoutDirection="rtl">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tag5_bill" android:background="@drawable/pfm_tag_5_bill_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_tag5_bill" />
+                <TextView android:textSize="14.0dp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_tag5_bill" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/add_more_withdraw_tag" android:background="@drawable/pfm_tag_more_selector" android:paddingTop="6.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="36.0dp" android:layout_marginRight="12.0dp" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_add_more_tag" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/itemTitle" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dp" android:text="@string/pfm_notification_other" android:fontFamily="@font/iran_sans_medium" android:textAlignment="viewStart" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

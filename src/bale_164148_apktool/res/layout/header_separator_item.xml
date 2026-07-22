@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fragment_callLogs_banner" android:background="@color/color1" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:layout_width="match_parent" android:layout_height="40.0dp" android:contentDescription="@string/calllog_recent_calls" android:importantForAccessibility="yes" android:paddingHorizontal="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/color8" android:layout_gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/calllog_recent_calls" android:fontFamily="@font/iran_sans_medium" android:paddingEnd="12.0dp" />
+    <ImageView android:layout_gravity="end|center" android:id="@id/call_log_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_call_log_refresh" android:contentDescription="@string/contacts_refresh_title" />
+</FrameLayout>

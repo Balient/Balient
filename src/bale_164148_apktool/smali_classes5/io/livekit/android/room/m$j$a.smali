@@ -1,0 +1,91 @@
+.class final Lio/livekit/android/room/m$j$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/XG2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lio/livekit/android/room/m$j;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lio/livekit/android/room/m;
+
+
+# direct methods
+.method constructor <init>(Lio/livekit/android/room/m;)V
+    .locals 0
+
+    iput-object p1, p0, Lio/livekit/android/room/m$j$a;->a:Lio/livekit/android/room/m;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Ljava/lang/Object;Lir/nasim/tA1;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Llivekit/LivekitRtc$SignalRequest;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lio/livekit/android/room/m$j$a;->b(Llivekit/LivekitRtc$SignalRequest;Lir/nasim/tA1;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public final b(Llivekit/LivekitRtc$SignalRequest;Lir/nasim/tA1;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iget-object p2, p0, Lio/livekit/android/room/m$j$a;->a:Lio/livekit/android/room/m;
+
+    .line 2
+    .line 3
+    invoke-static {p2}, Lio/livekit/android/room/m;->e(Lio/livekit/android/room/m;)Lir/nasim/XF4;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p2
+
+    .line 7
+    invoke-interface {p2}, Lir/nasim/XF4;->p()V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object p2, p0, Lio/livekit/android/room/m$j$a;->a:Lio/livekit/android/room/m;
+
+    .line 11
+    .line 12
+    invoke-static {p2, p1}, Lio/livekit/android/room/m;->i(Lio/livekit/android/room/m;Llivekit/LivekitRtc$SignalRequest;)V
+
+    .line 13
+    .line 14
+    .line 15
+    sget-object p1, Lir/nasim/Xh8;->a:Lir/nasim/Xh8;
+
+    .line 16
+    .line 17
+    return-object p1
+.end method

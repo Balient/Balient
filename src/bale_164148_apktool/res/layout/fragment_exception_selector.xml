@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/exception_selector_appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/exception_selector_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="@string/exception_selector_fragment_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/collection" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="8.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/exception_selector_appbar" />
+    <ProgressBar android:id="@id/loadingProgress" android:visibility="invisible" android:layout_width="40.0dp" android:layout_height="40.0dp" android:indeterminate="true" android:layout_centerHorizontal="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/container" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="52.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:padding="2.0dp" android:visibility="gone" android:layout_width="@dimen/baleButtonWidth" android:layout_height="@dimen/baleButtonHeight" />
+    <TextView android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:layout_marginRight="10.0dp" android:text="@string/button_title" />
+    <include android:id="@id/progressBar_cnt" android:visibility="gone" layout="@layout/button_progressbar" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="13.0dp" android:gravity="start" android:layout_gravity="start|center" android:id="@id/tv_dialog_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" android:layout_marginBottom="13.0dp" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="12.0dp" android:gravity="center_horizontal" android:layout_gravity="end|top" android:id="@id/tv_unread_messages_counter" android:paddingLeft="2.0dp" android:paddingTop="1.0dp" android:paddingRight="2.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:minWidth="19.0dp" android:height="19.0dp" android:includeFontPadding="false" android:paddingStart="2.0dp" android:paddingEnd="2.0dp" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/llSelectMxpContact" android:background="@drawable/background_select_mxp_contact" android:paddingLeft="14.0dp" android:paddingTop="16.0dp" android:paddingRight="14.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="14.0dp" android:paddingVertical="16.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivMxp" android:layout_width="24.0dp" android:layout_height="24.0dp" android:scaleType="fitCenter" app:srcCompat="@drawable/ic_mxp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/color9" android:layout_gravity="center_vertical" android:id="@id/tvMxpName" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_weight="1.0" android:layout_marginHorizontal="12.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_width="24.0dp" android:layout_height="24.0dp" app:srcCompat="@drawable/arrow_right_auto_mirror" app:tint="@color/color8" />
+</LinearLayout>

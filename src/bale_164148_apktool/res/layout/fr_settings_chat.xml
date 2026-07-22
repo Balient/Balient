@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/chat_settings_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="@string/settings_chat_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:id="@id/scrollContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/item_send_enter" android:paddingLeft="@dimen/settings_padding" android:paddingRight="@dimen/settings_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@id/sendByEnterCont" android:background="@drawable/selector" android:paddingLeft="@dimen/settings_content_padding" android:paddingTop="@dimen/settings_content_padding" android:paddingRight="@dimen/settings_content_padding" android:paddingBottom="@dimen/settings_content_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="@dimen/text_primary" android:id="@id/settings_send_by_enter_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_chat_send_enter" />
+                    <TextView android:textSize="@dimen/text_secondary" android:id="@id/settings_set_by_enter_hint" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_chat_send_enter_subtitle" />
+                </LinearLayout>
+                <CheckBox android:gravity="center_vertical" android:id="@id/sendByEnter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/settings_content_padding" android:layout_marginRight="@dimen/settings_content_padding" android:checked="false" />
+            </LinearLayout>
+            <View android:id="@id/dividerTop" android:layout_width="match_parent" android:layout_height="@dimen/div_size" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

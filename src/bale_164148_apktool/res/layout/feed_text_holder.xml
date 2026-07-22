@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/feed_text_container" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Bale.BodyMedium_3_14_Regular" android:textColor="?n500" android:gravity="start" android:id="@id/feed_text" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:includeFontPadding="false" android:textAllCaps="false" android:fontFamily="@font/iran_sans_regular" android:textDirection="anyRtl" android:textAlignment="textStart" />
+</FrameLayout>

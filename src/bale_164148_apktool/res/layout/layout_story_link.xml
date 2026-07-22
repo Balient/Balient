@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/Theme.Bale.Base" android:background="@drawable/story_widget_background" android:padding="@dimen/spacing_8" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_16" android:layout_marginRight="@dimen/spacing_16" android:layout_marginBottom="@dimen/spacing_12" android:maxHeight="60.0dp" android:layout_marginHorizontal="@dimen/spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.textview.MaterialTextView android:textAppearance="@style/TextAppearance.Bale.TitleLarge_2_16_Medium" android:textColor="@color/link_light" android:gravity="center" android:layout_gravity="center" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="@font/iran_sans_medium" android:textAlignment="center" app:drawableRightCompat="@drawable/link" app:drawableTint="@color/link_light" />
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@id/progressBar" android:layout_width="20.0dp" android:layout_height="20.0dp" android:indeterminate="true" />
+</FrameLayout>

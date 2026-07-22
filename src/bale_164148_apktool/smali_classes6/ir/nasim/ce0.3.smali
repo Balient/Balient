@@ -1,0 +1,60 @@
+.class public final synthetic Lir/nasim/ce0;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/dT2;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/core/modules/banking/BankingModule;
+
+.field public final synthetic b:Lir/nasim/uS0;
+
+.field public final synthetic c:Lir/nasim/Ta8;
+
+.field public final synthetic d:J
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/core/modules/banking/BankingModule;Lir/nasim/uS0;Lir/nasim/Ta8;J)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/ce0;->a:Lir/nasim/core/modules/banking/BankingModule;
+
+    iput-object p2, p0, Lir/nasim/ce0;->b:Lir/nasim/uS0;
+
+    iput-object p3, p0, Lir/nasim/ce0;->c:Lir/nasim/Ta8;
+
+    iput-wide p4, p0, Lir/nasim/ce0;->d:J
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/ce0;->a:Lir/nasim/core/modules/banking/BankingModule;
+
+    iget-object v1, p0, Lir/nasim/ce0;->b:Lir/nasim/uS0;
+
+    iget-object v2, p0, Lir/nasim/ce0;->c:Lir/nasim/Ta8;
+
+    iget-wide v3, p0, Lir/nasim/ce0;->d:J
+
+    move-object v5, p1
+
+    check-cast v5, Ljava/lang/String;
+
+    invoke-static/range {v0 .. v5}, Lir/nasim/core/modules/banking/BankingModule;->L(Lir/nasim/core/modules/banking/BankingModule;Lir/nasim/uS0;Lir/nasim/Ta8;JLjava/lang/String;)Lir/nasim/sR5;
+
+    move-result-object p1
+
+    return-object p1
+.end method

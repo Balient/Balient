@@ -1,0 +1,166 @@
+.class public final Lir/nasim/dl5;
+.super Lir/nasim/Rp2;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lir/nasim/dl5$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final b:Lir/nasim/dl5$a;
+
+.field public static final c:I
+
+
+# instance fields
+.field private final a:Lir/nasim/Pk5;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lir/nasim/dl5$a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Lir/nasim/dl5$a;-><init>(Lir/nasim/hS1;)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lir/nasim/dl5;->b:Lir/nasim/dl5$a;
+
+    .line 8
+    .line 9
+    const/16 v0, 0x8
+
+    .line 10
+    .line 11
+    sput v0, Lir/nasim/dl5;->c:I
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public constructor <init>(Lir/nasim/Pk5;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lir/nasim/Rp2;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lir/nasim/dl5;->a:Lir/nasim/Pk5;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "peer_chat_closed"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final b()Lir/nasim/Pk5;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/dl5;->a:Lir/nasim/Pk5;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/dl5;->a:Lir/nasim/Pk5;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lir/nasim/Pk5;->D()Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 10
+    .line 11
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    const-string v2, "peer_chat_closed {"
+
+    .line 15
+    .line 16
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 20
+    .line 21
+    .line 22
+    const-string v0, "}"
+
+    .line 23
+    .line 24
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :cond_0
+    const-string v0, "peer_chat_closed {peer is null}"
+
+    .line 33
+    .line 34
+    :goto_0
+    return-object v0
+.end method

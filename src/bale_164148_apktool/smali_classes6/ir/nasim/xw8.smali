@@ -1,0 +1,8 @@
+.class public interface abstract Lir/nasim/xw8;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a(Ljava/lang/Object;)Lir/nasim/lj0;
+.end method

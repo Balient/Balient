@@ -1,0 +1,48 @@
+.class public final synthetic Lir/nasim/U34;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/V34;
+
+.field public final synthetic b:Lir/nasim/zg8;
+
+.field public final synthetic c:Lir/nasim/M34;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/V34;Lir/nasim/zg8;Lir/nasim/M34;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/U34;->a:Lir/nasim/V34;
+
+    iput-object p2, p0, Lir/nasim/U34;->b:Lir/nasim/zg8;
+
+    iput-object p3, p0, Lir/nasim/U34;->c:Lir/nasim/M34;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/U34;->a:Lir/nasim/V34;
+
+    iget-object v1, p0, Lir/nasim/U34;->b:Lir/nasim/zg8;
+
+    iget-object v2, p0, Lir/nasim/U34;->c:Lir/nasim/M34;
+
+    invoke-static {v0, v1, v2, p1}, Lir/nasim/V34;->o(Lir/nasim/V34;Lir/nasim/zg8;Lir/nasim/M34;Landroid/view/View;)V
+
+    return-void
+.end method

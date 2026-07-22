@@ -1,0 +1,36 @@
+.class public final synthetic Lio/sentry/android/fragment/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/sentry/L1;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/Y76;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/Y76;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lio/sentry/android/fragment/c;->a:Lir/nasim/Y76;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lio/sentry/b0;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/sentry/android/fragment/c;->a:Lir/nasim/Y76;
+
+    invoke-static {v0, p1}, Lio/sentry/android/fragment/d;->o(Lir/nasim/Y76;Lio/sentry/b0;)V
+
+    return-void
+.end method

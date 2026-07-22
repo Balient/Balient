@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/pagerBulletIndicatorContainer" android:layout_width="match_parent" android:layout_height="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/pagerBulletIndicator" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <Button android:textSize="15.0dp" android:textColor="@color/secondary" android:id="@id/btn_next" android:background="@drawable/selector" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/intro_enter_button" />
+    <FrameLayout android:id="@id/lang_container" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="16.0dp" android:textColor="@color/secondary" android:gravity="center" android:id="@id/tv_language" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30.0dp" android:text="@string/language_swap_name" />
+        <ImageView android:layout_gravity="left|center" android:id="@id/icon_language" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_language_blue_24dp" />
+    </FrameLayout>
+    <TextView android:textColor="@color/c10" android:gravity="center" android:id="@id/pagerBulletIndicatorText" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

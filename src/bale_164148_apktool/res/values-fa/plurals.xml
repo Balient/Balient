@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alert_delete_messages_text">
+        <item quantity="one">آیا از حذف این پیام اطمینان دارید؟</item>
+        <item quantity="other">آیا از حذف این پیام‌ها اطمینان دارید؟</item>
+    </plurals>
+    <plurals name="alert_delete_messages_text_for_everyone">
+        <item quantity="one">آیا از حذف این پیام برای همه اطمینان دارید؟</item>
+        <item quantity="other">آیا از حذف این پیام‌ها برای همه اطمینان دارید؟</item>
+    </plurals>
+    <plurals name="alert_delete_messages_title">
+        <item quantity="one">حذف پیام</item>
+        <item quantity="other">حذف %s پیام</item>
+    </plurals>
+    <plurals name="error_forward_permission_denied">
+        <item quantity="one">بازارسال در گروه «%s» انجام نشد. مجوز ارسال پیام در این گروه بسته است.</item>
+        <item quantity="other">بازارسال در گروه‌های %s انجام نشد. مجوز ارسال پیام در این گروه‌ها بسته است.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">%d ثانیه سریع به‌جلو بردن</item>
+        <item quantity="other">%d ثانیه سریع به‌جلو بردن</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">%d ثانیه به‌عقب بردن</item>
+        <item quantity="other">%d ثانیه به‌عقب بردن</item>
+    </plurals>
+    <plurals name="forward_multiple_senders">
+        <item quantity="one">%1$s و %2$d نفر دیگر</item>
+        <item quantity="other">%1$s و %2$d نفر دیگر</item>
+    </plurals>
+    <plurals name="forward_to_multiple_chats_successful">
+        <item quantity="one">پیام‌ انتخاب‌شده به %s گفتگو بازارسال شد.</item>
+        <item quantity="other">پیام‌های انتخاب‌شده به %d گفتگو بازارسال شدند.</item>
+    </plurals>
+    <plurals name="forward_to_single_chat_successful">
+        <item quantity="one">پیام‌ انتخاب‌شده به %s بازارسال شد.</item>
+        <item quantity="other">پیام‌های انتخاب‌شده به %s بازارسال شدند.</item>
+    </plurals>
+    <plurals name="group_chat_members_count">
+        <item quantity="one">%s عضو</item>
+        <item quantity="other">%s عضو</item>
+    </plurals>
+    <plurals name="member_preview_group_member_expect">
+        <item quantity="one">و %s عضو دیگر</item>
+        <item quantity="other">و %s عضو دیگر</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d اعلان جدید</item>
+        <item quantity="other">%d اعلان جدید</item>
+    </plurals>
+    <plurals name="other_people_in_reaction_list">
+        <item quantity="one">نفر دیگر</item>
+        <item quantity="other">نفر دیگر</item>
+    </plurals>
+    <plurals name="reaction_string">
+        <item quantity="one">واکنش</item>
+        <item quantity="other">واکنش</item>
+    </plurals>
+</resources>

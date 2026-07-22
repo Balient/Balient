@@ -1,0 +1,11 @@
+.class public interface abstract Lir/nasim/FF8;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract f()V
+.end method
+
+.method public abstract p()V
+.end method

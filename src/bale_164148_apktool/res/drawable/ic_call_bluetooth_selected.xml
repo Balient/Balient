@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dp" android:width="24.0dp" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/voice_call_icon" android:pathData="M11.2501,21.65V13.8L6.4001,18.65L5.3501,17.6L10.9501,12L5.3501,6.4L6.4001,5.35L11.2501,10.2V2.35H12.0001L17.3501,7.7L13.0501,12L17.3501,16.3L12.0001,21.65H11.2501ZM12.7501,10.2L15.2501,7.7L12.7501,5.25V10.2ZM12.7501,18.75L15.2501,16.3L12.7501,13.8V18.75Z" />
+</vector>

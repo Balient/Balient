@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="58.0dp" android:paddingHorizontal="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="horizontal" android:background="@drawable/bg_reaction_story" android:clipChildren="true" android:layout_width="wrap_content" android:layout_height="52.0dp" android:layoutDirection="ltr" android:clipToOutline="true">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivCloseReactionStory" android:padding="5.0dp" android:focusable="true" android:clickable="true" android:layout_width="40.0dp" android:layout_height="match_parent" android:src="@drawable/ic_close_reaction" android:contentDescription="@string/close_reactions" />
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/rcReactionStory" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="rtl" android:paddingHorizontal="6.0dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivNub" android:layout_width="16.0dp" android:layout_height="6.0dp" android:layout_marginLeft="16.0dp" android:layout_marginRight="16.0dp" android:layout_marginHorizontal="16.0dp" app:srcCompat="@drawable/ic_reaction_story_nub" />
+</androidx.appcompat.widget.LinearLayoutCompat>

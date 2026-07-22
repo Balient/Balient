@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/Theme.Bale.Base" android:orientation="vertical" android:background="?background" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/block_list_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="@string/blocked_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/listView" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/selector" android:divider="@null" android:dividerHeight="0.0dp" />
+    <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/emptyView" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" />
+</LinearLayout>

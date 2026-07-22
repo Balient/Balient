@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/background_2" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/story_privacy_appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent">
+        <Toolbar android:layout_width="match_parent" android:layout_height="0.0dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/webviewLayout" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/story_privacy_appbar" />
+    <View android:id="@id/loading_shadow" android:background="@color/c6" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/story_privacy_appbar" />
+    <include android:id="@id/progress_bar_view" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/story_privacy_appbar" layout="@layout/bank_load_component" />
+    <androidx.compose.ui.platform.ComposeView android:id="@id/loading_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/story_privacy_appbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

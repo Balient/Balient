@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/picker_black" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/view_avtar_appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+        <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/view_avtar_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView android:textSize="18.0dp" android:textColor="@color/background_1" android:id="@id/avatars_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/view_avtar_appbar" android:layout_centerHorizontal="true" />
+    <ir.nasim.features.profile.avatar.SafeTouchViewPager android:id="@id/view_pager_avatars" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="36.0dp" android:layout_below="@id/view_avtar_appbar" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/c9" android:id="@id/no_photo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/avatar_no_photo" android:layout_below="@id/view_avtar_appbar" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dp" android:layout_alignParentBottom="true">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view_slider" android:layout_width="wrap_content" android:layout_height="@dimen/multi_avatar_slider_item_height" />
+    </LinearLayout>
+</RelativeLayout>

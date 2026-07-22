@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager2.widget.ViewPager2 android:orientation="vertical" android:id="@id/feed_full_screen_view_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <include android:id="@id/similar_post_onboarding_animation" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/swipe_animation_overlay" />
+    <LinearLayout android:orientation="vertical" android:id="@id/similar_post_teaching" android:background="@color/background_fixed" android:visibility="gone" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="80.0dp" app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView android:layout_gravity="center|bottom" android:id="@id/arrow_up" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/simple_arrow_up" app:layout_constraintBottom_toTopOf="@id/text" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_chainStyle="packed" app:tint="@color/onBackground_fixed" />
+        <TextView android:textColor="@color/onBackground_fixed" android:gravity="center|bottom" android:id="@id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/swipe_animation_action_label" app:layout_constraintTop_toBottomOf="@id/arrow_up" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

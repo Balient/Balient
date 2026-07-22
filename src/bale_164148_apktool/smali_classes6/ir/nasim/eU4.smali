@@ -1,0 +1,90 @@
+.class public final synthetic Lir/nasim/eU4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/KS2;
+
+
+# instance fields
+.field public final synthetic a:Ljava/lang/String;
+
+.field public final synthetic b:Ljava/lang/String;
+
+.field public final synthetic c:Ljava/lang/String;
+
+.field public final synthetic d:J
+
+.field public final synthetic e:Lir/nasim/kU4;
+
+.field public final synthetic f:Lir/nasim/xU5;
+
+.field public final synthetic g:J
+
+.field public final synthetic h:Ljava/lang/String;
+
+.field public final synthetic i:Ljava/lang/Integer;
+
+
+# direct methods
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLir/nasim/kU4;Lir/nasim/xU5;JLjava/lang/String;Ljava/lang/Integer;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/eU4;->a:Ljava/lang/String;
+
+    iput-object p2, p0, Lir/nasim/eU4;->b:Ljava/lang/String;
+
+    iput-object p3, p0, Lir/nasim/eU4;->c:Ljava/lang/String;
+
+    iput-wide p4, p0, Lir/nasim/eU4;->d:J
+
+    iput-object p6, p0, Lir/nasim/eU4;->e:Lir/nasim/kU4;
+
+    iput-object p7, p0, Lir/nasim/eU4;->f:Lir/nasim/xU5;
+
+    iput-wide p8, p0, Lir/nasim/eU4;->g:J
+
+    iput-object p10, p0, Lir/nasim/eU4;->h:Ljava/lang/String;
+
+    iput-object p11, p0, Lir/nasim/eU4;->i:Ljava/lang/Integer;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 12
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/eU4;->a:Ljava/lang/String;
+
+    iget-object v1, p0, Lir/nasim/eU4;->b:Ljava/lang/String;
+
+    iget-object v2, p0, Lir/nasim/eU4;->c:Ljava/lang/String;
+
+    iget-wide v3, p0, Lir/nasim/eU4;->d:J
+
+    iget-object v5, p0, Lir/nasim/eU4;->e:Lir/nasim/kU4;
+
+    iget-object v6, p0, Lir/nasim/eU4;->f:Lir/nasim/xU5;
+
+    iget-wide v7, p0, Lir/nasim/eU4;->g:J
+
+    iget-object v9, p0, Lir/nasim/eU4;->h:Ljava/lang/String;
+
+    iget-object v10, p0, Lir/nasim/eU4;->i:Ljava/lang/Integer;
+
+    move-object v11, p1
+
+    check-cast v11, Lir/nasim/Fu6;
+
+    invoke-static/range {v0 .. v11}, Lir/nasim/kU4;->K(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLir/nasim/kU4;Lir/nasim/xU5;JLjava/lang/String;Ljava/lang/Integer;Lir/nasim/Fu6;)Lir/nasim/lU4;
+
+    move-result-object p1
+
+    return-object p1
+.end method

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/rounded_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/line_iv" android:layout_width="32.0dp" android:layout_height="6.0dp" android:layout_marginTop="16.0dp" android:src="@drawable/ba_bsheet_swipe_button" />
+    <androidx.cardview.widget.CardView android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="16.0dp" android:layout_marginTop="12.0dp" android:layout_marginRight="16.0dp" android:layout_marginBottom="16.0dp" android:layout_marginHorizontal="16.0dp" app:cardCornerRadius="16.0dp" app:cardElevation="0.0dp">
+        <LinearLayout android:orientation="vertical" android:id="@id/list_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

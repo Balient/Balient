@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="right" android:layout_gravity="center" android:id="@id/card_number" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dp" android:gravity="right|center" android:id="@id/label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp" android:layout_marginRight="13.0dp" android:layout_marginBottom="11.0dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textDirection="rtl" />
+    <TextView android:textSize="16.0dp" android:textColor="#ff0b113e" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="10.0dp" android:layout_toRightOf="@id/card_bank_logo" android:textDirection="ltr" />
+    <ImageView android:layout_gravity="left|center" android:id="@id/card_bank_logo" android:padding="1.0dp" android:layout_width="30.0dp" android:layout_height="30.0dp" android:layout_marginLeft="13.0dp" android:layout_marginTop="11.0dp" android:layout_marginBottom="11.0dp" android:src="@drawable/sdk_bank_unknown" android:layout_alignParentLeft="true" />
+</RelativeLayout>

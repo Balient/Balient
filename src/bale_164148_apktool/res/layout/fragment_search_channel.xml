@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/channels_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <ScrollView android:id="@id/loading_container_scroll_view" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollIndicators="none">
+            <LinearLayout android:orientation="vertical" android:id="@id/loading_container" android:background="?background" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </ScrollView>
+        <include android:id="@id/empty_state_container" layout="@layout/search_empty" />
+    </FrameLayout>
+    <ir.nasim.designsystem.button.FullWidthButtonSecondary android:id="@id/see_all_result_btn" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="52.0dp" app:button_text="@string/view_all_result" />
+</LinearLayout>
