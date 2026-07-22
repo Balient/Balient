@@ -1,0 +1,49 @@
+.class Lir/nasim/jp1$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/cQ4;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lir/nasim/jp1;->d(Ljava/lang/reflect/Type;Ljava/lang/Class;)Lir/nasim/cQ4;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayDeque;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="group_chat_members_count">
+        <item quantity="one">%s نفر</item>
+        <item quantity="other">%s نفر</item>
+    </plurals>
+</resources>

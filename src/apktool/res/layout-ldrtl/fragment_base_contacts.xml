@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/empty_collection_bg" android:background="@color/background_1" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/collection" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_gravity="center|top" android:id="@id/empty_collection_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/contacts_empty_short" />
+</FrameLayout>

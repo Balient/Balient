@@ -1,0 +1,17 @@
+.class public interface abstract Lir/nasim/yx3$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/ux3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lir/nasim/yx3;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "a"
+.end annotation

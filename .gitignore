@@ -1,0 +1,15 @@
+﻿/dist/
+/work/
+/input/
+/assets/
+/tools/
+/local/
+*.apk
+*.ap_
+*.idsig
+*.keystore
+*.jks
+*.log
+*.tmp
+src/apktool/build/
+src/apktool/original/

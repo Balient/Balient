@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/forward_chips_background" android:paddingLeft="6.0dp" android:paddingRight="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" android:layout_marginEnd="4.0dp" android:paddingHorizontal="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ir.nasim.designsystem.avatar.AvatarViewGlide android:id="@id/peerAvatar" android:background="@color/transparent" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginEnd="6.0dp" />
+    <ImageView android:id="@id/savedMessage" android:background="@color/transparent" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_saved_message" android:layout_marginEnd="6.0dp" />
+    <TextView android:ellipsize="end" android:id="@id/peerName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    <ImageView android:layout_gravity="center" android:id="@id/iconClose" android:background="?selectableItemBackgroundBorderless" android:padding="2.0dp" android:focusable="true" android:clickable="true" android:layout_width="24.0dp" android:layout_height="24.0dp" android:layout_marginLeft="6.0dp" android:layout_marginRight="6.0dp" android:src="@drawable/close" android:layout_marginHorizontal="6.0dp" />
+</LinearLayout>

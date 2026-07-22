@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:layoutDirection="rtl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/melli_logo" android:layout_width="34.0dp" android:layout_height="34.0dp" android:src="@drawable/ic_sapta_bot_empty_bank_melli" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="14.0dp">
+        <TextView android:textSize="14.0dp" android:textStyle="bold" android:textColor="@color/itemTitle" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pfm_notification_melli" android:maxLines="1" android:fontFamily="@font/arad_medium" />
+        <TextView android:textSize="12.0dp" android:textColor="@color/itemTitle" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:fontFamily="@font/arad_regular" />
+    </LinearLayout>
+</LinearLayout>

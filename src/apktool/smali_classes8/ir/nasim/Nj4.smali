@@ -1,0 +1,36 @@
+.class public final synthetic Lir/nasim/Nj4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/tgwidgets/editor/messenger/D;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/tgwidgets/editor/messenger/D;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/Nj4;->a:Lir/nasim/tgwidgets/editor/messenger/D;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/Nj4;->a:Lir/nasim/tgwidgets/editor/messenger/D;
+
+    invoke-static {v0}, Lir/nasim/tgwidgets/editor/messenger/D;->l(Lir/nasim/tgwidgets/editor/messenger/D;)V
+
+    return-void
+.end method

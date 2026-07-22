@@ -1,0 +1,38 @@
+.class public final synthetic Lir/nasim/XZ4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/MM2;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/features/pfm/b;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/features/pfm/b;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/XZ4;->a:Lir/nasim/features/pfm/b;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/XZ4;->a:Lir/nasim/features/pfm/b;
+
+    invoke-static {v0}, Lir/nasim/features/pfm/b;->i9(Lir/nasim/features/pfm/b;)Lir/nasim/features/pfm/h;
+
+    move-result-object v0
+
+    return-object v0
+.end method

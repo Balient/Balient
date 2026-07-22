@@ -1,0 +1,193 @@
+.class public final Lir/nasim/zs4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private final a:Ljava/lang/Object;
+
+.field private final b:Lir/nasim/ys4;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Object;Lir/nasim/ys4;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "action"
+
+    .line 2
+    .line 3
+    invoke-static {p2, v0}, Lir/nasim/lq3;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, Lir/nasim/zs4;->a:Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    iput-object p2, p0, Lir/nasim/zs4;->b:Lir/nasim/ys4;
+
+    .line 12
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    instance-of p1, p1, Lir/nasim/zs4;
+
+    .line 2
+    .line 3
+    if-eqz p1, :cond_0
+
+    .line 4
+    .line 5
+    const/4 p1, 0x0
+
+    .line 6
+    return p1
+
+    .line 7
+    :cond_0
+    const/4 p1, 0x1
+
+    .line 8
+    return p1
+.end method
+
+.method public hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/zs4;->a:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, 0x0
+
+    .line 6
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lir/nasim/zs4;->b:Lir/nasim/ys4;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    add-int/2addr v0, v1
+
+    .line 20
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/zs4;->a:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lir/nasim/zs4;->b:Lir/nasim/ys4;
+
+    .line 4
+    .line 5
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 6
+    .line 7
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    const-string v3, "ModifyData(item="
+
+    .line 11
+    .line 12
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    const-string v0, ", action="
+
+    .line 19
+    .line 20
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    const-string v0, ")"
+
+    .line 27
+    .line 28
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    return-object v0
+.end method

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alert_delete_messages_text">
+        <item quantity="one">Are you sure you want to delete this message?</item>
+        <item quantity="other">Are you sure you want to delete these messages?</item>
+    </plurals>
+    <plurals name="alert_delete_messages_text_for_everyone">
+        <item quantity="one">Are you sure you want to delete this message for everyone?</item>
+        <item quantity="other">Are you sure you want to delete these messages for everyone?</item>
+    </plurals>
+    <plurals name="alert_delete_messages_title">
+        <item quantity="one">Delete Message</item>
+        <item quantity="other">Delete %s Messages</item>
+    </plurals>
+    <plurals name="error_forward_permission_denied">
+        <item quantity="one">Forwarding to %s group failed. Permission to send messages in this group is disabled.</item>
+        <item quantity="other">Forwarding to %s groups failed. Permission to send messages in these groups is disabled.</item>
+    </plurals>
+    <plurals name="exo_controls_fastforward_by_amount_description">
+        <item quantity="one">Fast forward %d second</item>
+        <item quantity="other">Fast forward %d seconds</item>
+    </plurals>
+    <plurals name="exo_controls_rewind_by_amount_description">
+        <item quantity="one">Rewind %d second</item>
+        <item quantity="other">Rewind %d seconds</item>
+    </plurals>
+    <plurals name="forward_to_multiple_chats_successful">
+        <item quantity="one">Selected message was forwarded to %1$s chats.</item>
+        <item quantity="other">Selected messages were forwarded to %1$s chats.</item>
+    </plurals>
+    <plurals name="forward_to_single_chat_successful">
+        <item quantity="one">Selected message was forwarded to %s.</item>
+        <item quantity="other">Selected messages were forwarded to %s.</item>
+    </plurals>
+    <plurals name="group_chat_members_count">
+        <item quantity="one">%s member</item>
+        <item quantity="other">%s members</item>
+    </plurals>
+    <plurals name="member_preview_group_member_expect">
+        <item quantity="one">and another %s member</item>
+        <item quantity="other">and another %s members</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="other_people_in_reaction_list">
+        <item quantity="one">another person</item>
+        <item quantity="other">another persons</item>
+    </plurals>
+    <plurals name="reaction_string">
+        <item quantity="one">Reaction</item>
+        <item quantity="other">Reactions</item>
+    </plurals>
+</resources>

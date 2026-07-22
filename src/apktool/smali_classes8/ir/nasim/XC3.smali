@@ -1,0 +1,48 @@
+.class public final synthetic Lir/nasim/XC3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/tgwidgets/editor/ui/Components/Paint/Views/LPhotoPaintView;
+
+.field public final synthetic b:I
+
+.field public final synthetic c:I
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/tgwidgets/editor/ui/Components/Paint/Views/LPhotoPaintView;II)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/XC3;->a:Lir/nasim/tgwidgets/editor/ui/Components/Paint/Views/LPhotoPaintView;
+
+    iput p2, p0, Lir/nasim/XC3;->b:I
+
+    iput p3, p0, Lir/nasim/XC3;->c:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/XC3;->a:Lir/nasim/tgwidgets/editor/ui/Components/Paint/Views/LPhotoPaintView;
+
+    iget v1, p0, Lir/nasim/XC3;->b:I
+
+    iget v2, p0, Lir/nasim/XC3;->c:I
+
+    invoke-static {v0, v1, v2, p1}, Lir/nasim/tgwidgets/editor/ui/Components/Paint/Views/LPhotoPaintView;->V(Lir/nasim/tgwidgets/editor/ui/Components/Paint/Views/LPhotoPaintView;IILandroid/animation/ValueAnimator;)V
+
+    return-void
+.end method

@@ -1,0 +1,44 @@
+.class public final synthetic Lir/nasim/qk7;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/pp1;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/uk7;
+
+.field public final synthetic b:Lir/nasim/tk7;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/uk7;Lir/nasim/tk7;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/qk7;->a:Lir/nasim/uk7;
+
+    iput-object p2, p0, Lir/nasim/qk7;->b:Lir/nasim/tk7;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/qk7;->a:Lir/nasim/uk7;
+
+    iget-object v1, p0, Lir/nasim/qk7;->b:Lir/nasim/tk7;
+
+    check-cast p1, Lir/nasim/nu8;
+
+    invoke-static {v0, v1, p1}, Lir/nasim/tk7;->o0(Lir/nasim/uk7;Lir/nasim/tk7;Lir/nasim/nu8;)V
+
+    return-void
+.end method

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="enable_system_alarm_service_default">false</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">true</bool>
+    <bool name="io.appmetrica.analytics.is_offline">true</bool>
+    <bool name="io.appmetrica.analytics.ndk.enable">false</bool>
+    <bool name="is_right_to_left">false</bool>
+    <bool name="leak_canary_watcher_auto_install">false</bool>
+    <bool name="map_is_right_to_left">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="use_light_system_bars">true</bool>
+    <bool name="workmanager_test_configuration">false</bool>
+</resources>

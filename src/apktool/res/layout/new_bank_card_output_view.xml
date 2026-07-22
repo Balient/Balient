@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/card_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="38.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/card_bank_logo" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/new_card_number_label_title_pair" />
+    <ImageView android:id="@id/card_bank_logo" android:layout_width="32.0dp" android:layout_height="32.0dp" android:layout_marginTop="1.0dp" android:layout_marginBottom="1.0dp" android:src="@drawable/bank_unknown" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

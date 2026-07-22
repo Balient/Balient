@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="182.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/edit_container" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <ImageView android:id="@id/imageView_edit_description" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_edit" android:layout_marginStart="16.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/c10" android:id="@id/edit_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_description" android:layout_marginStart="12.0dp" android:textFontWeight="400" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginStart="47.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/delete_description_container" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <ImageView android:id="@id/img_delete_description" android:layout_width="wrap_content" android:layout_height="24.0dp" android:src="@drawable/ic_delete_defualt" android:layout_marginStart="16.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/c10" android:id="@id/delete_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_description" android:layout_marginStart="12.0dp" android:textFontWeight="400" />
+    </LinearLayout>
+    <View android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginStart="47.0dp" />
+    <View android:id="@id/devider_2" android:background="@color/divider" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginStart="47.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/delete_transaction_container" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="60.0dp">
+        <ImageView android:id="@id/img_delete_transaction" android:layout_width="24.0dp" android:layout_height="24.0dp" android:src="@drawable/ic_delet_dialog" android:layout_marginStart="16.0dp" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/inputError" android:id="@id/txt_deleteTransaction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_transaction" android:layout_marginStart="12.0dp" android:textFontWeight="400" />
+    </LinearLayout>
+</LinearLayout>

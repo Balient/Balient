@@ -1,0 +1,63 @@
+.class public abstract Lir/nasim/Qb2$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lir/nasim/Qb2;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "a"
+.end annotation
+
+
+# static fields
+.field private static a:Lir/nasim/eN2;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lir/nasim/Pb2;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lir/nasim/Pb2;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lir/nasim/Qb2$a;->a:Lir/nasim/eN2;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public static a(Lir/nasim/uc2;Lir/nasim/PG3;Lir/nasim/PG3;)Lir/nasim/Yp7;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lir/nasim/Qb2$a;->a:Lir/nasim/eN2;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p0, p1, p2}, Lir/nasim/eN2;->n(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lir/nasim/Yp7;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method

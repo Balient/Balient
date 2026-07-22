@@ -1,0 +1,44 @@
+.class public final synthetic Lir/nasim/Zz3;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/MM2;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/fragment/app/Fragment;
+
+.field public final synthetic b:Lir/nasim/features/keyboard/a;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/fragment/app/Fragment;Lir/nasim/features/keyboard/a;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/Zz3;->a:Landroidx/fragment/app/Fragment;
+
+    iput-object p2, p0, Lir/nasim/Zz3;->b:Lir/nasim/features/keyboard/a;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/Zz3;->a:Landroidx/fragment/app/Fragment;
+
+    iget-object v1, p0, Lir/nasim/Zz3;->b:Lir/nasim/features/keyboard/a;
+
+    invoke-static {v0, v1}, Lir/nasim/features/keyboard/a;->a(Landroidx/fragment/app/Fragment;Lir/nasim/features/keyboard/a;)Lir/nasim/jp0;
+
+    move-result-object v0
+
+    return-object v0
+.end method

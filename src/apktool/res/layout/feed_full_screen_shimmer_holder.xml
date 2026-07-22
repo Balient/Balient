@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/background_fixed" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="rtl"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/toolbar_placeholder" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/title_highlight" android:layout_width="113.0dp" android:layout_height="16.0dp" app:layout_constraintBottom_toTopOf="@id/subcount_placeholder" app:layout_constraintEnd_toStartOf="@id/feed_option_menu" app:layout_constraintTop_toTopOf="parent">
+                <androidx.cardview.widget.CardView android:layout_width="113.0dp" android:layout_height="16.0dp" app:cardCornerRadius="@dimen/radius_100" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/subcount_placeholder" android:layout_width="59.0dp" android:layout_height="16.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintEnd_toStartOf="@id/feed_option_menu" app:layout_constraintTop_toBottomOf="@id/title_highlight">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4.0dp" app:cardCornerRadius="@dimen/radius_100" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/feed_join_button" android:layout_width="64.0dp" android:layout_height="32.0dp" app:layout_constraintBottom_toBottomOf="@id/feed_option_menu" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@id/feed_option_menu">
+                <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="4.0dp" app:cardCornerRadius="@dimen/radius_8" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <ImageView android:id="@id/feed_option_menu" android:paddingLeft="12.0dp" android:paddingTop="6.0dp" android:paddingRight="12.0dp" android:paddingBottom="6.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:insetLeft="0.0dp" android:insetRight="0.0dp" android:insetTop="0.0dp" android:insetBottom="0.0dp" android:importantForAccessibility="no" android:paddingHorizontal="12.0dp" android:paddingVertical="6.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/more_menu" app:tint="@color/skeleton_highlight_dark" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ir.nasim.components.appbar.view.BaleToolbar>
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/caption_placeholder" android:layout_width="276.0dp" android:layout_height="16.0dp" android:layout_marginBottom="@dimen/spacing_8" android:layout_marginStart="@dimen/spacing_12" app:layout_constraintBottom_toTopOf="@id/suggester_placeholder" app:layout_constraintStart_toStartOf="parent">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/radius_100" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/suggester_placeholder" android:layout_width="179.0dp" android:layout_height="16.0dp" android:layout_marginTop="@dimen/spacing_8" android:layout_marginBottom="@dimen/spacing_12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="@id/caption_placeholder">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/radius_100" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/tag_placeholder" android:layout_width="59.0dp" android:layout_height="16.0dp" android:layout_marginLeft="@dimen/spacing_12" android:layout_marginTop="@dimen/spacing_8" android:layout_marginRight="@dimen/spacing_12" android:layout_marginBottom="@dimen/spacing_12" android:layout_marginHorizontal="@dimen/spacing_12" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="@dimen/radius_100" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

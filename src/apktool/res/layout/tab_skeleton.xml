@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:padding="8.0dp" android:layout_width="70.0dp" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/n40_dark" android:layout_width="40.0dp" android:layout_height="16.0dp" />
+</FrameLayout>

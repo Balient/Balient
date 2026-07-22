@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/side_column_root" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:paddingEnd="12.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="?colorOnSurfaceVariant" android:id="@id/side_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/TextAppearance.Bale.LabelMedium_1_12_Regular" />
+    <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/side_icons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/side_date">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/last_reaction_emoji" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" />
+        <TextView android:textSize="12.0sp" android:textColor="?colorOnPrimary" android:gravity="center" android:id="@id/mention_icon" android:background="@drawable/bg_mention_circle" android:visibility="gone" android:layout_width="24.0dp" android:layout_height="24.0dp" android:text="@" android:layout_marginStart="2.0dp" />
+        <ImageView android:id="@id/msg_state_icon" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginStart="2.0dp" />
+        <FrameLayout android:id="@id/unread_badge_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="2.0dp" />
+        <ImageView android:id="@id/pin_icon" android:visibility="gone" android:layout_width="18.0dp" android:layout_height="18.0dp" android:layout_marginStart="2.0dp" app:srcCompat="@drawable/pin" />
+        <TextView android:gravity="center" android:id="@id/open_web_app_btn" android:paddingLeft="12.0dp" android:paddingRight="12.0dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32.0dp" android:minWidth="64.0dp" android:text="@string/open_web_app_button" android:layout_marginStart="8.0dp" android:paddingHorizontal="12.0dp" style="@style/TextAppearance.Bale.TitleSmall_2_12_Regular" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

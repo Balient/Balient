@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ir.nasim.designsystem.ImageViewCrossFade android:id="@id/feed_photo_iv" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="540.0dp" android:minWidth="120.0dp" app:layout_constraintBottom_toTopOf="@id/feed_photo_text" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/feed_state_container_photo" android:background="@drawable/circle_bubble_secondary_color" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" app:layout_constraintBottom_toBottomOf="@id/feed_photo_iv" app:layout_constraintEnd_toEndOf="@id/feed_photo_iv" app:layout_constraintStart_toStartOf="@id/feed_photo_iv" app:layout_constraintTop_toTopOf="@id/feed_photo_iv">
+        <ir.nasim.features.conversation.messages.content.CircleProgressBar android:layout_gravity="center" android:id="@id/feed_progress_photo" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" android:max="100" />
+        <ImageView android:layout_gravity="center" android:id="@id/feed_state_photo_iv" android:layout_width="24.0dp" android:layout_height="24.0dp" app:tint="?colorOnPrimary" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/feed_like_animation_container_photo" android:layout_width="120.0dp" android:layout_height="120.0dp" app:layout_constraintBottom_toBottomOf="@id/feed_photo_iv" app:layout_constraintEnd_toEndOf="@id/feed_photo_iv" app:layout_constraintStart_toStartOf="@id/feed_photo_iv" app:layout_constraintTop_toTopOf="@id/feed_photo_iv">
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/feed_reaction_anim" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:lottie_autoPlay="false" app:lottie_loop="false" app:lottie_rawRes="@raw/icon_heart" app:lottie_repeatMode="restart" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

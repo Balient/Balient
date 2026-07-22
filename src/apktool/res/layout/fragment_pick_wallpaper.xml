@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/pick_wallpaper_appbar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/pick_wallpaper_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="@string/wallpaper" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ir.nasim.designsystem.BackgroundPreviewViewGlide android:id="@id/wallpaper" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/wallpaper_preview_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <HorizontalScrollView android:id="@id/container_scrollview" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:requiresFadingEdge="none">
+                <LinearLayout android:orientation="horizontal" android:id="@id/background_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </HorizontalScrollView>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/bar_edit" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

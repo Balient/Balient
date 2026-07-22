@@ -1,0 +1,235 @@
+.class public Lir/nasim/DX7;
+.super Lir/nasim/z90;
+.source "SourceFile"
+
+
+# instance fields
+.field private c:Ljava/util/List;
+
+
+# direct methods
+.method public constructor <init>(Lir/nasim/iv1;)V
+    .locals 3
+
+    .line 1
+    invoke-direct {p0, p1}, Lir/nasim/z90;-><init>(Lir/nasim/iv1;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1}, Lir/nasim/iv1;->c()Lir/nasim/BB;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    check-cast p1, Lir/nasim/ky;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Lir/nasim/ky;->u()Lir/nasim/iy;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p1
+
+    .line 14
+    check-cast p1, Lir/nasim/ny;
+
+    .line 15
+    .line 16
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 17
+    .line 18
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 19
+    .line 20
+    .line 21
+    iput-object v0, p0, Lir/nasim/DX7;->c:Ljava/util/List;
+
+    .line 22
+    .line 23
+    invoke-virtual {p1}, Lir/nasim/ny;->u()Ljava/util/List;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p1
+
+    .line 27
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object p1
+
+    .line 31
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v0
+
+    .line 35
+    if-eqz v0, :cond_0
+
+    .line 36
+    .line 37
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    check-cast v0, Lir/nasim/kF;
+
+    .line 42
+    .line 43
+    iget-object v1, p0, Lir/nasim/DX7;->c:Ljava/util/List;
+
+    .line 44
+    .line 45
+    new-instance v2, Lir/nasim/CX7;
+
+    .line 46
+    .line 47
+    invoke-direct {v2, v0}, Lir/nasim/CX7;-><init>(Lir/nasim/kF;)V
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 51
+    .line 52
+    .line 53
+    goto :goto_0
+
+    .line 54
+    :cond_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public b(Landroid/content/Context;ILjava/lang/String;Z)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    sget p2, Lir/nasim/DR5;->message_holder_content_bank_transaction:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-eqz p1, :cond_1
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    if-eq v0, v1, :cond_0
+
+    .line 12
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :cond_0
+    check-cast p1, Lir/nasim/DX7;
+
+    .line 15
+    .line 16
+    iget-object v0, p0, Lir/nasim/DX7;->c:Ljava/util/List;
+
+    .line 17
+    .line 18
+    iget-object p1, p1, Lir/nasim/DX7;->c:Ljava/util/List;
+
+    .line 19
+    .line 20
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result p1
+
+    .line 24
+    return p1
+
+    .line 25
+    :cond_1
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 26
+    return p1
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/DX7;->c:Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/util/Objects;->hashCode(Ljava/lang/Object;)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public v()Ljava/util/List;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/DX7;->c:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

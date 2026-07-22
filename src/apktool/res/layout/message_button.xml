@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ir.nasim.features.conversation.messages.content.CircleProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="42.0dp" android:layout_height="42.0dp" android:max="100" />
+    <ImageView android:layout_gravity="center" android:id="@id/image" android:padding="10.0dp" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_margin="10.0dp" android:scaleType="fitCenter" />
+</merge>

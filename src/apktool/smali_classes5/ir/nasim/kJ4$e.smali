@@ -1,0 +1,92 @@
+.class public final Lir/nasim/kJ4$e;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lir/nasim/kJ4;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1c
+    name = "e"
+.end annotation
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+.field private final b:J
+
+.field private final c:Z
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;JZ)V
+    .locals 1
+
+    .line 1
+    const-string v0, "url"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lir/nasim/lq3;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object p1, p0, Lir/nasim/kJ4$e;->a:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iput-wide p2, p0, Lir/nasim/kJ4$e;->b:J
+
+    .line 12
+    .line 13
+    iput-boolean p4, p0, Lir/nasim/kJ4$e;->c:Z
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lir/nasim/kJ4$e;->b:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/kJ4$e;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final c()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lir/nasim/kJ4$e;->c:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method

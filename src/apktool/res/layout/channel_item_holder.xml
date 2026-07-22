@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?background" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="?n300" android:id="@id/title_tv" android:background="?n30" android:paddingLeft="12.0dp" android:paddingTop="5.0dp" android:paddingRight="12.0dp" android:paddingBottom="5.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="?n30" android:paddingHorizontal="12.0dp" android:paddingVertical="5.0dp" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ir.nasim.designsystem.avatar.AvatarViewGlide android:id="@id/avatar" android:layout_width="50.0dp" android:layout_height="50.0dp" android:layout_margin="12.0dp" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="?n500" android:ellipsize="end" android:id="@id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:textDirection="locale" android:paddingEnd="4.0dp" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="13.0sp" android:textColor="?n200" android:id="@id/member_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textDirection="locale" app:layout_constraintStart_toEndOf="@id/avatar" app:layout_constraintTop_toTopOf="@id/avatar" />
+                <TextView android:textSize="13.0sp" android:textColor="?n200" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" | " app:layout_constraintStart_toEndOf="@id/avatar" app:layout_constraintTop_toTopOf="@id/avatar" />
+                <TextView android:textSize="13.0sp" android:textColor="?n200" android:ellipsize="end" android:id="@id/nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textDirection="ltr" app:layout_constraintStart_toEndOf="@id/avatar" app:layout_constraintTop_toTopOf="@id/avatar" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:textSize="14.0sp" android:gravity="center" android:id="@id/join_container" android:paddingLeft="12.0sp" android:paddingTop="4.0dp" android:paddingRight="12.0sp" android:paddingBottom="4.0dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless" android:minWidth="0.0dp" android:minHeight="0.0dp" android:singleLine="true" android:layout_marginStart="12.0dp" android:layout_marginEnd="12.0dp" android:elevation="0.0dp" android:backgroundTint="?colorPrimary" android:paddingHorizontal="12.0sp" android:paddingVertical="4.0dp" app:cardElevation="0.0dp" app:cornerRadius="64.0dp" app:strokeColor="?colorPrimary" app:strokeWidth="2.0dp" />
+    </LinearLayout>
+    <ir.nasim.designsystem.DividerView android:id="@id/divider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="74.0dp" />
+</LinearLayout>

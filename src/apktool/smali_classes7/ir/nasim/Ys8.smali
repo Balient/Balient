@@ -1,0 +1,13 @@
+.class public interface abstract Lir/nasim/Ys8;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lir/nasim/Ys8$a;,
+        Lir/nasim/Ys8$b;,
+        Lir/nasim/Ys8$c;
+    }
+.end annotation

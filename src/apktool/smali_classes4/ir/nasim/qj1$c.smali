@@ -1,0 +1,144 @@
+.class final Lir/nasim/qj1$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/eN2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lir/nasim/qj1;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# static fields
+.field public static final a:Lir/nasim/qj1$c;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lir/nasim/qj1$c;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lir/nasim/qj1$c;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lir/nasim/qj1$c;->a:Lir/nasim/qj1$c;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lir/nasim/Fv;Lir/nasim/Ql1;I)V
+    .locals 0
+
+    .line 1
+    const-string p3, "$this$AnimatedVisibility"
+
+    .line 2
+    .line 3
+    invoke-static {p1, p3}, Lir/nasim/lq3;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object p1, Lir/nasim/ps4;->a:Lir/nasim/ps4$a;
+
+    .line 7
+    .line 8
+    const/16 p3, 0xc
+
+    .line 9
+    .line 10
+    int-to-float p3, p3
+
+    .line 11
+    invoke-static {p3}, Lir/nasim/k82;->n(F)F
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p3
+
+    .line 15
+    invoke-static {p1, p3}, Landroidx/compose/foundation/layout/d;->t(Lir/nasim/ps4;F)Lir/nasim/ps4;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    const/4 p3, 0x6
+
+    .line 20
+    invoke-static {p1, p2, p3}, Lir/nasim/O37;->a(Lir/nasim/ps4;Lir/nasim/Ql1;I)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+.end method
+
+.method public bridge synthetic n(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lir/nasim/Fv;
+
+    .line 2
+    .line 3
+    check-cast p2, Lir/nasim/Ql1;
+
+    .line 4
+    .line 5
+    check-cast p3, Ljava/lang/Number;
+
+    .line 6
+    .line 7
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result p3
+
+    .line 11
+    invoke-virtual {p0, p1, p2, p3}, Lir/nasim/qj1$c;->a(Lir/nasim/Fv;Lir/nasim/Ql1;I)V
+
+    .line 12
+    .line 13
+    .line 14
+    sget-object p1, Lir/nasim/D48;->a:Lir/nasim/D48;
+
+    .line 15
+    .line 16
+    return-object p1
+.end method

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow" android:layout_marginStart="16.0dp" />
+    <TextView android:textSize="13.0sp" android:id="@id/txtTootTip" android:background="@drawable/bg_tooltip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/error_nationalId" android:fontFamily="@font/arad_regular" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" />
+</FrameLayout>

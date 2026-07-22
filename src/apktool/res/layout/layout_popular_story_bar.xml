@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/status_loading_back" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ir.nasim.story.ui.viewfragment.views.ReactionButton android:id="@id/reactionBtn" android:layout_width="28.0dp" android:layout_height="28.0dp" android:layout_marginStart="16.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/color3_2" android:gravity="center" android:id="@id/tvReactionCount" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/arad_regular" android:layout_marginStart="6.0dp" android:textFontWeight="500" />
+    <View android:id="@id/divider" android:background="#8e8e8e" android:visibility="invisible" android:layout_width="1.0dp" android:layout_height="20.0dp" android:layout_marginStart="8.0dp" />
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/ivViewCount" android:visibility="invisible" android:layout_width="28.0dp" android:layout_height="28.0dp" android:src="@drawable/ic_story_view" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_marginStart="8.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/color3_2" android:gravity="center" android:id="@id/tvViewCount" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/arad_regular" android:layout_marginStart="6.0dp" android:textFontWeight="500" />
+</merge>

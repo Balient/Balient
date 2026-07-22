@@ -1,0 +1,54 @@
+.class public final synthetic Lir/nasim/EQ6;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/tgwidgets/editor/ui/Components/Paint/r;
+
+.field public final synthetic b:Lir/nasim/tgwidgets/editor/ui/Components/Paint/q;
+
+.field public final synthetic c:I
+
+.field public final synthetic d:Ljava/util/ArrayList;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/tgwidgets/editor/ui/Components/Paint/r;Lir/nasim/tgwidgets/editor/ui/Components/Paint/q;ILjava/util/ArrayList;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/EQ6;->a:Lir/nasim/tgwidgets/editor/ui/Components/Paint/r;
+
+    iput-object p2, p0, Lir/nasim/EQ6;->b:Lir/nasim/tgwidgets/editor/ui/Components/Paint/q;
+
+    iput p3, p0, Lir/nasim/EQ6;->c:I
+
+    iput-object p4, p0, Lir/nasim/EQ6;->d:Ljava/util/ArrayList;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/EQ6;->a:Lir/nasim/tgwidgets/editor/ui/Components/Paint/r;
+
+    iget-object v1, p0, Lir/nasim/EQ6;->b:Lir/nasim/tgwidgets/editor/ui/Components/Paint/q;
+
+    iget v2, p0, Lir/nasim/EQ6;->c:I
+
+    iget-object v3, p0, Lir/nasim/EQ6;->d:Ljava/util/ArrayList;
+
+    invoke-static {v0, v1, v2, v3}, Lir/nasim/tgwidgets/editor/ui/Components/Paint/r;->a(Lir/nasim/tgwidgets/editor/ui/Components/Paint/r;Lir/nasim/tgwidgets/editor/ui/Components/Paint/q;ILjava/util/ArrayList;)V
+
+    return-void
+.end method

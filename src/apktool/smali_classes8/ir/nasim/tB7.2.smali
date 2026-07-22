@@ -1,0 +1,71 @@
+.class public Lir/nasim/tB7;
+.super Lir/nasim/Nt7;
+.source "SourceFile"
+
+
+# instance fields
+.field public e:J
+
+.field public f:Lir/nasim/fC7;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lir/nasim/Nt7;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public b(Lir/nasim/N1;Z)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p1, p2}, Lir/nasim/N1;->f(Z)J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    iput-wide v0, p0, Lir/nasim/tB7;->e:J
+
+    .line 6
+    .line 7
+    invoke-virtual {p1, p2}, Lir/nasim/N1;->e(Z)I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    invoke-static {p1, v0, p2}, Lir/nasim/fC7;->d(Lir/nasim/N1;IZ)Lir/nasim/fC7;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    iput-object p1, p0, Lir/nasim/tB7;->f:Lir/nasim/fC7;
+
+    .line 16
+    .line 17
+    return-void
+.end method

@@ -1,0 +1,122 @@
+.class public final synthetic Lir/nasim/lX4;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/eN2;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/SN7;
+
+.field public final synthetic b:Z
+
+.field public final synthetic c:Z
+
+.field public final synthetic d:Lir/nasim/fs8;
+
+.field public final synthetic e:Lir/nasim/Wx4;
+
+.field public final synthetic f:Z
+
+.field public final synthetic g:Lir/nasim/cN2;
+
+.field public final synthetic h:Lir/nasim/cN2;
+
+.field public final synthetic i:Lir/nasim/cN2;
+
+.field public final synthetic j:Lir/nasim/cN2;
+
+.field public final synthetic k:Lir/nasim/rQ6;
+
+.field public final synthetic l:Lir/nasim/HL7;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/SN7;ZZLir/nasim/fs8;Lir/nasim/Wx4;ZLir/nasim/cN2;Lir/nasim/cN2;Lir/nasim/cN2;Lir/nasim/cN2;Lir/nasim/rQ6;Lir/nasim/HL7;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/lX4;->a:Lir/nasim/SN7;
+
+    iput-boolean p2, p0, Lir/nasim/lX4;->b:Z
+
+    iput-boolean p3, p0, Lir/nasim/lX4;->c:Z
+
+    iput-object p4, p0, Lir/nasim/lX4;->d:Lir/nasim/fs8;
+
+    iput-object p5, p0, Lir/nasim/lX4;->e:Lir/nasim/Wx4;
+
+    iput-boolean p6, p0, Lir/nasim/lX4;->f:Z
+
+    iput-object p7, p0, Lir/nasim/lX4;->g:Lir/nasim/cN2;
+
+    iput-object p8, p0, Lir/nasim/lX4;->h:Lir/nasim/cN2;
+
+    iput-object p9, p0, Lir/nasim/lX4;->i:Lir/nasim/cN2;
+
+    iput-object p10, p0, Lir/nasim/lX4;->j:Lir/nasim/cN2;
+
+    iput-object p11, p0, Lir/nasim/lX4;->k:Lir/nasim/rQ6;
+
+    iput-object p12, p0, Lir/nasim/lX4;->l:Lir/nasim/HL7;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final n(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 16
+
+    .line 1
+    move-object/from16 v0, p0
+
+    iget-object v1, v0, Lir/nasim/lX4;->a:Lir/nasim/SN7;
+
+    iget-boolean v2, v0, Lir/nasim/lX4;->b:Z
+
+    iget-boolean v3, v0, Lir/nasim/lX4;->c:Z
+
+    iget-object v4, v0, Lir/nasim/lX4;->d:Lir/nasim/fs8;
+
+    iget-object v5, v0, Lir/nasim/lX4;->e:Lir/nasim/Wx4;
+
+    iget-boolean v6, v0, Lir/nasim/lX4;->f:Z
+
+    iget-object v7, v0, Lir/nasim/lX4;->g:Lir/nasim/cN2;
+
+    iget-object v8, v0, Lir/nasim/lX4;->h:Lir/nasim/cN2;
+
+    iget-object v9, v0, Lir/nasim/lX4;->i:Lir/nasim/cN2;
+
+    iget-object v10, v0, Lir/nasim/lX4;->j:Lir/nasim/cN2;
+
+    iget-object v11, v0, Lir/nasim/lX4;->k:Lir/nasim/rQ6;
+
+    iget-object v12, v0, Lir/nasim/lX4;->l:Lir/nasim/HL7;
+
+    move-object/from16 v13, p1
+
+    check-cast v13, Lir/nasim/cN2;
+
+    move-object/from16 v14, p2
+
+    check-cast v14, Lir/nasim/Ql1;
+
+    move-object/from16 v15, p3
+
+    check-cast v15, Ljava/lang/Integer;
+
+    invoke-virtual {v15}, Ljava/lang/Integer;->intValue()I
+
+    move-result v15
+
+    invoke-static/range {v1 .. v15}, Lir/nasim/uX4;->g(Lir/nasim/SN7;ZZLir/nasim/fs8;Lir/nasim/Wx4;ZLir/nasim/cN2;Lir/nasim/cN2;Lir/nasim/cN2;Lir/nasim/cN2;Lir/nasim/rQ6;Lir/nasim/HL7;Lir/nasim/cN2;Lir/nasim/Ql1;I)Lir/nasim/D48;
+
+    move-result-object v1
+
+    return-object v1
+.end method

@@ -1,0 +1,42 @@
+.class public final synthetic Lir/nasim/iG5;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field public final synthetic a:Lir/nasim/CH5;
+
+.field public final synthetic b:Landroid/app/Dialog;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lir/nasim/CH5;Landroid/app/Dialog;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lir/nasim/iG5;->a:Lir/nasim/CH5;
+
+    iput-object p2, p0, Lir/nasim/iG5;->b:Landroid/app/Dialog;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/iG5;->a:Lir/nasim/CH5;
+
+    iget-object v1, p0, Lir/nasim/iG5;->b:Landroid/app/Dialog;
+
+    invoke-static {v0, v1, p1}, Lir/nasim/CH5;->Q9(Lir/nasim/CH5;Landroid/app/Dialog;Landroid/view/View;)V
+
+    return-void
+.end method

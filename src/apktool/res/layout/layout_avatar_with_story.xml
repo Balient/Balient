@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ir.nasim.designsystem.avatar.AvatarViewGlide android:layout_gravity="center" android:id="@id/originalAvatar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Circle" />
+    <ir.nasim.designsystem.avatar.AvatarViewGlide android:layout_gravity="center" android:id="@id/avatarInsideRing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Circle" />
+    <ImageView android:layout_gravity="center" android:id="@id/ring" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="end|bottom" android:id="@id/avatar_badge" android:visibility="gone" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_margin="4.0dp" android:src="@drawable/ic_live_badge" />
+    <View android:layout_gravity="end|bottom" android:id="@id/avatar_presence" android:background="@drawable/ic_online_circle" android:visibility="gone" android:layout_width="12.0dp" android:layout_height="12.0dp" android:layout_margin="2.0dp" />
+</FrameLayout>

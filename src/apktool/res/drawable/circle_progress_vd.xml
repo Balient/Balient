@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="15.0dp" android:width="15.0dp" android:viewportWidth="15.333" android:viewportHeight="15.333"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/webViewLoadingCircleProgress" android:pathData="M7.659,15.317C3.432,15.317 0.001,11.886 0.001,7.66C0.001,3.428 3.432,0.001 7.659,0.001C11.89,0.001 15.316,3.428 15.316,7.66C15.316,11.886 11.89,15.317 7.659,15.317ZM7.659,2.005C4.537,2.005 2.004,4.538 2.004,7.66C2.004,10.781 4.537,13.314 7.659,13.314C10.78,13.314 13.314,10.781 13.314,7.66C13.314,4.538 10.78,2.005 7.659,2.005Z" android:fillAlpha="0.4" android:fillType="evenOdd" />
+</vector>

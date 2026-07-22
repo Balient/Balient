@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/tv_country_name" android:paddingRight="16.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.7" />
+    <TextView android:textSize="16.0sp" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/tv_country_code" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.3" />
+</LinearLayout>

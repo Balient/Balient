@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/wallet_pay_tab_views" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wallet_pay_tab_layout" />
+    <include android:id="@id/wallet_charge_type_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wallet_charge_layout" />
+    <include android:id="@id/wallet_pay_transfer_type_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wallet_pay_transfer_type_layout" />
+    <include android:id="@id/wallet_pay_verify_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/wallet_pay_layout_verify" />
+    <View android:id="@id/loading_shadow_1" android:background="@color/t2" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" wallet:layout_constraintBottom_toBottomOf="parent" wallet:layout_constraintLeft_toLeftOf="parent" wallet:layout_constraintRight_toRightOf="parent" wallet:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/progress_bar_view_1" android:visibility="gone" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_centerInParent="true" wallet:layout_constraintBottom_toBottomOf="parent" wallet:layout_constraintLeft_toLeftOf="parent" wallet:layout_constraintRight_toRightOf="parent" wallet:layout_constraintTop_toTopOf="parent" layout="@layout/bank_load_component" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/AlertDialogStyle" android:orientation="vertical" android:background="@color/color3" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="locale"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/content_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackgroundBorderless">
+        <ir.nasim.designsystem.avatar.AvatarViewGlide android:id="@id/avatar" android:layout_width="44.0dp" android:layout_height="44.0dp" android:layout_marginTop="12.0dp" android:layout_marginBottom="12.0dp" android:layout_marginStart="12.0dp" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="8.0dp">
+            <TextView android:textSize="16.0sp" android:textColor="@color/color9" android:id="@id/name_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dp">
+                <TextView android:textSize="12.0sp" android:textColor="@color/color8" android:id="@id/presence_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="4.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ir.nasim.designsystem.DividerView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="68.0dp" />
+</LinearLayout>

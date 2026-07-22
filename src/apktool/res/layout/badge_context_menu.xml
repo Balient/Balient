@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorRoot" android:background="@drawable/context_menu_background" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:id="@id/llTabContainer" android:background="@drawable/context_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layoutDirection="ltr">
+        <ir.nasim.premium.ui.badge.tab.TabLayoutRecycler android:id="@id/tlrBadges" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="35.0dp" android:layoutDirection="locale" />
+        <View android:background="?n30" android:layout_width="match_parent" android:layout_height="1.0dp" />
+        <ir.nasim.premium.ui.badge.BadgeRecyclerView android:id="@id/rcBadges" android:paddingLeft="5.25dp" android:paddingRight="5.25dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="locale" android:paddingHorizontal="5.25dp" app:layout_anchor="@id/llTabContainer" app:layout_anchorGravity="bottom" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

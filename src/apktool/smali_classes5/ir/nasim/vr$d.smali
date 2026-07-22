@@ -1,0 +1,138 @@
+.class Lir/nasim/vr$d;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/Zj0$b;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lir/nasim/vr;->b2(Lir/nasim/Ld5;Ljava/lang/Long;Ljava/lang/Long;)Lir/nasim/Zj0;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lir/nasim/Ld5;
+
+.field final synthetic b:Ljava/lang/Long;
+
+.field final synthetic c:Ljava/lang/Long;
+
+.field final synthetic d:Lir/nasim/vr;
+
+
+# direct methods
+.method constructor <init>(Lir/nasim/vr;Lir/nasim/Ld5;Ljava/lang/Long;Ljava/lang/Long;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lir/nasim/vr$d;->d:Lir/nasim/vr;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lir/nasim/vr$d;->a:Lir/nasim/Ld5;
+
+    .line 4
+    .line 5
+    iput-object p3, p0, Lir/nasim/vr$d;->b:Ljava/lang/Long;
+
+    .line 6
+    .line 7
+    iput-object p4, p0, Lir/nasim/vr$d;->c:Ljava/lang/Long;
+
+    .line 8
+    .line 9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic a(Ljava/lang/Object;I)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lir/nasim/wd5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lir/nasim/vr$d;->c(Lir/nasim/wd5;I)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public b()V
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/vr$d;->d:Lir/nasim/vr;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Lir/nasim/Ip4;->a:Lir/nasim/Jt4;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lir/nasim/Jt4;->w()Lir/nasim/core/modules/banking/BankingModule;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    iget-object v2, p0, Lir/nasim/vr$d;->a:Lir/nasim/Ld5;
+
+    .line 10
+    .line 11
+    iget-object v0, p0, Lir/nasim/vr$d;->b:Ljava/lang/Long;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-wide v3
+
+    .line 17
+    iget-object v0, p0, Lir/nasim/vr$d;->c:Ljava/lang/Long;
+
+    .line 18
+    .line 19
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-wide v5
+
+    .line 23
+    invoke-virtual/range {v1 .. v6}, Lir/nasim/core/modules/banking/BankingModule;->A2(Lir/nasim/Ld5;JJ)Lir/nasim/DJ5;
+
+    .line 24
+    .line 25
+    .line 26
+    return-void
+.end method
+
+.method public c(Lir/nasim/wd5;I)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method

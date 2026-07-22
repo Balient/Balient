@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/dialogListTab" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/dialogsList" android:background="@color/background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/searchEmptyState" android:paddingBottom="34.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="8.0dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_width="48.0dp" android:layout_height="48.0dp" app:srcCompat="@drawable/search" />
+        <TextView android:textColor="?n200" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/market_search_no_result" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/emptyStatePlaceHolder" android:paddingBottom="34.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:elevation="8.0dp">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/emptyStateIcon" android:layout_width="48.0dp" android:layout_height="48.0dp" app:srcCompat="@drawable/empty_dialogs_state_placeholder" />
+        <TextView android:textColor="?n200" android:id="@id/emptyStateText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/no_unread_conversations" />
+    </LinearLayout>
+</FrameLayout>

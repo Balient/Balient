@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="rtl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView android:gravity="center" android:layout_gravity="center" android:layout_width="74.0dp" android:layout_height="74.0dp" app:cardBackgroundColor="@color/c5_2" app:cardCornerRadius="74.0dp" app:cardElevation="10.0dp"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:gravity="center" android:layout_width="74.0dp" android:layout_height="74.0dp">
+            <ProgressBar android:id="@id/progressBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/circle_loading" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

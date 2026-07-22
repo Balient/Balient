@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ir.nasim.components.appbar.view.BaleToolbar android:id="@id/add_group_member_toolbar" android:layout_width="match_parent" android:layout_height="?actionBarSize" app:title="@string/group_add_title" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <EditText android:textSize="16.0sp" android:id="@id/searchField" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp" android:minHeight="56.0dp" android:hint="@string/create_group_search_hint" android:maxLines="3" android:drawableStart="@drawable/ic_contact_picker_search" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/collection" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" />
+</LinearLayout>

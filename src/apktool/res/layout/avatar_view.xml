@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/picker_black" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.chrisbanes.photoview.PhotoView android:id="@id/avatar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="60.0dp" android:scaleType="fitCenter" android:adjustViewBounds="false" />
+    <com.droidkit.progress.IndeterminateView android:layout_gravity="top" android:id="@id/uploadProgress" android:layout_width="match_parent" android:layout_height="wrap_content" />
+</FrameLayout>

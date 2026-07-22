@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ir.nasim.features.conversation.messages.content.adapter.view.BubblePlayerView android:layout_width="match_parent" android:layout_height="match_parent" app:auto_show="false" app:hide_on_touch="false" app:keep_content_on_player_reset="true" app:player_layout_id="@layout/stream_bubble_exo_player_view" app:resize_mode="zoom" app:surface_type="texture_view" app:use_controller="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

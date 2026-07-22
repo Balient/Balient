@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/status_loading_back" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:id="@id/progressBar" android:layout_width="16.0dp" android:layout_height="16.0dp" android:layout_marginTop="16.0dp" android:layout_marginBottom="16.0dp" android:layout_marginStart="16.0dp" android:indeterminateTint="@color/white" app:indicatorColor="@color/n500_fixed" app:indicatorSize="20.0dp" app:trackColor="@color/n100_fixed" app:trackThickness="2.0dp" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="14.0sp" android:textColor="@color/s11" android:id="@id/noticeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sending_story" android:fontFamily="@font/arad_regular" android:layout_marginStart="8.0dp" />
+</merge>

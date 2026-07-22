@@ -1,0 +1,19 @@
+.class public interface abstract Lir/nasim/tgwidgets/editor/ui/Components/PhotoFilterBlurControl$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lir/nasim/tgwidgets/editor/ui/Components/PhotoFilterBlurControl;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "c"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lir/nasim/rt5;FFF)V
+.end method

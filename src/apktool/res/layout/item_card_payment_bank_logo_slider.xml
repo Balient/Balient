@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/ic_card_payment_background_bank_logo_slider_item" android:layout_width="40.0dp" android:layout_height="40.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/logo" android:padding="4.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bank_melli" android:contentDescription="@null" />
+</LinearLayout>

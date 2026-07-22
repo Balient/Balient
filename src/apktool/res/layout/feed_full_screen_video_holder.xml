@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/feed_video_container" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <com.google.android.exoplayer2.ui.AspectRatioFrameLayout android:layout_gravity="center" android:id="@id/aspectRatioFrameLayout" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextureView android:id="@id/feed_player_view" android:layout_width="match_parent" android:layout_height="match_parent" app:use_controller="false" />
+        </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+        <ImageView android:id="@id/feed_video_thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/feed_state_container_video" android:background="@drawable/circle_bubble_secondary_color" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/feed_video_container" app:layout_constraintEnd_toEndOf="@id/feed_video_container" app:layout_constraintStart_toStartOf="@id/feed_video_container" app:layout_constraintTop_toTopOf="@id/feed_video_container">
+        <ir.nasim.features.conversation.messages.content.CircleProgressBar android:layout_gravity="center" android:id="@id/feed_progress_video" android:visibility="gone" android:layout_width="44.0dp" android:layout_height="44.0dp" android:max="100" />
+        <ImageView android:layout_gravity="center" android:id="@id/feed_state_video_iv" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_feed_retry" app:tint="?colorOnPrimary" />
+    </FrameLayout>
+    <ImageView android:id="@id/feed_play_pause" android:background="@drawable/play_pause_drawable_bg" android:visibility="gone" android:layout_width="60.0dp" android:layout_height="60.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

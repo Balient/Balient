@@ -1,0 +1,539 @@
+.class final Lir/nasim/HS2$b;
+.super Lir/nasim/Kq7;
+.source "SourceFile"
+
+# interfaces
+.implements Lir/nasim/cN2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lir/nasim/HS2;->d(Lir/nasim/Bx6;Lir/nasim/Sw1;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field b:Ljava/lang/Object;
+
+.field c:I
+
+.field final synthetic d:Lir/nasim/HS2;
+
+.field final synthetic e:Lir/nasim/Bx6;
+
+
+# direct methods
+.method constructor <init>(Lir/nasim/HS2;Lir/nasim/Bx6;Lir/nasim/Sw1;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lir/nasim/HS2$b;->d:Lir/nasim/HS2;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lir/nasim/HS2$b;->e:Lir/nasim/Bx6;
+
+    .line 4
+    .line 5
+    const/4 p1, 0x2
+
+    .line 6
+    invoke-direct {p0, p1, p3}, Lir/nasim/Kq7;-><init>(ILir/nasim/Sw1;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lir/nasim/Sw1;)Lir/nasim/Sw1;
+    .locals 2
+
+    .line 1
+    new-instance p1, Lir/nasim/HS2$b;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lir/nasim/HS2$b;->d:Lir/nasim/HS2;
+
+    .line 4
+    .line 5
+    iget-object v1, p0, Lir/nasim/HS2$b;->e:Lir/nasim/Bx6;
+
+    .line 6
+    .line 7
+    invoke-direct {p1, v0, v1, p2}, Lir/nasim/HS2$b;-><init>(Lir/nasim/HS2;Lir/nasim/Bx6;Lir/nasim/Sw1;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lir/nasim/Vz1;
+
+    .line 2
+    .line 3
+    check-cast p2, Lir/nasim/Sw1;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, Lir/nasim/HS2$b;->t(Lir/nasim/Vz1;Lir/nasim/Sw1;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
+
+    .line 1
+    invoke-static {}, Lir/nasim/mq3;->f()Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget v1, p0, Lir/nasim/HS2$b;->c:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x3
+
+    .line 8
+    const/4 v3, 0x2
+
+    .line 9
+    const/4 v4, 0x1
+
+    .line 10
+    if-eqz v1, :cond_3
+
+    .line 11
+    .line 12
+    if-eq v1, v4, :cond_2
+
+    .line 13
+    .line 14
+    if-eq v1, v3, :cond_1
+
+    .line 15
+    .line 16
+    if-ne v1, v2, :cond_0
+
+    .line 17
+    .line 18
+    iget-object v0, p0, Lir/nasim/HS2$b;->b:Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    check-cast v0, Ljava/util/List;
+
+    .line 21
+    .line 22
+    invoke-static {p1}, Lir/nasim/He6;->b(Ljava/lang/Object;)V
+
+    .line 23
+    .line 24
+    .line 25
+    goto/16 :goto_3
+
+    .line 26
+    .line 27
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 28
+    .line 29
+    const-string v0, "call to \'resume\' before \'invoke\' with coroutine"
+
+    .line 30
+    .line 31
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 32
+    .line 33
+    .line 34
+    throw p1
+
+    .line 35
+    :cond_1
+    iget-object v1, p0, Lir/nasim/HS2$b;->b:Ljava/lang/Object;
+
+    .line 36
+    .line 37
+    check-cast v1, Ljava/util/List;
+
+    .line 38
+    .line 39
+    invoke-static {p1}, Lir/nasim/He6;->b(Ljava/lang/Object;)V
+
+    .line 40
+    .line 41
+    .line 42
+    goto :goto_1
+
+    .line 43
+    :cond_2
+    invoke-static {p1}, Lir/nasim/He6;->b(Ljava/lang/Object;)V
+
+    .line 44
+    .line 45
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :cond_3
+    invoke-static {p1}, Lir/nasim/He6;->b(Ljava/lang/Object;)V
+
+    .line 48
+    .line 49
+    .line 50
+    iget-object p1, p0, Lir/nasim/HS2$b;->d:Lir/nasim/HS2;
+
+    .line 51
+    .line 52
+    invoke-static {p1}, Lir/nasim/HS2;->c(Lir/nasim/HS2;)Lir/nasim/ye5;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    iget-object v1, p0, Lir/nasim/HS2$b;->e:Lir/nasim/Bx6;
+
+    .line 57
+    .line 58
+    iput v4, p0, Lir/nasim/HS2$b;->c:I
+
+    .line 59
+    .line 60
+    invoke-interface {p1, v1, p0}, Lir/nasim/ye5;->c(Lir/nasim/Bx6;Lir/nasim/Sw1;)Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object p1
+
+    .line 64
+    if-ne p1, v0, :cond_4
+
+    .line 65
+    .line 66
+    return-object v0
+
+    .line 67
+    :cond_4
+    :goto_0
+    move-object v1, p1
+
+    .line 68
+    check-cast v1, Ljava/util/List;
+
+    .line 69
+    .line 70
+    iget-object p1, p0, Lir/nasim/HS2$b;->d:Lir/nasim/HS2;
+
+    .line 71
+    .line 72
+    invoke-static {p1}, Lir/nasim/HS2;->a(Lir/nasim/HS2;)Lir/nasim/mS2;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object p1
+
+    .line 76
+    iput-object v1, p0, Lir/nasim/HS2$b;->b:Ljava/lang/Object;
+
+    .line 77
+    .line 78
+    iput v3, p0, Lir/nasim/HS2$b;->c:I
+
+    .line 79
+    .line 80
+    invoke-virtual {p1, p0}, Lir/nasim/mS2;->b(Lir/nasim/Sw1;)Ljava/lang/Object;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object p1
+
+    .line 84
+    if-ne p1, v0, :cond_5
+
+    .line 85
+    .line 86
+    return-object v0
+
+    .line 87
+    :cond_5
+    :goto_1
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 88
+    .line 89
+    const/16 v3, 0xa
+
+    .line 90
+    .line 91
+    invoke-static {p1, v3}, Lir/nasim/N51;->x(Ljava/lang/Iterable;I)I
+
+    .line 92
+    .line 93
+    .line 94
+    move-result v4
+
+    .line 95
+    invoke-static {v4}, Lir/nasim/M24;->f(I)I
+
+    .line 96
+    .line 97
+    .line 98
+    move-result v4
+
+    .line 99
+    const/16 v5, 0x10
+
+    .line 100
+    .line 101
+    invoke-static {v4, v5}, Lir/nasim/WT5;->e(II)I
+
+    .line 102
+    .line 103
+    .line 104
+    move-result v4
+
+    .line 105
+    new-instance v5, Ljava/util/LinkedHashMap;
+
+    .line 106
+    .line 107
+    invoke-direct {v5, v4}, Ljava/util/LinkedHashMap;-><init>(I)V
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object p1
+
+    .line 114
+    :goto_2
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 115
+    .line 116
+    .line 117
+    move-result v4
+
+    .line 118
+    if-eqz v4, :cond_6
+
+    .line 119
+    .line 120
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 121
+    .line 122
+    .line 123
+    move-result-object v4
+
+    .line 124
+    check-cast v4, Lir/nasim/ee5;
+
+    .line 125
+    .line 126
+    invoke-virtual {v4}, Lir/nasim/ee5;->e()J
+
+    .line 127
+    .line 128
+    .line 129
+    move-result-wide v6
+
+    .line 130
+    invoke-static {v6, v7}, Lir/nasim/Bs0;->e(J)Ljava/lang/Long;
+
+    .line 131
+    .line 132
+    .line 133
+    move-result-object v6
+
+    .line 134
+    invoke-virtual {v4}, Lir/nasim/ee5;->c()J
+
+    .line 135
+    .line 136
+    .line 137
+    move-result-wide v7
+
+    .line 138
+    invoke-static {v7, v8}, Lir/nasim/Bs0;->e(J)Ljava/lang/Long;
+
+    .line 139
+    .line 140
+    .line 141
+    move-result-object v4
+
+    .line 142
+    invoke-static {v6, v4}, Lir/nasim/w08;->a(Ljava/lang/Object;Ljava/lang/Object;)Lir/nasim/s75;
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object v4
+
+    .line 146
+    invoke-virtual {v4}, Lir/nasim/s75;->f()Ljava/lang/Object;
+
+    .line 147
+    .line 148
+    .line 149
+    move-result-object v6
+
+    .line 150
+    invoke-virtual {v4}, Lir/nasim/s75;->g()Ljava/lang/Object;
+
+    .line 151
+    .line 152
+    .line 153
+    move-result-object v4
+
+    .line 154
+    invoke-interface {v5, v6, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 155
+    .line 156
+    .line 157
+    goto :goto_2
+
+    .line 158
+    :cond_6
+    check-cast v1, Ljava/lang/Iterable;
+
+    .line 159
+    .line 160
+    new-instance p1, Lir/nasim/HS2$b$a;
+
+    .line 161
+    .line 162
+    invoke-direct {p1, v5}, Lir/nasim/HS2$b$a;-><init>(Ljava/util/Map;)V
+
+    .line 163
+    .line 164
+    .line 165
+    invoke-static {v1, p1}, Lir/nasim/N51;->Z0(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+
+    .line 166
+    .line 167
+    .line 168
+    move-result-object p1
+
+    .line 169
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 170
+    .line 171
+    invoke-static {p1, v3}, Lir/nasim/N51;->e1(Ljava/lang/Iterable;I)Ljava/util/List;
+
+    .line 172
+    .line 173
+    .line 174
+    move-result-object p1
+
+    .line 175
+    iget-object v1, p0, Lir/nasim/HS2$b;->d:Lir/nasim/HS2;
+
+    .line 176
+    .line 177
+    invoke-static {v1}, Lir/nasim/HS2;->b(Lir/nasim/HS2;)Lir/nasim/pU3;
+
+    .line 178
+    .line 179
+    .line 180
+    move-result-object v1
+
+    .line 181
+    iput-object p1, p0, Lir/nasim/HS2$b;->b:Ljava/lang/Object;
+
+    .line 182
+    .line 183
+    iput v2, p0, Lir/nasim/HS2$b;->c:I
+
+    .line 184
+    .line 185
+    invoke-virtual {v1, p1, p0}, Lir/nasim/pU3;->e(Ljava/util/List;Lir/nasim/Sw1;)Ljava/lang/Object;
+
+    .line 186
+    .line 187
+    .line 188
+    move-result-object v1
+
+    .line 189
+    if-ne v1, v0, :cond_7
+
+    .line 190
+    .line 191
+    return-object v0
+
+    .line 192
+    :cond_7
+    move-object v0, p1
+
+    .line 193
+    :goto_3
+    return-object v0
+.end method
+
+.method public final t(Lir/nasim/Vz1;Lir/nasim/Sw1;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lir/nasim/HS2$b;->create(Ljava/lang/Object;Lir/nasim/Sw1;)Lir/nasim/Sw1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    check-cast p1, Lir/nasim/HS2$b;
+
+    .line 6
+    .line 7
+    sget-object p2, Lir/nasim/D48;->a:Lir/nasim/D48;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, p2}, Lir/nasim/HS2$b;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    return-object p1
+.end method

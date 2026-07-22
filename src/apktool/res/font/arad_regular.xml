@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <font
+        android:font="@font/arad_fdvf"
+        android:fontStyle="normal"
+        android:fontVariationSettings="'wght' 400"
+        android:fontWeight="400"
+        app:font="@font/arad_fdvf"
+        app:fontStyle="normal"
+        app:fontVariationSettings="'wght' 400"
+        app:fontWeight="400" />
+</font-family>

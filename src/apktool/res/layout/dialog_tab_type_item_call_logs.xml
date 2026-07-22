@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dp" android:textColor="@color/tabBarNavBarNormalObject" android:gravity="start" android:layout_gravity="center" android:id="@id/tv_dialog_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:drawablePadding="5.0dp" android:fontFamily="@font/arad_medium" android:drawableTint="@color/tabBarNavBarNormalObject" />
+    <View android:layout_gravity="end" android:background="@color/dialogDivider3" android:layout_width="1.0dp" android:layout_height="match_parent" android:layout_marginTop="10.0dp" android:layout_marginBottom="10.0dp" />
+</FrameLayout>

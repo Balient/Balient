@@ -1,0 +1,22 @@
+.class public interface abstract Lir/nasim/T02$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lir/nasim/T02;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "a"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(Lir/nasim/S02;Lir/nasim/T02$b;)V
+.end method
+
+.method public abstract b()J
+.end method

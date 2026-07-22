@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/menu_group_normal" android:visible="false">
+        <item android:icon="@drawable/ic_more_vert_white_24dp" android:id="@id/more_item" android:title="" app:showAsAction="always" />
+    </group>
+    <group android:id="@id/menu_group_action_mode" android:visible="false">
+        <item android:icon="@drawable/magic_ai" android:id="@id/chat_action_ai" android:title="@string/messages_action_ask_ai_message" app:iconTint="@color/color3_2" app:showAsAction="always" />
+        <item android:icon="@drawable/edit" android:id="@id/chat_action_edit" android:title="@string/messages_action_edit" app:iconTint="@color/color3_2" app:showAsAction="always" />
+        <item android:icon="@drawable/reply" android:id="@id/chat_action_reply" android:title="@string/reply_label" app:iconTint="@color/color3_2" app:showAsAction="always" />
+        <item android:icon="@drawable/copy" android:id="@id/chat_action_copy" android:title="@string/menu_copy" app:iconTint="@color/color3_2" app:showAsAction="always" />
+        <item android:icon="@drawable/forward_e" android:id="@id/chat_action_forward" android:title="@string/menu_forward" app:iconTint="@color/color3_2" app:showAsAction="always" />
+        <item android:icon="@drawable/delete" android:id="@id/chat_action_delete" android:title="@string/menu_delete" app:iconTint="@color/color3_2" app:showAsAction="always" />
+    </group>
+</menu>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:backgroundTint="?context_menu_background" app:strokeColor="@color/primary" app:strokeWidth="?context_menu_border_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/context_item" android:background="@drawable/context_menu_action_item_background" android:padding="12.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/iconImageView" android:layout_width="24.0dp" android:layout_height="24.0dp" android:tint="?context_menu_icon_tint" />
+        <TextView android:textAppearance="@style/TextAppearance.Bale.ContextMenu.Title" android:id="@id/titleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dp" style="@style/Bale.ContextMenu.TextView" />
+        <TextView android:textAppearance="@style/TextAppearance.Bale.ContextMenu.Detail" android:gravity="start" android:id="@id/detailTextView" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="textEnd" android:layout_marginStart="4.0dp" style="@style/Bale.ContextMenu.TextView" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@dimen/spacing_12" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

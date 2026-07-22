@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/marker_view_root" android:background="@drawable/right_tooltip" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dp" android:layoutDirection="rtl"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/baleSnackbarText" android:id="@id/date_marker_view_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="12.0dp" android:fontFamily="@font/arad_regular" android:layout_marginHorizontal="12.0dp" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/baleSnackbarText" android:id="@id/amount_marker_view_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dp" android:layout_marginRight="12.0dp" android:layout_marginBottom="8.0dp" android:fontFamily="@font/arad_regular" android:layout_marginHorizontal="12.0dp" />
+</LinearLayout>

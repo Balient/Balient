@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:theme="@style/Theme.Bale.Base" android:id="@id/story_layout" android:background="@color/transparent" android:paddingBottom="8.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/story_collapse_toolbar_height" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rcStoriesList" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" />
+</FrameLayout>

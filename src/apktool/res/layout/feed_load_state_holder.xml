@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?background" android:layout_width="match_parent" android:layout_height="56.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.compose.ui.platform.ComposeView android:layout_gravity="center" android:id="@id/cv_loading" android:layout_width="match_parent" android:layout_height="54.0dp" />
+</FrameLayout>

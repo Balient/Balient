@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/webview_layout" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view" android:background="@color/c5" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@id/webview_header">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <WebView android:id="@id/wb_webview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+    <View android:id="@id/c6" android:background="@color/c6" android:focusableInTouchMode="true" android:visibility="gone" android:clickable="true" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/webview_header" android:background="@color/c1" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_alignParentTop="true">
+        <TextView android:textSize="18.0sp" android:textColor="@color/c10" android:id="@id/webview_tite" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dp" android:text="@string/web_view_bottom_sheet_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="16.0sp" android:textColor="@drawable/selector_text_primary" android:id="@id/close_webview" android:background="@drawable/capsule_transparent_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dp" android:layout_marginBottom="5.0dp" android:text="@string/persian_close" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/progress_bar_view" android:visibility="gone" android:layout_width="70.0dp" android:layout_height="70.0dp" android:layout_centerInParent="true" layout="@layout/bank_load_component" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="yes"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <ir.nasim.features.conversation.messages.content.adapter.view.MessageStateView android:textAppearance="@style/TextAppearance.Bale.Bubble.State.White" android:layout_gravity="end|bottom" android:id="@id/stateView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dp" />
+</FrameLayout>

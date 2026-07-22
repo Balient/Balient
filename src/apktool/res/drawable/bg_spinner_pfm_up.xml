@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="8.0dp" />
+                    <solid android:color="@color/buttonBackground" />
+                </shape>
+            </item>
+            <item android:gravity="left|center" android:drawable="@drawable/ic_chevron_up" android:left="4.0dp" />
+        </layer-list>
+    </item>
+</selector>

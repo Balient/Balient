@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dividerTop" android:layout_width="match_parent" android:layout_height="@dimen/div_size" />
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48.0dp" android:layoutDirection="ltr">
+        <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/cancel" android:background="@drawable/btn_white" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/edit_name_cancel" android:layout_weight="1.0" android:textAllCaps="true" />
+        <View android:id="@id/dividerBot" android:background="@color/divider" android:layout_width="@dimen/div_size" android:layout_height="match_parent" />
+        <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/ok" android:background="@drawable/btn_white" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:text="@string/edit_name_save" android:layout_weight="1.0" android:textAllCaps="true" />
+    </LinearLayout>
+</LinearLayout>

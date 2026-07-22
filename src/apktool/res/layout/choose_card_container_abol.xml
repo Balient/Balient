@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background_4" android:paddingLeft="8.0dp" android:paddingRight="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dp" android:textColor="@color/c10" android:id="@id/abolTitle" android:paddingBottom="16.0dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/bank_choose_card" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageButton android:id="@id/abolClose" android:background="@drawable/transparent" android:paddingLeft="8.0dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:src="@drawable/ic_keyboard_arrow_down_24dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textColor="@color/c10" android:id="@id/tvHintCards" android:paddingTop="8.0dp" android:paddingBottom="8.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bank_my_bank_saved_cards" android:layout_below="@id/abolTitle" android:layout_alignParentRight="true" />
+    <androidx.core.widget.NestedScrollView android:id="@id/abolNestedScroll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/tvHintCards">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/abolCardsContainer" android:paddingBottom="48.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <Button android:textSize="18.0dp" android:textColor="@color/secondary" android:layout_gravity="center|bottom" android:id="@id/abolButtonUseNewCard" android:background="@drawable/selector" android:paddingLeft="8.0dp" android:paddingTop="8.0dp" android:paddingRight="8.0dp" android:paddingBottom="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bank_add_new_card" />
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

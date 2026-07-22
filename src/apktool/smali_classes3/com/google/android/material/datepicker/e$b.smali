@@ -1,0 +1,58 @@
+.class Lcom/google/android/material/datepicker/e$b;
+.super Lir/nasim/g2;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/google/android/material/datepicker/e;->V5(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic d:Lcom/google/android/material/datepicker/e;
+
+
+# direct methods
+.method constructor <init>(Lcom/google/android/material/datepicker/e;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/android/material/datepicker/e$b;->d:Lcom/google/android/material/datepicker/e;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lir/nasim/g2;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public g(Landroid/view/View;Lir/nasim/I2;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1, p2}, Lir/nasim/g2;->g(Landroid/view/View;Lir/nasim/I2;)V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 p1, 0x0
+
+    .line 5
+    invoke-virtual {p2, p1}, Lir/nasim/I2;->t0(Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="5.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="68.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/photo" android:layout_width="46.0dp" android:layout_height="46.0dp" android:layerType="hardware" android:layout_marginStart="12.0dp" android:layout_alignParentStart="true" />
+    <LinearLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/text_wrap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:layout_marginStart="12.0dp" android:layout_marginEnd="16.0dp" android:layout_toStartOf="@id/answer_btn" android:layout_toEndOf="@id/photo">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/group_ic" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_notification_group_call" android:layerType="hardware" android:layout_marginEnd="4.0dp" />
+            <TextView android:textSize="14.0dp" android:ellipsize="end" android:gravity="end" android:id="@id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:fontFamily="@font/arad_medium" />
+        </LinearLayout>
+        <TextView android:textSize="12.0dp" android:ellipsize="end" android:gravity="end" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voice_call_incoming" android:singleLine="true" android:fontFamily="@font/arad_regular" />
+    </LinearLayout>
+    <ImageView android:id="@id/answer_btn" android:background="?android:selectableItemBackgroundBorderless" android:padding="4.0dp" android:layout_width="46.0dp" android:layout_height="46.0dp" android:src="@drawable/collapsed_answer" android:layout_marginEnd="16.0dp" android:layout_toStartOf="@id/decline_btn" />
+    <ImageView android:id="@id/decline_btn" android:background="?android:selectableItemBackgroundBorderless" android:padding="4.0dp" android:layout_width="46.0dp" android:layout_height="46.0dp" android:src="@drawable/collapsed_decline" android:layout_marginEnd="12.0dp" android:layout_alignParentEnd="true" />
+</RelativeLayout>

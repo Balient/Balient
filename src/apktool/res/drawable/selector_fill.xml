@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/c3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector android:exitFadeDuration="200">
+            <item android:state_pressed="true" android:drawable="@color/c6" />
+            <item android:state_selected="true" android:drawable="@color/c6" />
+            <item android:state_focused="true" android:drawable="@color/c4" />
+            <item android:drawable="@color/c4" android:state_hovered="true" />
+            <item android:drawable="@android:color/transparent" />
+        </selector>
+    </item>
+</ripple>

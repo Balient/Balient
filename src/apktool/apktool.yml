@@ -1,0 +1,23 @@
+version: 3.0.2
+apkFileName: Balient.apk
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: 24
+  targetSdkVersion: 33
+versionInfo:
+  versionCode: 156598
+  versionName: 10.1.10 (156598)
+resourcesInfo:
+  packageId: 127
+doNotCompress:
+- arsc
+- gif
+- mp3
+- ogg
+- png
+- wav
+- webp
+- assets/dexopt/baseline.prof
+- assets/dexopt/baseline.profm

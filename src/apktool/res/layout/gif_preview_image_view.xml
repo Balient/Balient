@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.facebook.shimmer.ShimmerFrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/frame_shimmer" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/img_place_holder" android:layout_width="match_parent" android:layout_height="match_parent" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <ir.nasim.designsystem.ImageViewCrossFade android:id="@id/img_gif" android:layout_width="match_parent" android:layout_height="match_parent" />
+</merge>

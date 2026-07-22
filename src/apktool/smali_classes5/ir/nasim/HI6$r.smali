@@ -1,0 +1,168 @@
+.class public Lir/nasim/HI6$r;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lir/nasim/HI6;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "r"
+.end annotation
+
+
+# instance fields
+.field private final a:Lir/nasim/Ld5;
+
+.field private final b:Ljava/util/ArrayList;
+
+.field private final c:Ljava/util/ArrayList;
+
+.field private final d:Ljava/lang/String;
+
+.field private final e:Ljava/lang/String;
+
+.field private final f:Lir/nasim/qN5;
+
+.field private final g:Lir/nasim/gR7;
+
+.field private final h:Ljava/lang/Long;
+
+
+# direct methods
+.method public constructor <init>(Lir/nasim/Ld5;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Lir/nasim/qN5;Lir/nasim/gR7;Ljava/lang/Long;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lir/nasim/HI6$r;->a:Lir/nasim/Ld5;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lir/nasim/HI6$r;->b:Ljava/util/ArrayList;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Lir/nasim/HI6$r;->c:Ljava/util/ArrayList;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lir/nasim/HI6$r;->d:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Lir/nasim/HI6$r;->e:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, Lir/nasim/HI6$r;->f:Lir/nasim/qN5;
+
+    .line 15
+    .line 16
+    iput-object p7, p0, Lir/nasim/HI6$r;->g:Lir/nasim/gR7;
+
+    .line 17
+    .line 18
+    iput-object p8, p0, Lir/nasim/HI6$r;->h:Ljava/lang/Long;
+
+    .line 19
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/HI6$r;->e:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public b()Ljava/util/ArrayList;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/HI6$r;->c:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public c()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/HI6$r;->d:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public d()Lir/nasim/Ld5;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/HI6$r;->a:Lir/nasim/Ld5;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public e()Ljava/util/ArrayList;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/HI6$r;->b:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public f()Lir/nasim/qN5;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/HI6$r;->f:Lir/nasim/qN5;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public g()Ljava/lang/Long;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/HI6$r;->h:Ljava/lang/Long;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public h()Lir/nasim/gR7;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/HI6$r;->g:Lir/nasim/gR7;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method

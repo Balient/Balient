@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="56.0dp" android:layout_height="56.0dp" android:elevation="0.0dp" app:cardBackgroundColor="@color/background" app:cardCornerRadius="14.0dp" app:cardElevation="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.progressindicator.CircularProgressIndicator android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:indeterminateBehavior="repeat" app:indicatorColor="?colorPrimary" app:indicatorSize="24.0dp" app:trackColor="@color/ripple" app:trackCornerRadius="100.0dp" app:trackThickness="3.0dp" />
+</androidx.cardview.widget.CardView>

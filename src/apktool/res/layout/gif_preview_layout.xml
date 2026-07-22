@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_gif_preview_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/img_swipe_up" android:layout_width="32.0dp" android:layout_height="32.0dp" android:src="@drawable/ic_arrow_up" />
+    <ir.nasim.features.smiles.widget.GifPreviewImageView android:layout_gravity="center_horizontal" android:id="@id/img_gif_preview" android:layout_width="315.0dp" android:layout_height="210.0dp" android:layout_marginTop="32.0dp" />
+</LinearLayout>

@@ -1,0 +1,95 @@
+.class public final Lir/nasim/o17;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private final a:Lir/nasim/Zy4;
+
+.field private final b:Lir/nasim/Iy4;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    const/4 v1, 0x1
+
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    invoke-static {v0, v1, v2}, Lir/nasim/fz4;->b(ZILjava/lang/Object;)Lir/nasim/Zy4;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    iput-object v0, p0, Lir/nasim/o17;->a:Lir/nasim/Zy4;
+
+    .line 12
+    .line 13
+    const/4 v0, 0x2
+
+    .line 14
+    invoke-static {v2, v2, v0, v2}, Lir/nasim/F27;->i(Ljava/lang/Object;Lir/nasim/D27;ILjava/lang/Object;)Lir/nasim/Iy4;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    iput-object v0, p0, Lir/nasim/o17;->b:Lir/nasim/Iy4;
+
+    .line 19
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lir/nasim/R07;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lir/nasim/o17;->b:Lir/nasim/Iy4;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lir/nasim/I67;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-static {v0}, Lir/nasim/h74;->a(Ljava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    return-object v0
+.end method
