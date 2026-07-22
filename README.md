@@ -1,8 +1,8 @@
-# Balient
-
 <p align="center">
-  <img src="docs/assets/balient-padded-icon.png" width="132" height="132" alt="Balient logo" />
+  <img src="docs/assets/balient-padded-icon.png" width="216" height="216" alt="Balient logo" />
 </p>
+
+<h1 align="center">Balient</h1>
 
 <p align="center">
   <strong>An open, maintainable Bale Android client modding workspace.</strong><br />
