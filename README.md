@@ -229,3 +229,22 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Keep changes small, explain every smali 
 ## License
 
 See [LICENSE](LICENSE). Bale-origin files and third-party components retain their original ownership and licensing. The Balient-specific scripts, documentation, and modifications are provided under this repository's license.
+
+---
+
+<p align="center">
+  <strong>Enjoying Balient?</strong><br />
+  If this source handoff, documentation, or porting baseline helps you, consider giving the project a star.
+</p>
+
+<p align="center">
+  <a href="https://github.com/Balient/Balient/stargazers">
+    <img src="https://img.shields.io/github/stars/Balient/Balient?style=for-the-badge&label=STAR%20BALIENT&color=14b8a6" alt="Star Balient on GitHub" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://star-history.com/#Balient/Balient&Date">
+    <img src="https://api.star-history.com/svg?repos=Balient/Balient&type=Date" alt="Balient star history" />
+  </a>
+</p>
