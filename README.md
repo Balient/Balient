@@ -20,7 +20,7 @@
 | --- | --- |
 | Build the included Balient tree | [Build and sign](#build-and-sign) |
 | Start from a fresh vanilla Bale APK | [English modding guide](docs/MODDING_FROM_SCRATCH.md) · [راهنمای فارسی](docs/FA_MODDING_FROM_SCRATCH.md) |
-| Port Balient to a newer Bale version | [Porting checklist](docs/PORTING_CHECKLIST.md) |
+| Port Balient to a newer Bale version | [Porting checklist](docs/PORTING_CHECKLIST.md) · [چک‌لیست فارسی](docs/FA_PORTING_CHECKLIST.md) |
 | Download the last handoff APK | [GitHub Releases](https://github.com/Balient/Balient/releases/latest) |
 | Understand the source layout | [Repository map](#repository-map) |
 
@@ -28,7 +28,7 @@
 <summary><strong>فهرست فارسی</strong></summary>
 
 - [راهنمای ساخت و توسعه از صفر](docs/FA_MODDING_FROM_SCRATCH.md)
-- [چک‌لیست انتقال به نسخه جدید](docs/PORTING_CHECKLIST.md)
+- [چک‌لیست انتقال به نسخه جدید](docs/FA_PORTING_CHECKLIST.md)
 - [دریافت آخرین APK](https://github.com/Balient/Balient/releases/latest)
 
 </details>
@@ -63,6 +63,7 @@ Balient/
 │   ├── MODDING_FROM_SCRATCH.md           Full English guide
 │   ├── FA_MODDING_FROM_SCRATCH.md        راهنمای کامل فارسی
 │   ├── PORTING_CHECKLIST.md              New-version porting checklist
+│   ├── FA_PORTING_CHECKLIST.md           چک‌لیست انتقال نسخه به فارسی
 │   └── RELEASES.md                       Release notes and policy
 ├── CONTRIBUTING.md                       Contribution conventions
 └── LICENSE                               License for Balient-owned work
@@ -169,6 +170,7 @@ Do **not** overwrite a newer vanilla Bale tree with the whole old Balient tree. 
 - [Modding vanilla Bale from scratch — English](docs/MODDING_FROM_SCRATCH.md)
 - [راهنمای توسعه Balient از Bale خام — فارسی](docs/FA_MODDING_FROM_SCRATCH.md)
 - [Porting checklist](docs/PORTING_CHECKLIST.md)
+- [چک‌لیست انتقال به فارسی](docs/FA_PORTING_CHECKLIST.md)
 
 ## Important Balient integration areas
 

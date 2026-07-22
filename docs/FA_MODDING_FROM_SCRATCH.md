@@ -122,7 +122,7 @@ java -jar tools\apktool\apktool.jar if framework.apk
 6. بعد از هر feature، build، sign و تست کنید؛ چندین feature را یکجا اضافه نکنید.
 7. تغییرات هر feature را در یک commit جدا ثبت کنید.
 
-برای فهرست دقیق‌تر، [PORTING_CHECKLIST.md](PORTING_CHECKLIST.md) را دنبال کنید.
+برای فهرست دقیق‌تر، [PORTING_CHECKLIST.md](PORTING_CHECKLIST.md) یا [چک‌لیست فارسی انتقال](FA_PORTING_CHECKLIST.md) را دنبال کنید.
 
 ## 6. پیدا کردن کد و نقطه اتصال
 
@@ -269,4 +269,5 @@ adb logcat | Select-String -Pattern "FATAL EXCEPTION|VerifyError|AndroidRuntime|
 - [README اصلی](../README.md)
 - [راهنمای انگلیسی](MODDING_FROM_SCRATCH.md)
 - [چک‌لیست انتقال نسخه](PORTING_CHECKLIST.md)
+- [چک‌لیست فارسی انتقال نسخه](FA_PORTING_CHECKLIST.md)
 - [Releaseهای Balient](https://github.com/Balient/Balient/releases)
