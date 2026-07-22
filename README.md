@@ -243,8 +243,14 @@ See [LICENSE](LICENSE). Bale-origin files and third-party components retain thei
   </a>
 </p>
 
+## Star History
+
 <p align="center">
-  <a href="https://star-history.com/#Balient/Balient&Date">
-    <img src="https://api.star-history.com/svg?repos=Balient/Balient&type=Date" alt="Balient star history" />
+  <a href="https://www.star-history.com/?repos=Balient%2FBalient&type=date&legend=top-left">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Balient/Balient&type=date&theme=dark&legend=top-left&sealed_token=1O26P2G-BgMrczAomvi-xZJGRJMjPxVclZcnwaBHWWYjptj5Mk0ARyoU6_ALJfBX6eILDZwm-0EFRKUhCClAvxgcG6baK5M6PQ2u_gcDzZ6NCV0FfXevXw" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Balient/Balient&type=date&legend=top-left&sealed_token=1O26P2G-BgMrczAomvi-xZJGRJMjPxVclZcnwaBHWWYjptj5Mk0ARyoU6_ALJfBX6eILDZwm-0EFRKUhCClAvxgcG6baK5M6PQ2u_gcDzZ6NCV0FfXevXw" />
+      <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Balient/Balient&type=date&legend=top-left&sealed_token=1O26P2G-BgMrczAomvi-xZJGRJMjPxVclZcnwaBHWWYjptj5Mk0ARyoU6_ALJfBX6eILDZwm-0EFRKUhCClAvxgcG6baK5M6PQ2u_gcDzZ6NCV0FfXevXw" />
+    </picture>
   </a>
 </p>
