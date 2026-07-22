@@ -245,6 +245,6 @@ See [LICENSE](LICENSE). Bale-origin files and third-party components retain thei
 
 <p align="center">
   <a href="https://star-history.com/#Balient/Balient&Date">
-    <img src="https://api.star-history.com/svg?repos=Balient/Balient&type=Date" alt="Balient star history" />
+    <img src="https://www.star-history.com/?type=date&repos=Balient%2FBalient" alt="Balient star history" />
   </a>
 </p>
