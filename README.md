@@ -1,57 +1,99 @@
-﻿# Balient
+# Balient
 
-Balient is a community-maintained modified Bale Android client. This repository contains the last public Balient apktool project tree so future maintainers can continue the work, audit it, port features to newer Bale versions, or build the current Balient source.
+<p align="center">
+  <strong>An open, maintainable Bale Android client modding workspace.</strong><br />
+  Source handoff · reproducible APK builds · documentation for future maintainers
+</p>
 
-## Repository layout
+<p align="center">
+  <a href="https://github.com/Balient/Balient/releases/latest"><img src="https://img.shields.io/github/v/release/Balient/Balient?display_name=tag&sort=semver&style=for-the-badge" alt="Latest release" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-0ea5e9?style=for-the-badge" alt="License" /></a>
+  <a href="https://github.com/Balient/Balient"><img src="https://img.shields.io/github/repo-size/Balient/Balient?style=for-the-badge" alt="Repository size" /></a>
+</p>
+
+> [!NOTE]
+> This repository is a **source handoff and modding workspace**, not an official Bale distribution. It preserves the final Balient apktool tree, the build path used for it, and a practical guide for porting its work to future vanilla Bale releases.
+
+## Start here
+
+| I want to… | Read / run |
+| --- | --- |
+| Build the included Balient tree | [Build and sign](#build-and-sign) |
+| Start from a fresh vanilla Bale APK | [English modding guide](docs/MODDING_FROM_SCRATCH.md) · [راهنمای فارسی](docs/FA_MODDING_FROM_SCRATCH.md) |
+| Port Balient to a newer Bale version | [Porting checklist](docs/PORTING_CHECKLIST.md) |
+| Download the last handoff APK | [GitHub Releases](https://github.com/Balient/Balient/releases/latest) |
+| Understand the source layout | [Repository map](#repository-map) |
+
+<details>
+<summary><strong>فهرست فارسی</strong></summary>
+
+- [راهنمای ساخت و توسعه از صفر](docs/FA_MODDING_FROM_SCRATCH.md)
+- [چک‌لیست انتقال به نسخه جدید](docs/PORTING_CHECKLIST.md)
+- [دریافت آخرین APK](https://github.com/Balient/Balient/releases/latest)
+
+</details>
+
+---
+
+## What is included
+
+- The **last public Balient apktool project tree** under [`src/apktool/`](src/apktool/).
+- PowerShell scripts for deterministic **build**, **zipalign**, **sign**, and **verify** steps.
+- Complete documentation for modding a vanilla Bale APK from scratch in **English and Persian**.
+- A release handoff APK, published as a GitHub Release asset rather than committed into Git history.
+- The current Balient-specific smali and resources, including the Arad font integration while retaining Bale's original font assets.
+
+## Repository map
 
 ```text
-src/apktool/                 Last Balient apktool project tree
-  AndroidManifest.xml        Decoded manifest
-  apktool.yml                Apktool metadata
-  res/                       Decoded resources
-  smali*/                    Decompiled smali dex trees
-  assets/, lib/, unknown/    Runtime assets/native libs/unknown apktool files
-scripts/build.ps1            Build decoded apktool tree into an unsigned APK
-scripts/sign.ps1             Zipalign/sign/verify an unsigned APK
-docs/MODDING_FROM_SCRATCH.md Full guide for modding vanilla Bale from scratch
-docs/PORTING_CHECKLIST.md    Checklist for porting Balient changes to a new Bale APK
-docs/RELEASES.md             Release/build notes
+Balient/
+├── src/
+│   └── apktool/                         Decoded final Balient APK project
+│       ├── AndroidManifest.xml           Application manifest
+│       ├── apktool.yml                   Apktool build metadata
+│       ├── res/                          Resources, layouts, fonts, drawables
+│       ├── smali*/                       Decompiled DEX code, split per classes*.dex
+│       ├── assets/ lib/ unknown/         Preserved runtime files and native libraries
+│       └── smali_classes10/ir/nasim/balientlab/
+│                                          Balient-owned helper/feature code
+├── scripts/
+│   ├── build.ps1                         Build decoded source to an unsigned APK
+│   └── sign.ps1                          Zipalign, sign, and verify an APK
+├── docs/
+│   ├── MODDING_FROM_SCRATCH.md           Full English guide
+│   ├── FA_MODDING_FROM_SCRATCH.md        راهنمای کامل فارسی
+│   ├── PORTING_CHECKLIST.md              New-version porting checklist
+│   └── RELEASES.md                       Release notes and policy
+├── CONTRIBUTING.md                       Contribution conventions
+└── LICENSE                               License for Balient-owned work
 ```
-
-## What is intentionally not committed
-
-The repository should not contain:
-
-- Original Bale APK downloads.
-- Generated unsigned/signed APK outputs.
-- `.idsig`, `.ap_`, `build/`, apktool cache outputs.
-- Private signing keys (`.keystore`, `.jks`).
-- Android SDK/build-tools/apktool jars.
-- Local test logs and crash dumps.
-
-The latest built APK should be distributed as a GitHub Release asset, not committed into git history.
 
 ## Requirements
 
-Install these locally:
+Install these locally; they are intentionally not tracked in this repository.
 
-- Java JDK 17+.
-- Apktool 3.x.
-- Android SDK Build Tools with `zipalign` and `apksigner`.
-- Git.
-- PowerShell 7+ is recommended on Windows, but Windows PowerShell works for these scripts.
+| Tool | Purpose |
+| --- | --- |
+| Java JDK 17+ | Runs Apktool and `apksigner` |
+| Apktool 3.x | Decodes and rebuilds the APK tree |
+| Android SDK Build Tools | Provides `zipalign` and `apksigner` |
+| Git | Tracks ports and feature changes |
+| PowerShell 7+ | Runs the supplied scripts (Windows PowerShell also works) |
+| `adb` *(recommended)* | Installs and tests local builds |
 
-Expected local tools layout for the included scripts:
+The scripts accept explicit paths. Their default tool layout is:
 
 ```text
-tools/apktool/apktool.jar
-tools/android-sdk/build-tools/<version>/zipalign.exe
-tools/android-sdk/build-tools/<version>/lib/apksigner.jar
+tools/
+├── apktool/apktool.jar
+└── android-sdk/build-tools/<version>/
+    ├── zipalign.exe
+    └── lib/apksigner.jar
 ```
 
-You can also pass explicit tool paths to the scripts.
+## Build and sign
 
-## Build the current Balient tree
+### 1. Build
 
 From the repository root:
 
@@ -59,13 +101,9 @@ From the repository root:
 .\scripts\build.ps1
 ```
 
-Default output:
+Output: `dist/Balient_unsigned.apk`
 
-```text
-dist/Balient_unsigned.apk
-```
-
-Build with custom paths:
+Or provide explicit locations:
 
 ```powershell
 .\scripts\build.ps1 `
@@ -74,9 +112,9 @@ Build with custom paths:
   -OutApk "dist\Balient_unsigned.apk"
 ```
 
-## Sign the APK
+### 2. Create a local signing key
 
-Create or provide a keystore. Example debug keystore:
+Do this once. Keep the key outside Git and back it up securely.
 
 ```powershell
 keytool -genkeypair `
@@ -91,7 +129,7 @@ keytool -genkeypair `
   -dname "CN=Balient, O=Balient, C=IR"
 ```
 
-Then sign:
+### 3. Zipalign, sign, and verify
 
 ```powershell
 .\scripts\sign.ps1 `
@@ -102,67 +140,70 @@ Then sign:
   -KeyPass "android"
 ```
 
-Default signed output:
+Output: `dist/Balient_signed.apk`
 
-```text
-dist/Balient_signed.apk
+### 4. Install for testing
+
+```powershell
+adb install -r dist\Balient_signed.apk
 ```
 
-## Mod vanilla Bale from scratch
+If Android rejects installation over an existing app, uninstall the old package first or sign with the same original signing key.
 
-Read the full guide:
+## Mod a fresh vanilla Bale release
 
-- [docs/MODDING_FROM_SCRATCH.md](docs/MODDING_FROM_SCRATCH.md)
+The short workflow is:
 
-Short version:
+```powershell
+# Keep the downloaded APK out of Git.
+java -jar tools\apktool\apktool.jar d input\Bale.apk -o work\bale_vanilla_apktool -f
 
-1. Put a vanilla Bale APK somewhere outside git, for example `input/Bale.apk`.
-2. Decode it with apktool:
-
-   ```powershell
-   java -jar tools\apktool\apktool.jar d input\Bale.apk -o work\bale_vanilla_apktool -f
-   ```
-
-3. Compare `work/bale_vanilla_apktool` with `src/apktool`.
-4. Port Balient files and smali/resource edits section by section.
-5. Build:
-
-   ```powershell
-   java -jar tools\apktool\apktool.jar b work\bale_vanilla_apktool -o dist\Balient_unsigned.apk
-   ```
-
-6. Zipalign/sign/verify with `scripts/sign.ps1` or Android build-tools directly.
-7. Test on a device before release.
-
-## Important Balient areas
-
-Main Balient custom code lives under:
-
-```text
-src/apktool/smali_classes10/ir/nasim/balientlab/
+# Port only deliberate Balient changes into work\bale_vanilla_apktool.
+java -jar tools\apktool\apktool.jar b work\bale_vanilla_apktool -o dist\Balient_unsigned.apk
 ```
 
-Commonly touched integration points include:
+Do **not** overwrite a newer vanilla Bale tree with the whole old Balient tree. Bale is obfuscated and class names, methods, registers, layouts, and resource ids can move on every release. Start with Balient-owned files, then port each integration patch using a stable anchor in the new version.
 
-- `AndroidManifest.xml` for activities/providers/permissions.
-- `res/values/public.xml` for stable resource ids.
-- `res/values*/styles.xml` and `res/layout/*.xml` for UI/font/theme overrides.
-- `smali_classes6/ir/nasim/MG2.smali` for app font provider behavior.
-- `smali_classes6/ir/nasim/Mi4.smali` for message text/font settings UI.
-- Chat/message classes in `smali_classes5/ir/nasim/chat/` and conversation packages.
-- Feature hooks and utilities in `ir/nasim/balientlab`.
+**Read the complete guide before porting:**
 
-## Current status notes
+- [Modding vanilla Bale from scratch — English](docs/MODDING_FROM_SCRATCH.md)
+- [راهنمای توسعه Balient از Bale خام — فارسی](docs/FA_MODDING_FROM_SCRATCH.md)
+- [Porting checklist](docs/PORTING_CHECKLIST.md)
 
-This repo reflects the last local Balient working tree at the time it was open-sourced. Theme Manager/Theme Importer code was removed because it was unstable. Arad font integration is present while keeping the original Bale fonts in the tree.
+## Important Balient integration areas
 
-## Release policy
+| Area | Why it matters |
+| --- | --- |
+| `smali_classes10/ir/nasim/balientlab/` | Balient-owned feature/helper package; port this first. |
+| `AndroidManifest.xml` | Activities, receivers, providers, permissions, and application integration. |
+| `res/values/public.xml` | Stable resource-id declarations required when adding resources. |
+| `res/font/` and `res/values*/styles.xml` | Font registration and UI text appearance overrides. |
+| `smali_classes6/ir/nasim/MG2.smali` | Central Bale font-provider behavior. |
+| `smali_classes6/ir/nasim/Mi4.smali` | Message text/font settings integration. |
+| `smali_classes*/ir/nasim/chat/` | Chat composer, message lists, and chat-specific behavior. |
 
-- Commit source/decompiled project changes only.
-- Attach installable APKs to GitHub Releases.
-- Never commit private keystores.
-- Tag releases as `vYYYY.MM.DD` or `v<base-bale-version>-balient.<n>`.
+## What is intentionally excluded
+
+These files are ignored and must stay out of commits:
+
+- Downloaded vanilla Bale APKs.
+- Generated unsigned/signed APKs, `.idsig`, `.ap_`, and apktool `build/` outputs.
+- Private `.keystore` / `.jks` signing keys.
+- Android SDK, build-tools, and Apktool jars.
+- Local crash logs, device backups, temporary files, and test data.
+
+Installable builds belong in [GitHub Releases](https://github.com/Balient/Balient/releases), not Git history.
+
+## Current handoff status
+
+This is the final locally maintained Balient tree at the time of open-sourcing. The unstable Theme Manager / Theme Importer was removed before the handoff. Arad font integration remains, and the original Bale font resources are retained.
+
+Future maintainers should create one branch per Bale base version and document the exact base APK version, Apktool version, toolchain version, and tested device/Android versions in each release.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Keep changes small, explain every smali hook, test a rebuilt/signed APK, and never commit a private key or generated build output.
 
 ## License
 
-See [LICENSE](LICENSE). Third-party components and Bale-origin files retain their original ownership; Balient-specific modifications are released under the license in this repository.
+See [LICENSE](LICENSE). Bale-origin files and third-party components retain their original ownership and licensing. The Balient-specific scripts, documentation, and modifications are provided under this repository's license.
