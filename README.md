@@ -1,6 +1,10 @@
 # Balient
 
 <p align="center">
+  <img src="docs/assets/balient-mark.svg" width="132" height="132" alt="Balient logo" />
+</p>
+
+<p align="center">
   <strong>An open, maintainable Bale Android client modding workspace.</strong><br />
   Source handoff · reproducible APK builds · documentation for future maintainers
 </p>
@@ -9,6 +13,13 @@
   <a href="https://github.com/Balient/Balient/releases/latest"><img src="https://img.shields.io/github/v/release/Balient/Balient?display_name=tag&sort=semver&style=for-the-badge" alt="Latest release" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-0ea5e9?style=for-the-badge" alt="License" /></a>
   <a href="https://github.com/Balient/Balient"><img src="https://img.shields.io/github/repo-size/Balient/Balient?style=for-the-badge" alt="Repository size" /></a>
+</p>
+
+<p align="center">
+  <a href="#build-and-sign">Build</a> ·
+  <a href="docs/MODDING_FROM_SCRATCH.md">Modding guide</a> ·
+  <a href="docs/FA_MODDING_FROM_SCRATCH.md">راهنمای فارسی</a> ·
+  <a href="https://github.com/Balient/Balient/releases/latest">Releases</a>
 </p>
 
 > [!NOTE]
